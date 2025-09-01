@@ -1,0 +1,844 @@
+/* Reseteo básico */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* Video de fondo */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Barra de navegación centrada */
+header {
+  width: 100%;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transform: translateY(-100%);
+  animation: slideDown 1s ease forwards;
+}
+
+@keyframes slideDown {
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Logo */
+.logo {
+  height: 100px;
+  margin-right: 20px;
+  transform: scale(0);
+  animation: zoomIn 1s ease forwards;
+  animation-delay: 0.5s; /* se retrasa un poco */
+}
+
+@keyframes zoomIn {
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Menú */
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 40px;
+}
+
+nav ul li {
+  margin: 0 15px;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+nav ul li:nth-child(1) { animation-delay: 0.5s; }
+nav ul li:nth-child(2) { animation-delay: 0.7s; }
+nav ul li:nth-child(3) { animation-delay: 0.9s; }
+nav ul li:nth-child(4) { animation-delay: 1.1s; }
+nav ul li:nth-child(5) { animation-delay: 1.3s; }
+nav ul li:nth-child(6) { animation-delay: 1.5s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #F23805;
+}
+
+#menu-toggle {
+  display: none; /* oculto en escritorio */
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* Contenido centrado */
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 80px 20px 20px; /* espacio para el header fijo */
+}
+
+.boton {
+  margin-top: 30px;
+  padding: 12px 25px;
+  background-color: #F23805;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+  /* ====== BARRA INFERIOR IZQUIERDA ====== */
+.barra-redes {
+  position: fixed;
+  bottom: 20px;                  /* 🔹 se pega abajo */
+  left: 20px;                    /* 🔹 se pega a la izquierda */
+  background: rgba(0, 0, 0, 0.9); /* fondo negro */
+  padding: 10px 15px;
+  border-radius: 10px;           /* bordes redondeados */
+  display: flex;
+  flex-direction: row;           /* 🔹 en fila horizontal */
+  align-items: center;
+  gap: 15px;                     /* separación entre iconos */
+  z-index: 2000;
+}
+
+/* Íconos dentro de la barra */
+.barra-redes a img {
+  width: 35px;
+  height: 35px;
+  transition: transform 0.3s, filter 0.3s;
+  cursor: pointer;
+}
+
+/* Hover: efecto zoom y color */
+.barra-redes a img:hover {
+  transform: scale(1.2);
+  filter: brightness(1) invert(0);   /* recupera color original */
+}
+
+/* Marca de agua discreta */
+.marca-agua {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0.4;
+  z-index: 9999;
+  pointer-events: none;
+  width: 250px;
+}
+
+@keyframes caerDesdeArriba {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px); /* empieza más arriba */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* posición final */
+  }
+}
+
+.logop {
+  width: 500px;   /* aumenta el ancho (puedes poner 400px si la quieres más grande) */
+  max-width: 100%; /* para que no se desborde en pantallas pequeñas */
+  margin-top: 20px;
+  border-radius: 15px; /* opcional: bordes redondeados */
+  opacity: 0;
+  animation: caerDesdeArriba 1.2s ease forwards;
+  animation-delay: 0.3s; /* para que caiga un poquito después del texto */
+}
+
+.overlay p {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 300;
+  font-size: 35px;
+  line-height: 1.6;
+  opacity: 0;
+  animation: caerDesdeArriba 1s ease forwards;
+}
+
+
+.boton:hover {
+  background-color: #F23805;
+}
+
+/* Sección negra */
+.info-section {
+  background-color: black;
+  color: white;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+/* Contenedor de dos columnas */
+.info-container {
+  display: flex;
+  flex-wrap: wrap; /* Para que se ajuste en pantallas pequeñas */
+  max-width: 1100px;
+  width: 100%;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Texto a la izquierda */
+.info-texto {
+  flex: 1;
+}
+
+.info-texto h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.info-texto p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Botón dentro de la sección */
+.boton-info {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #F23805;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.boton-info:hover {
+  background-color: #d32f02;
+}
+
+/* Imagen a la derecha */
+.info-imagen {
+  flex: 1;
+  text-align: center;
+}
+
+.info-imagen img {
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.6);
+}
+
+/* Contenedor del banner */
+.img-section {
+  width: 100%;
+  margin: 0;       /* elimina separación con lo de arriba */
+  padding: 0;      /* elimina espacio extra */
+}
+
+/* Contenedor de la imagen */
+.img-container {
+  position: relative;
+  width: 100%;     /* ocupa todo el ancho */
+  height: 250px;   /* altura reducida (puedes ajustar a gusto) */
+  overflow: hidden; /* recorta si la imagen es más grande */
+}
+
+/* Imagen rectangular */
+.img-rectangular {
+  width: 100%;
+  height: 100%;     /* fuerza la altura a llenar el contenedor */
+  object-fit: cover; /* recorta sin deformar */
+  border-radius: 0; /* sin esquinas redondeadas */
+  box-shadow: none; /* sin sombra */
+}
+
+/* Texto encima del banner */
+.img-texto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-weight: bold;     /* negrilla */
+  text-transform: uppercase; /* mayúsculas */
+  font-size: 26px;       /* más grande (ajusta a tu gusto) */
+  text-align: center;
+  padding: 12px 25px;
+  border-radius: 10px;
+}
+
+/* Sección de servicios */
+.servicios {
+  width: 100%;
+  text-align: center;
+  color: white;
+  padding: 80px 20px;
+  background: rgba(0,0,0,0.5); /* para que el texto se lea sobre el video */
+}
+
+
+#servicios h2 {
+  font-size: 48px;       /* cambia el tamaño del texto */
+  font-weight: bold;     /* negrilla */
+  text-transform: uppercase; /* todo en mayúsculas */
+  color: white;          /* color del texto */
+  letter-spacing: 3px;   /* espacio entre letras */
+  text-align: center;    /* centrar el título */
+  margin-bottom: 40px;   /* espacio debajo del título */
+}
+
+
+/* Grid de servicios */
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Cada servicio */
+.servicio {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.servicio:hover {
+  transform: translateY(-10px); /* efecto al pasar el mouse */
+}
+
+/* Imagen tipo botón */
+.servicio-img {
+  width: 250px;   /* cambia el ancho de la imagen */
+  height: 270px;  /* cambia el alto de la imagen */
+  object-fit: cover;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.servicio-img:hover {
+  transform: scale(1.1);
+}
+
+/* Texto de servicio */
+.servicio p {
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+}
+
+.boton-contenedor {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;     /* Por si quieres centrar también verticalmente */
+  margin-top: 20px;
+}
+
+
+.boton-ver-todos {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 35px;
+  background-color: #F23805;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.boton-ver-todos:hover {
+  background-color: #cc5200;
+  transform: scale(1.1);
+}
+
+/* contenedor */
+.clientes-section {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px;
+}
+.clientes-section h2 {
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+
+/* logos: fila */
+.clientes-logos {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  overflow: visible; /* importante para que el zoom no se corte */
+}
+
+/* botón que envuelve cada logo */
+.cliente-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  overflow: visible;       /* evita recortar el zoom */
+  outline: none;
+}
+
+/* imagen del logo (estado base) */
+.logo-cliente {
+  width: 250px;            /* ajusta el tamaño base aquí */
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.28s cubic-bezier(.2,.8,.2,1), box-shadow 0.28s;
+}
+
+/* efecto zoom al hover o foco (accesible por teclado) */
+.cliente-btn:hover .logo-cliente,
+.cliente-btn:focus-visible .logo-cliente {
+  transform: scale(1.18);  /* cambia a 1.25 si quieres más zoom */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+}
+
+/* fallback por si la imagen recibe directamente el hover */
+.logo-cliente:hover {
+  transform: scale(1.18);
+}
+
+/* modal base */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+/* contenido del modal */
+.modal-content {
+  background: #fff;
+  color: #000;
+  padding: 24px;
+  border-radius: 10px;
+  width: 60%;
+  max-width: 750px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+}
+
+/* logo dentro del modal (más grande) */
+.modal-logo {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+/* cerrar */
+.close {
+  position: absolute;
+  top: 10px; right: 18px;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+footer {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  z-index: 1;
+  height: 60vh; /* ocupa todo el alto de la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centra vertical */
+  
+}
+
+/* Fondo oscuro para el video */
+footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: -1;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.footer-item h3 {
+  margin-bottom: 10px;
+  font-size: 40px;
+  font-weight: bold;
+  position: relative;
+}
+
+/* Rectángulo de color encima del título */
+.footer-item h3::before {
+  content: "";
+  position: absolute;
+  top: -20px; /* espacio arriba */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 8px;
+  background-color: #F23805; /* color del rectángulo */
+  border-radius: 4px;
+}
+
+.footer-item p {
+  font-size: 18px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.3);
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+.social-icons {
+  margin: 15px 0;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  font-size: 22px;
+  color: #fff;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #1e90ff;
+}
+
+.footer-title-link {
+  display: block;
+  font-size: 60px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 40px;
+  text-align: center;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.footer-title-link:hover {
+  color: #F23805; /* cambia de color al pasar */
+  transform: scale(1.05); /* leve animación */
+}
+
+/* ====== ICONOS DE REDES EN EL FOOTER ====== */
+.footer-bottom .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* separación entre íconos */
+  margin: 15px 0;
+}
+
+.footer-bottom .social-icons a img {
+  width: 35px;
+  height: 35px;
+  transition: transform 0.3s, filter 0.3s;
+  cursor: pointer;
+}
+
+.footer-bottom .social-icons a img:hover {
+  transform: scale(1.2);
+  filter: brightness(1) invert(0); /* recupera color original */
+}
+
+
+
+  
+  /* Header: reducir tamaño logo y ajustar menú */
+  .logo {
+    height: 60px;
+    margin-right: 10px;
+  }
+  
+
+/* Ocultar menú en móviles y mostrar botón */
+@media (max-width: 768px) {
+  /* Menú hamburguesa */
+  #menu-toggle {
+    display: block; /* visible solo en móviles */
+  }
+  nav {
+    position: fixed;
+    top: 60px; /* debajo del header */
+    right: 0;
+    background-color: rgba(0,0,0,0.95);
+    width: 250px;
+    height: 100vh;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 200;
+  }
+  nav.open {
+    transform: translateX(0);
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  nav ul li {
+    margin: 0;
+    opacity: 1 !important; /* para evitar animaciones */
+    transform: none !important;
+  }
+  nav ul li a {
+    font-size: 18px;
+    display: block;
+  }
+
+  /* Overlay: logo y texto */
+  .logop {
+    width: 90%;
+    max-width: 300px;
+    margin-top: 10px;
+  }
+  .overlay p {
+    font-size: 20px;
+    padding: 0 10px;
+  }
+  .boton {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  /* Info section: columna y textos */
+  .info-section {
+    padding: 40px 10px;
+    min-height: auto;
+  }
+  .info-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .info-texto, .info-imagen {
+    flex: none;
+    width: 100%;
+    text-align: center;
+  }
+  .info-texto h2 {
+    font-size: 1.8em;
+  }
+  .info-texto p {
+    font-size: 1em;
+  }
+  .boton-info {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  /* Banner image height y texto */
+  .img-container {
+    height: 150px;
+  }
+  .img-texto {
+    font-size: 18px;
+    padding: 8px 15px;
+  }
+
+  /* Servicios grid: 2 columnas */
+  .servicios-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  .servicio-img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+  }
+  .servicio p {
+    font-size: 14px;
+  }
+  .boton-ver-todos {
+    padding: 12px 25px;
+    font-size: 16px;
+  }
+
+  /* Clientes logos */
+  .clientes-section h2 {
+    font-size: 36px;
+  }
+  .logo-cliente {
+    width: 150px;
+  }
+
+  /* Modal contenido */
+  .modal-content {
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+  }
+  .modal-logo {
+    max-width: 250px;
+  }
+
+  /* Footer */
+  footer {
+    height: auto;
+    padding: 30px 10px;
+  }
+  .footer-item h3 {
+    font-size: 24px;
+  }
+  .footer-item p {
+    font-size: 14px;
+  }
+  .footer-title-link {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  .social-icons a {
+    font-size: 18px;
+    margin: 0 8px;
+  }
+
+  /* Marca de agua */
+  .marca-agua {
+    width: 150px;
+    bottom: 10px;
+    right: 10px;
+  }
+
+  /* Video fondo */
+  #bg-video {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  /* Títulos grandes en banner y secciones */
+  .banner-texto h1 {
+    font-size: 32px;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+  }
+  .bunker-contenido h2,
+  .bunker-derecha h2,
+  .bunker-simple-izq h2,
+  .bunker-centro h2 {
+    font-size: 24px;
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  
+  #Imagen\ representativa {
+    width: 90%;       /* Ajusta al 90% del ancho del contenedor */
+    max-width: 300px; /* Máximo ancho deseado */
+    height: auto;     /* Mantiene la proporción */
+    display: block;
+    margin: 0 auto 20px auto; /* Centra la imagen y agrega margen inferior */
+  }
+
+  /* Ajuste bunkers: apilar columnas y ajustar imágenes */
+  .bunker-negro,
+  .bunker-simple {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 0;
+  }
+  .bunker-izquierda,
+  .bunker-derecha,
+  .bunker-simple-izq,
+  .bunker-simple-der {
+    flex: none;
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .bunker-img,
+  .bunker-simple-img,
+  .bunker-centro-img {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto 20px auto;
+    display: block;
+    border-radius: 10px;
+    object-fit: contain;
+  }
+
+  /* Ajustes de padding y altura en banners y secciones */
+  .banner-inicio {
+    padding-left: 20px !important;
+    height: 40vh !important;
+  }
+  .bunker-contenido {
+    padding-top: 40px !important;
+  }
+  .bunker-centro {
+    height: auto !important;
+    padding: 30px 15px !important;
+  }
+  .bunker-centro .btn-servicios {
+    padding: 12px 25px !important;
+    font-size: 16px !important;
+  }
+}

@@ -1,0 +1,582 @@
+/* ====== RESETEO BÁSICO ====== */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* ====== VIDEO DE FONDO ====== */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* ====== HEADER ====== */
+header {
+  width: 100%;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transform: translateY(-100%);
+  animation: slideDown 1s ease forwards;
+}
+
+@keyframes slideDown {
+  to {
+    transform: translateY(0);
+  }
+}
+
+.logo {
+  height: 80px;
+  margin-right: 20px;
+  transform: scale(0);
+  animation: zoomIn 1s ease forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes zoomIn {
+  to {
+    transform: scale(1);
+  }
+}
+
+/* ====== MENÚ ====== */
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 40px;
+}
+
+nav ul li {
+  margin: 0 15px;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+nav ul li:nth-child(1) { animation-delay: 0.5s; }
+nav ul li:nth-child(2) { animation-delay: 0.7s; }
+nav ul li:nth-child(3) { animation-delay: 0.9s; }
+nav ul li:nth-child(4) { animation-delay: 1.1s; }
+nav ul li:nth-child(5) { animation-delay: 1.3s; }
+nav ul li:nth-child(6) { animation-delay: 1.5s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #F23805;
+}
+
+/* ====== HEADER con fondo del banner ====== */
+.header-banner {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: url("../img/banner.jpg") no-repeat center center/cover; /* mismo fondo */
+  padding: 20px;
+}
+
+.header-banner nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.header-banner nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.header-banner nav ul li a:hover {
+  color: #ffcc00;
+}
+
+/* ====== BANNER ====== */
+.banner-nosotros {
+  margin-top: 0;
+  width: 100%;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  animation: bannerDrop 1s ease forwards;
+  transform: translateY(-100%);
+}
+
+@keyframes bannerDrop {
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Imagen del banner */
+.banner-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 👈 que llene todo el espacio */
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* Capa oscura */
+.banner-nosotros::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 2;
+}
+
+/* Texto */
+.banner-contenido {
+  position: relative;
+  color: #fff;
+  text-align: left;
+  z-index: 3;
+  padding-left: 40px;
+  padding-top: 120px;
+  animation: fadeIn 1.5s ease forwards;
+  opacity: 0;
+  animation-delay: 0.8s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.banner-contenido h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+
+/* ====== CONTENEDOR ====== */
+
+.info-section {
+  min-height: 75vh;              /* ocupa toda la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;        /* centra todo verticalmente */
+  align-items: center;            /* centra horizontalmente */
+  gap: 40px;                      /* espacio entre título y botones */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.info-container {
+  display: flex;
+  justify-content: center;        /* centra horizontal */
+  align-items: center;            /* centra vertical */
+  gap: 40px;
+  flex-wrap: wrap; /* responsivo */
+}
+
+/* ====== TÍTULO ====== */
+.info-titulo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 2px;
+  text-align: center;
+
+  /* Animación */
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: fadeSlideDown 1s ease forwards;
+}
+
+@keyframes fadeSlideDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ====== TARJETAS ====== */
+.info-card {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 20px;
+  width: 400px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  /* Animación inicial */
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeSlideUp 1s ease forwards;
+}
+
+.info-card:nth-child(2) {
+  animation-delay: 0.3s; /* la primera tarjeta aparece primero */
+}
+.info-card:nth-child(3) {
+  animation-delay: 0.6s; /* la segunda aparece después */
+}
+
+@keyframes fadeSlideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover */
+.info-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.8);
+}
+
+/* Títulos dentro de las tarjetas */
+.info-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+/* Imagen QR */
+.info-card img {
+  width: 100%;      /* ocupa todo el ancho disponible */
+  height: auto;  
+}
+
+/* Texto debajo de la imagen (solo en la derecha) */
+.info-card p {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #ddd;
+}
+
+
+
+
+/* ====== FOOTER ====== */
+footer {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  z-index: 1;
+  background: rgba(0,0,0,0.6);
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.footer-item h3 {
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  position: relative;
+}
+
+.footer-item h3::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 5px;
+  background-color: #F23805;
+  border-radius: 3px;
+}
+
+.footer-item p {
+  font-size: 16px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.3);
+  padding-top: 15px;
+  font-size: 14px;
+}
+
+.social-icons {
+  margin: 15px 0;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  font-size: 22px;
+  color: #fff;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #1e90ff;
+}
+
+.footer-title-link {
+  display: block;
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 30px;
+  text-align: center;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.footer-title-link:hover {
+  color: #F23805;
+  transform: scale(1.05);
+}
+
+/* ====== ICONOS DE REDES EN EL FOOTER ====== */
+.footer-bottom .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* separación entre íconos */
+  margin: 15px 0;
+}
+
+.footer-bottom .social-icons a img {
+  width: 35px;
+  height: 35px;
+  transition: transform 0.3s, filter 0.3s;
+  cursor: pointer;
+}
+
+.footer-bottom .social-icons a img:hover {
+  transform: scale(1.2);
+  filter: brightness(1) invert(0); /* recupera color original */
+}
+
+/* ====== BARRA INFERIOR IZQUIERDA ====== */
+.barra-redes {
+  position: fixed;
+  bottom: 20px;                  /* 🔹 se pega abajo */
+  left: 20px;                    /* 🔹 se pega a la izquierda */
+  background: rgba(0, 0, 0, 0.9); /* fondo negro */
+  padding: 10px 15px;
+  border-radius: 10px;           /* bordes redondeados */
+  display: flex;
+  flex-direction: row;           /* 🔹 en fila horizontal */
+  align-items: center;
+  gap: 15px;                     /* separación entre iconos */
+  z-index: 2000;
+}
+
+/* Íconos dentro de la barra */
+.barra-redes a img {
+  width: 35px;
+  height: 35px;
+  transition: transform 0.3s, filter 0.3s;
+  cursor: pointer;
+}
+
+/* Hover: efecto zoom y color */
+.barra-redes a img:hover {
+  transform: scale(1.2);
+  filter: brightness(1) invert(0);   /* recupera color original */
+}
+
+
+/* ====== MARCA DE AGUA ====== */
+.marca-agua {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0.4;
+  z-index: 9999;
+  pointer-events: none;
+  width: 250px;
+}
+
+
+
+
+/* ====== ESTILOS PARA MÓVILES ====== */
+@media (max-width: 768px) {
+  /* Ajustes generales de texto y contenedores */
+  .banner-contenido h1 {
+    font-size: 2rem;
+    padding-left: 20px;
+    padding-top: 80px;
+  }
+
+  .info-section {
+    padding: 40px 15px;
+    gap: 30px;
+  }
+
+  .info-titulo {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+
+  .info-container {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .info-card {
+    width: 90%;
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .info-card h2 {
+    font-size: 1.4rem;
+  }
+
+  .info-card p {
+    font-size: 0.9rem;
+  }
+
+  .info-card img {
+    max-width: 80%;
+    height: auto;
+  }
+
+  /* ====== MENÚ HAMBURGUESA ====== */
+  /* Ocultar menú horizontal y mostrar botón hamburguesa */
+  nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 20px;
+  }
+
+  #menu-toggle {
+    display: block;
+    background: transparent;
+    border: none;
+    font-size: 2.5rem;
+    color: white;
+    cursor: pointer;
+    z-index: 110;
+  }
+
+  /* Posicionar el nav como menú lateral desde la derecha */
+  #menu-nav {
+    position: fixed;
+    top: 0;
+    right: -250px; /* oculto inicialmente */
+    width: 250px;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.95);
+    box-shadow: -2px 0 8px rgba(0,0,0,0.7);
+    transition: right 0.3s ease;
+    z-index: 105;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Cuando el menú está activo (abrir) */
+  #menu-nav.active {
+    right: 0;
+  }
+
+  /* Mostrar lista vertical dentro del menú lateral */
+  #menu-nav ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+  }
+
+  #menu-nav ul li {
+    margin: 0;
+    opacity: 1;
+    transform: none;
+  }
+
+  #menu-nav ul li a {
+    font-size: 1.2rem;
+    padding: 10px 0;
+    color: white;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  #menu-nav ul li a:hover {
+    color: #F23805;
+  }
+
+  /* Ocultar logo para ganar espacio o reducir tamaño */
+  .logo {
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  /* Ajustar header para que tenga espacio para botón */
+  header {
+    justify-content: space-between;
+    padding: 10px 15px;
+  }
+}
+
+/* ====== ESTILOS PARA ESCRITORIO ====== */
+@media (min-width: 769px) {
+  /* Ocultar botón hamburguesa */
+  #menu-toggle {
+    display: none;
+  }
+
+  /* Mostrar menú horizontal */
+  nav ul {
+    display: flex !important;
+  }
+
+  /* Asegurar que menú lateral no se muestre */
+  #menu-nav {
+    position: static;
+    width: auto;
+    height: auto;
+    background: transparent;
+    box-shadow: none;
+    transition: none;
+    display: block;
+  }
+}

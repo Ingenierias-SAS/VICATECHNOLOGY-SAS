@@ -1,0 +1,823 @@
+/* ====== RESETEO BÁSICO ====== */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* ====== VIDEO DE FONDO ====== */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* ====== HEADER ====== */
+
+header {
+  width: 100%;
+  background: transparent; /* antes era negro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transform: translateY(-100%);
+  animation: slideDown 1s ease forwards;
+}
+
+@keyframes slideDown {
+  to {
+    transform: translateY(0);
+  }
+}
+
+.logo {
+  height: 80px;
+  margin-right: 20px;
+  transform: scale(0);
+  animation: zoomIn 1s ease forwards;
+  animation-delay: 0.5s;
+  filter: drop-shadow(0 0 5px rgba(0,0,0,0.7)); /* brillo para destacar */
+}
+
+@keyframes zoomIn {
+  to {
+    transform: scale(1);
+  }
+}
+
+#menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  margin-left: 10px;
+  z-index: 150;
+  position: relative;
+}
+
+/* ====== MENÚ ====== */
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 40px;
+}
+
+nav ul li {
+  margin: 0 15px;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+nav ul li:nth-child(1) { animation-delay: 0.5s; }
+nav ul li:nth-child(2) { animation-delay: 0.7s; }
+nav ul li:nth-child(3) { animation-delay: 0.9s; }
+nav ul li:nth-child(4) { animation-delay: 1.1s; }
+nav ul li:nth-child(5) { animation-delay: 1.3s; }
+nav ul li:nth-child(6) { animation-delay: 1.5s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+  text-shadow: 0 0 5px rgba(0,0,0,0.7); /* para que se lea sobre la imagen */
+}
+
+nav ul li a:hover {
+  color: #F23805;
+}
+
+
+/* ====== BANNER ====== */
+.banner-nosotros {
+  margin-top: 0;
+  width: 100%;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start; /* alineamos arriba para que el título se pueda bajar con padding */
+  animation: bannerDrop 1s ease forwards; /* animación */
+  transform: translateY(-100%); /* empieza arriba */
+}
+
+@keyframes bannerDrop {
+  to {
+    transform: translateY(0); /* baja a su posición */
+  }
+}
+
+/* Imagen del banner */
+.banner-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* Capa oscura */
+.banner-nosotros::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 2;
+}
+
+/* Texto */
+.banner-contenido {
+  position: relative;
+  color: #fff;
+  text-align: left;
+  z-index: 3;
+  padding-left: 40px;
+  padding-top: 120px; /* 👈 baja el título dentro del banner */
+  animation: fadeIn 1.5s ease forwards;
+  opacity: 0;
+  animation-delay: 0.8s; /* aparece después de que cae el banner */
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.banner-contenido h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+/* ====== BUNKER ====== */
+.bunker {
+  width: 100vw;          /* ocupa todo el ancho */
+  height: 50vh;         /* ocupa todo el alto */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(0,0,0,0.6); /* semitransparente, se ve el fondo natural */
+  border-radius: 0;      /* sin bordes redondeados para ocupar toda la pantalla */
+  overflow: hidden;
+  box-shadow: none;
+  margin: 0;             /* quita márgenes */
+}
+
+/* Imagen a la izquierda */
+.bunker-img {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center; /* centra horizontalmente */
+  align-items: center;     /* centra verticalmente */
+}
+.bunker-img img {
+  width: 60%;       /* la hacemos más grande que antes */
+  height: auto;
+  object-fit: contain; 
+}
+
+
+/* Texto a la derecha */
+.bunker-texto {
+  flex: 1;
+  padding: 40px;
+  color: #fff;
+}
+.bunker-texto h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ffffff; /* color destacado */
+}
+.bunker-texto p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* ====== BUNKER NEGRO ====== */
+.bunker-negro {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #000;   /* Fondo negro sólido */
+  margin: 0;
+  overflow: hidden;
+}
+
+/* Texto a la izquierda */
+.bunker-negro .bunker-texto {
+  flex: 1;
+  padding: 60px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* centra verticalmente */
+  align-items: center;       /* centra horizontalmente */
+  text-align: center;
+}
+.bunker-negro .bunker-texto h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #F23805; /* Color de acento */
+}
+.bunker-negro .bunker-texto p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+/* Imagen a la derecha */
+.bunker-negro .bunker-img {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center; /* centra horizontalmente */
+  align-items: center;     /* centra verticalmente */
+}
+.bunker-negro .bunker-img img {
+  width: 110%;       /* ajusta el tamaño */
+  height: auto;
+  object-fit: contain; 
+}
+
+
+
+/* ====== NUEVO BUNKER ====== */
+.bunker {
+  width: 100%;
+  height: 90vh; /* ocupa toda la altura de la pantalla */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(0,0,0,0.6); /* 👈 fondo natural de la página */
+  margin: 0;
+  padding: 40px;
+}
+
+/* Imagen a la izquierda */
+.bunker-img2 {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center; /* centra horizontalmente */
+  align-items: center;     /* centra verticalmente */
+}
+.bunker-img2 img {
+  width: 80%;     /* la imagen ocupa el 50% del ancho */
+  height: auto;
+  object-fit: contain;
+}
+
+/* Texto a la derecha */
+.bunker-texto {
+  flex: 1;
+  padding: 40px;
+  color: #fff;
+}
+.bunker-texto h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ffffff; /* color destacado */
+}
+.bunker-texto p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+/* ====== BUNKER NEGRO (Texto izquierda - Imagen derecha) ====== */
+.bunker-negro2 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #000;   /* Fondo negro sólido */
+  margin: 0;
+  overflow: hidden;
+}
+
+/* Texto a la izquierda */
+.bunker-negro2 .bunker-texto {
+  flex: 1;
+  padding: 60px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* centra verticalmente */
+  align-items: center;       /* centra horizontalmente */
+  text-align: center;  
+}
+.bunker-negro2 .bunker-texto h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #F23805; /* Color de acento */
+}
+.bunker-negro2 .bunker-texto p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+/* Imagen a la derecha */
+.bunker-negro2 .bunker-img {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center; /* centra horizontalmente */
+  align-items: center;     /* centra verticalmente */
+}
+.bunker-negro2 .bunker-img img {
+  width: 60%;   /* puedes aumentar a 110% si quieres más grande */
+  height: auto;
+  object-fit: contain; 
+}
+
+
+
+
+
+
+/* ====== FOOTER ====== */
+footer {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  z-index: 1;
+  background: rgba(0,0,0,0.6);
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.footer-item h3 {
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  position: relative;
+}
+
+.footer-item h3::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 5px;
+  background-color: #F23805;
+  border-radius: 3px;
+}
+
+.footer-item p {
+  font-size: 16px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.3);
+  padding-top: 15px;
+  font-size: 14px;
+}
+
+.social-icons {
+  margin: 15px 0;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  font-size: 22px;
+  color: #fff;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #1e90ff;
+}
+
+.footer-title-link {
+  display: block;
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 30px;
+  text-align: center;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.footer-title-link:hover {
+  color: #F23805;
+  transform: scale(1.05);
+}
+
+/* ====== ICONOS DE REDES EN EL FOOTER ====== */
+.footer-bottom .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* separación entre íconos */
+  margin: 15px 0;
+}
+
+.footer-bottom .social-icons a img {
+  width: 35px;
+  height: 35px;
+  transition: transform 0.3s, filter 0.3s;
+  cursor: pointer;
+}
+
+.footer-bottom .social-icons a img:hover {
+  transform: scale(1.2);
+  filter: brightness(1) invert(0); /* recupera color original */
+}
+
+/* ====== BARRA INFERIOR IZQUIERDA ====== */
+.barra-redes {
+  position: fixed;
+  bottom: 20px;                  /* 🔹 se pega abajo */
+  left: 20px;                    /* 🔹 se pega a la izquierda */
+  background: rgba(0, 0, 0, 0.9); /* fondo negro */
+  padding: 10px 15px;
+  border-radius: 10px;           /* bordes redondeados */
+  display: flex;
+  flex-direction: row;           /* 🔹 en fila horizontal */
+  align-items: center;
+  gap: 15px;                     /* separación entre iconos */
+  z-index: 2000;
+}
+
+/* Íconos dentro de la barra */
+.barra-redes a img {
+  width: 35px;
+  height: 35px;
+  transition: transform 0.3s, filter 0.3s;
+  cursor: pointer;
+}
+
+/* Hover: efecto zoom y color */
+.barra-redes a img:hover {
+  transform: scale(1.2);
+  filter: brightness(1) invert(0);   /* recupera color original */
+}
+
+/* ====== MARCA DE AGUA ====== */
+.marca-agua {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0.4;
+  z-index: 9999;
+  pointer-events: none;
+  width: 250px;
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+/* Botón hamburguesa oculto en escritorio */
+#menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  margin-left: 10px;
+  z-index: 150;
+  position: relative;
+}
+
+/* Mostrar botón y menú móvil en pantallas pequeñas */
+@media (max-width: 768px) {
+  #menu-toggle {
+    display: block;
+  }
+
+  nav#menu-nav {
+    position: fixed;
+    top: 60px; /* debajo del header */
+    right: 0;
+    background-color: rgba(0,0,0,0.95);
+    width: 250px;
+    height: 100vh;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 140;
+  }
+
+  nav#menu-nav.open {
+    transform: translateX(0);
+  }
+
+  nav#menu-nav ul {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  nav#menu-nav ul li {
+    margin: 0;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  nav#menu-nav ul li a {
+    font-size: 18px;
+    display: block;
+  }
+}
+
+/* ====== ESTILOS PARA MÓVILES ====== */
+@media (max-width: 768px) {
+  /* Evitar overflow horizontal global */
+  body, html {
+    overflow-x: hidden;
+  }
+
+  /* Header */
+  header {
+    display: flex;
+    flex-direction: row;   /* fila en lugar de columna */
+    justify-content: space-between; /* logo a la izq, botón a la der */
+    align-items: center;  /* centrados verticalmente */
+    padding: 10px 15px;
+    box-sizing: border-box;
+  }
+
+  .logo {
+    height: 50px;
+    margin: 0; /* quitar margen extra que lo empuja hacia abajo */
+  }
+
+  #menu-toggle {
+    display: block;
+    background: transparent;
+    border: none;
+    font-size: 2.5rem;
+    color: white;
+    cursor: pointer;
+    z-index: 110;
+    margin-left: auto; /* empuja el botón al extremo derecho */
+  }
+
+  nav ul {
+    display: none; /* ocultar menú horizontal */
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 20px;
+    margin: 0;
+  }
+
+  #menu-nav {
+    position: fixed;
+    top: 0;
+    right: -260px; /* oculto fuera de pantalla */
+    width: 260px;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.95);
+    box-shadow: -2px 0 8px rgba(0,0,0,0.7);
+    transition: right 0.3s ease;
+    z-index: 105;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  #menu-nav.active {
+    right: 0; /* menú visible */
+  }
+
+  #menu-nav ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    padding-left: 0;
+  }
+
+  #menu-nav ul li {
+    margin: 0;
+    list-style: none;
+    text-align: center;
+  }
+
+  #menu-nav ul li a {
+    font-size: 1.2rem;
+    padding: 10px 0;
+    color: white;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  #menu-nav ul li a:hover {
+    color: #F23805;
+  }
+
+  /* Banner */
+  .banner-nosotros {
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner-contenido {
+    padding-left: 0;
+    padding-top: 0;
+    text-align: center;
+  }
+
+  .banner-contenido h1 {
+    font-size: 2rem;
+  }
+
+  /* Secciones bunker */
+  .bunker,
+  .bunker-negro,
+  .bunker-negro2 {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  .bunker-img,
+  .bunker-img2,
+  .bunker-negro .bunker-img,
+  .bunker-negro2 .bunker-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+
+  .bunker-img img,
+  .bunker-img2 img,
+  .bunker-negro .bunker-img img,
+  .bunker-negro2 .bunker-img img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .bunker-texto,
+  .bunker-negro .bunker-texto,
+  .bunker-negro2 .bunker-texto {
+    width: 100%;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .bunker-texto h2,
+  .bunker-negro .bunker-texto h2,
+  .bunker-negro2 .bunker-texto h2 {
+    font-size: 1.8rem;
+  }
+
+  .bunker-texto p,
+  .bunker-negro .bunker-texto p,
+  .bunker-negro2 .bunker-texto p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  /* SECCIÓN NOSOTROS */
+  .info-section {
+    padding: 80px 15px 40px;
+    box-sizing: border-box;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .info-section h2 {
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    margin: 0 auto 20px;
+    max-width: 100%;
+  }
+
+  .info-section p {
+    font-size: 1rem;
+    max-width: 100%;
+    margin: 0 auto 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  /* BUNKER SERVICIOS */
+  .bunker-servicios {
+    padding: 40px 15px;
+    min-height: auto;
+    box-sizing: border-box;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .bunker-servicios h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    letter-spacing: 1.5px;
+  }
+
+  .servicios-container {
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+    padding: 0 10px;
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+
+  .servicio-card {
+    width: 100% !important;
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+    border-radius: 15px;
+    transform: scale(1);
+    animation-delay: 0.5s;
+    box-sizing: border-box;
+    overflow: hidden;
+    word-wrap: break-word;
+  }
+
+  .servicio-card img {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .servicio-card span {
+    font-size: 1.2rem;
+    word-wrap: break-word;
+  }
+
+  .servicio-btn,
+  .btn-info {
+    padding: 10px 20px;
+    font-size: 1rem;
+    width: 100% !important;
+    max-width: 100%;
+    box-sizing: border-box;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  /* Footer */
+  footer {
+    padding: 20px 10px;
+  }
+
+  .footer-item h3 {
+    font-size: 20px;
+  }
+
+  .footer-item p {
+    font-size: 14px;
+  }
+
+  .footer-title-link {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  /* Marca de agua */
+  .marca-agua {
+    width: 150px;
+    bottom: 10px;
+    right: 10px;
+  }
+}

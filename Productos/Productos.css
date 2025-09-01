@@ -1,0 +1,669 @@
+/* ====== RESETEO BÁSICO ====== */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* ====== VIDEO DE FONDO ====== */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* ====== HEADER ====== */
+header {
+  width: 100%;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transform: translateY(-100%);
+  animation: slideDown 1s ease forwards;
+}
+
+@keyframes slideDown {
+  to {
+    transform: translateY(0);
+  }
+}
+
+.logo {
+  height: 80px;
+  margin-right: 20px;
+  transform: scale(0);
+  animation: zoomIn 1s ease forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes zoomIn {
+  to {
+    transform: scale(1);
+  }
+}
+
+/* ====== MENÚ ====== */
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 40px;
+}
+
+nav ul li {
+  margin: 0 15px;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+nav ul li:nth-child(1) { animation-delay: 0.5s; }
+nav ul li:nth-child(2) { animation-delay: 0.7s; }
+nav ul li:nth-child(3) { animation-delay: 0.9s; }
+nav ul li:nth-child(4) { animation-delay: 1.1s; }
+nav ul li:nth-child(5) { animation-delay: 1.3s; }
+nav ul li:nth-child(6) { animation-delay: 1.5s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #F23805;
+}
+
+/* ====== SECCIÓN NOSOTROS ====== */
+.info-section {
+  background-color: rgba(0, 0, 0, 0.6);
+  min-height: 100vh;
+  padding: 120px 20px 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+
+.info-section h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.info-section p {
+  font-size: 20px;
+  max-width: 700px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  opacity: 0;
+  animation: fadeInUp 1.2s ease forwards;
+  animation-delay: 0.3s;
+}
+
+/* ====== BUNKER SERVICIOS ====== */
+.bunker-servicios {
+  width: 100%;
+  min-height: 80vh;
+  background: rgba(0, 0, 0, 0.6);   /* fondo negro transparente */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.bunker-servicios h2 {
+  font-size: 48px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 60px;
+  color: #ffffff;
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: slideDown 1s ease forwards;
+}
+
+/* Contenedor de los dos botones */
+.servicios-container {
+  display: flex;
+  gap: 100px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Cada card tipo botón */
+.servicio-card {
+  background: rgba(0, 0, 0, 70); /* fondo con opacidad */
+  border-radius: 20px;
+  width: 280px;
+  height: 350px;
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  flex-direction: column;    /* apila elementos */
+  align-items: center;       /* centra horizontalmente */
+  justify-content: space-between;
+  text-align: center;
+  padding: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+
+  /* Animación inicial */
+  transform: scale(0.8);
+  opacity: 0;
+  animation: zoomIn 1s ease forwards;
+  animation-delay: 0.8s; /* empieza después del título */
+
+  /* Transiciones suaves */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  gap: 20px; /* espacio entre imagen, título y botón */
+}
+
+.servicio-card:hover {
+  transform: scale(1.05); /* zoom al pasar el mouse */
+  background: #1a1a1a;
+}
+
+/* ====== ANIMACIONES ====== */
+@keyframes slideDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+/* Imagen dentro del card */
+.servicio-card img {
+  max-width: 520px;   /* 🔹 límite grande de ancho */
+  width: 100%;        /* 🔹 ocupa todo el ancho disponible en la tarjeta */
+  height: auto;       /* 🔹 mantiene proporciones */
+  object-fit: contain;
+  display: block;
+  margin: auto;       /* 🔹 centra horizontal y vertical */
+}
+
+
+/* Hover en imagen */
+.servicio-card:hover img {
+  transform: scale(1.1);
+}
+
+.servicio-btn {
+  padding: 12px 24px;
+  background: #ffffff;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+/* Hover en botón */
+.servicio-btn:hover {
+  transform: scale(1.1);
+  background: #ffffff;
+}
+
+/* Texto abajo */
+.servicio-card span {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* Hover con efecto */
+.servicio-card:hover {
+  transform: scale(1.08);
+  background: #F23805;               /* se ilumina con el color corporativo */
+}
+.servicio-card:hover span {
+  color: #000;
+}
+
+.img-infra {
+  max-width: 1200px;   /* 🔹 grande */
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+
+  /* Animación exclusiva */
+  opacity: 0;
+  transform: translateY(50px) scale(0.9);
+  animation: infraAppear 1.8s ease forwards;
+}
+
+/* Animación aparte para esta imagen */
+@keyframes infraAppear {
+  0% {
+    opacity: 0;
+    transform: translateY(50px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Botón Más Información */
+.btn-info {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 15px 35px;
+  background: #F23805;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: btnInfoAppear 1.8s ease forwards;
+  animation-delay: 1s; /* aparece después de la imagen */
+}
+
+.btn-info:hover {
+  background: #F23805;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+/* Animación del botón */
+@keyframes btnInfoAppear {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/* ====== FOOTER ====== */
+footer {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  z-index: 1;
+  background: rgba(0,0,0,0.6);
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.footer-item h3 {
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  position: relative;
+}
+
+.footer-item h3::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 5px;
+  background-color: #F23805;
+  border-radius: 3px;
+}
+
+.footer-item p {
+  font-size: 16px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.3);
+  padding-top: 15px;
+  font-size: 14px;
+}
+
+.social-icons {
+  margin: 15px 0;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  font-size: 22px;
+  color: #fff;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #1e90ff;
+}
+
+.footer-title-link {
+  display: block;
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 30px;
+  text-align: center;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.footer-title-link:hover {
+  color: #F23805;
+  transform: scale(1.05);
+}
+
+/* ====== ICONOS DE REDES EN EL FOOTER ====== */
+.footer-bottom .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* separación entre íconos */
+  margin: 15px 0;
+}
+
+.footer-bottom .social-icons a img {
+  width: 35px;
+  height: 35px;
+  transition: transform 0.3s, filter 0.3s;
+  cursor: pointer;
+}
+
+.footer-bottom .social-icons a img:hover {
+  transform: scale(1.2);
+  filter: brightness(1) invert(0); /* recupera color original */
+}
+
+/* ====== BARRA INFERIOR IZQUIERDA ====== */
+.barra-redes {
+  position: fixed;
+  bottom: 20px;                  /* 🔹 se pega abajo */
+  left: 20px;                    /* 🔹 se pega a la izquierda */
+  background: rgba(0, 0, 0, 0.9); /* fondo negro */
+  padding: 10px 15px;
+  border-radius: 10px;           /* bordes redondeados */
+  display: flex;
+  flex-direction: row;           /* 🔹 en fila horizontal */
+  align-items: center;
+  gap: 15px;                     /* separación entre iconos */
+  z-index: 2000;
+}
+
+/* Íconos dentro de la barra */
+.barra-redes a img {
+  width: 35px;
+  height: 35px;
+  transition: transform 0.3s, filter 0.3s;
+  cursor: pointer;
+}
+
+/* Hover: efecto zoom y color */
+.barra-redes a img:hover {
+  transform: scale(1.2);
+  filter: brightness(1) invert(0);   /* recupera color original */
+}
+
+
+/* ====== MARCA DE AGUA ====== */
+.marca-agua {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0.4;
+  z-index: 9999;
+  pointer-events: none;
+  width: 250px;
+}
+
+/* ====== ESTILOS PARA MÓVILES ====== */
+@media (max-width: 768px) {
+  /* Evitar overflow horizontal global */
+  body, html {
+    overflow-x: hidden;
+  }
+
+  /* HEADER: menú hamburguesa */
+  #menu-toggle {
+    display: block;
+    background: transparent;
+    border: none;
+    font-size: 2.5rem;
+    color: white;
+    cursor: pointer;
+    z-index: 110;
+  }
+
+  nav ul {
+    display: none; /* ocultar menú horizontal */
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 20px;
+    margin: 0;
+  }
+
+  #menu-nav {
+    position: fixed;
+    top: 0;
+    right: -260px; /* oculto fuera de pantalla */
+    width: 260px;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.95);
+    box-shadow: -2px 0 8px rgba(0,0,0,0.7);
+    transition: right 0.3s ease;
+    z-index: 105;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  #menu-nav.active {
+    right: 0; /* menú visible */
+  }
+
+  #menu-nav ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    padding-left: 0;
+  }
+
+  #menu-nav ul li {
+    margin: 0;
+    opacity: 1;
+    transform: none;
+    list-style: none;
+  }
+
+  #menu-nav ul li a {
+    font-size: 1.2rem;
+    padding: 10px 0;
+    color: white;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  #menu-nav ul li a:hover {
+    color: #F23805;
+  }
+
+  /* Ajustes header */
+  header {
+    justify-content: space-between;
+    padding: 10px 15px;
+    box-sizing: border-box;
+  }
+
+  .logo {
+    height: 50px;
+    margin-right: 10px;
+    transform: scale(1);
+    animation: none;
+  }
+
+  /* SECCIÓN NOSOTROS */
+  .info-section {
+    padding: 80px 15px 40px;
+    box-sizing: border-box;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .info-section h2 {
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    margin: 0 auto 20px;
+    max-width: 100%;
+  }
+
+  .info-section p {
+    font-size: 1rem;
+    max-width: 100%;
+    margin: 0 auto 20px;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  /* BUNKER SERVICIOS */
+  .bunker-servicios {
+    padding: 40px 15px;
+    min-height: auto;
+    box-sizing: border-box;
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .bunker-servicios h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    letter-spacing: 1.5px;
+  }
+
+  .servicios-container {
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+    padding: 0 10px;
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+
+  .servicio-card {
+    width: 100% !important;
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+    border-radius: 15px;
+    transform: scale(1);
+    animation-delay: 0.5s;
+    box-sizing: border-box;
+    overflow: hidden;
+    word-wrap: break-word;
+  }
+
+  .servicio-card img {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .servicio-card span {
+    font-size: 1.2rem;
+    word-wrap: break-word;
+  }
+
+  .servicio-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    width: 100% !important;
+    max-width: 100%;
+    box-sizing: border-box;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  /* Botón Más Información */
+  .btn-info {
+    font-size: 1rem;
+    padding: 12px 30px;
+    width: 100% !important;
+    max-width: 100%;
+    box-sizing: border-box;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+}
+  
+/* ====== ESTILOS PARA ESCRITORIO ====== */
+@media (min-width: 769px) {
+  #menu-toggle {
+    display: none;
+  }
+
+  nav ul {
+    display: flex !important;
+  }
+
+  #menu-nav {
+    position: static;
+    width: auto;
+    height: auto;
+    background: transparent;
+    box-shadow: none;
+    transition: none;
+    display: block;
+  }
+}

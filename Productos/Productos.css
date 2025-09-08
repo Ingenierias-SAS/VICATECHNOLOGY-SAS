@@ -1,3 +1,9 @@
+/* ====== Fuente Montserrat Semibold para títulos ====== */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600; /* Semibold */
+}
+
 /* ====== RESETEO BÁSICO ====== */
 body, html {
   margin: 0;
@@ -461,6 +467,19 @@ footer {
   width: 250px;
 }
 
+
+.img-pc {
+  display: block;
+  width: 95%;         /* ✅ casi toda la pantalla */
+  max-width: 1400px;  /* ✅ aún más grande */
+  margin: 30px auto;
+  border-radius: 15px;
+}
+
+.img-movil {
+  display: none;
+}
+
 /* ====== ESTILOS PARA MÓVILES ====== */
 @media (max-width: 768px) {
   /* Evitar overflow horizontal global */
@@ -645,7 +664,27 @@ footer {
     word-wrap: break-word;
     overflow-wrap: break-word;
   }
+  .img-pc {
+    display: none; /* Se oculta la imagen única */
+  }
+
+  .img-movil {
+    display: flex;
+    flex-direction: column; /* ✅ una debajo de otra */
+    align-items: center;    /* ✅ centradas */
+    gap: 20px;              /* separación entre imágenes */
+    margin: 20px auto;
+  }
+
+  .img-movil img {
+    width: 90%;        /* ✅ más grandes en móvil */
+    max-width: 400px;  /* límite para que no se deformen */
+    border-radius: 15px;
+  }
+
 }
+
+
   
 /* ====== ESTILOS PARA ESCRITORIO ====== */
 @media (min-width: 769px) {

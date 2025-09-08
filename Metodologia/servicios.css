@@ -1,3 +1,9 @@
+/* ====== Fuente Montserrat Semibold para títulos ====== */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600; /* Semibold */
+}
+
 /* ====== RESETEO BÁSICO ====== */
 body, html {
   margin: 0;
@@ -129,12 +135,6 @@ nav ul li a:hover {
   color: #F23805;
 }
 
-
-
-
-
-
-
 /* ====== BANNER ====== */
 .banner-inicio {
   position: relative;
@@ -201,7 +201,7 @@ nav ul li a:hover {
 /* ====== BUNKER ====== */
 .bunker {
   width: 100%;
-  height: 80vh; /* 🔹 ocupa toda la pantalla */
+  height: 100vh; /* 🔹 ocupa toda la pantalla */
   margin: 0;     /* 🔹 sin márgenes */
   padding: 0;    /* 🔹 sin padding */
   display: flex;
@@ -210,18 +210,20 @@ nav ul li a:hover {
   
 }
 
+
+
 .bunker-contenido {
-  background: rgba(0, 0, 0, 0.6); /* 🔹 fondo semitransparente */
+  background: rgba(0, 0, 0, 0.6); 
   width: 100%;
   height: 100%;
-  border-radius: 0; /* 🔹 pega a los bordes */
+  border-radius: 0;
   text-align: center;
   color: white;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* 🔹 contenido inicia desde arriba */
-  align-items: center;
-  padding-top: 80px; /* 🔹 baja el título */
+  justify-content: center;   /* ✅ centra verticalmente */
+  align-items: center;       /* ✅ centra horizontalmente */
+  padding: 0;                /* ❌ quita padding que empujaba hacia abajo */
 }
 
 .bunker-contenido h2 {
@@ -233,12 +235,15 @@ nav ul li a:hover {
 }
 
 .bunker-img {
-  width: 100%;        
-  max-width: 1900px; 
-  height: auto;
+  max-width: 100%;     /* 🔹 nunca más ancha que el contenedor */
+  max-height: 80%;    /* 🔹 nunca más alta que el contenedor */
+  height: auto;        /* 🔹 mantiene proporción */
+  object-fit: contain; /* 🔹 ajusta la imagen dentro sin deformarse */
   border-radius: 15px;
   animation: fadeIn 2s ease forwards;
 }
+
+
 
 /* ====== ANIMACIONES ====== */
 @keyframes dropFromSkyText {

@@ -339,11 +339,13 @@ nav ul li a:hover {
 /* Grid de servicios */
 .servicios-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
   gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 800px; /* más angosto para que no se separen demasiado */
+  margin: 0 auto;   /* centra el grid */
+  justify-content: center; /* asegura centrado */
 }
+
 
 /* Cada servicio */
 .servicio {
@@ -502,6 +504,9 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
+
+
+
 footer {
   position: relative;
   color: #fff;
@@ -616,12 +621,330 @@ footer::before {
 
 
   
-  /* Header: reducir tamaño logo y ajustar menú */
-  .logo {
-    height: 60px;
-    margin-right: 10px;
+.circle-container {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  margin: 50px auto;
+}
+
+/* Círculo dividido en 5 secciones iguales */
+.circle {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: conic-gradient(
+    #0f4c81 0deg 72deg,
+    #007bff 72deg 144deg,
+    #ff5722 144deg 216deg,
+    #2196f3 216deg 288deg,
+    #f9a825 288deg 360deg
+  );
+  /* Hueco en el centro */
+  -webkit-mask: radial-gradient(circle 80px at center, transparent 0, black 85%);
+  mask: radial-gradient(circle 80px at center, transparent 0, black 85%);
+  position: relative;
+}
+
+/* Contenido dentro de cada sección */
+.slice-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center center;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.slice-content img {
+  width: 50px;
+  height: 50px;
+  margin-top: 8px;
+}
+
+.numero {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Posiciones rotadas para que queden en la mitad de cada sección */
+.s1 { transform: rotate(36deg) translate(180px) rotate(-36deg); }
+.s2 { transform: rotate(108deg) translate(180px) rotate(-108deg); }
+.s3 { transform: rotate(180deg) translate(180px) rotate(-180deg); }
+.s4 { transform: rotate(252deg) translate(180px) rotate(-252deg); }
+.s5 { transform: rotate(324deg) translate(180px) rotate(-324deg); }
+
+/* Logo central en el hueco */
+.logo-centro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 160px;
+  height: 160px;
+  z-index: 20;
+}
+.logo-centro img {
+  width: 100%;
+  height: auto;
+  background: transparent;
+}
+
+/* Tooltip */
+.tooltip {
+  position: absolute;
+  background: rgba(20,20,40,0.95);
+  color: #fff;
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  max-width: 240px;
+  text-align: center;
+  display: none;
+  pointer-events: none;
+  box-shadow: 0 0 15px rgba(0,255,255,0.4);
+  z-index: 30;
+}
+
+/* ===== SERVICIOS ===== */
+.servicios-section {
+  position: relative;
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+  overflow: hidden;
+}
+
+.servicios-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.45);
+  z-index: 0;
+}
+
+.servicios-section h2 {
+  position: relative;
+  z-index: 1;
+  font-size: 2.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.servicios-imagen {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Imagen PC */
+.servicios-imagen .img-pc {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0px 5px 20px rgba(0,0,0,0.4);
+  transition: 0.3s ease;
+}
+
+/* Imagen Móvil (oculta por defecto) */
+.servicios-imagen .img-movil {
+  display: none;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0px 5px 20px rgba(0,0,0,0.4);
+}
+
+/* Botón */
+.boton-contenedor {
+  position: relative;
+  z-index: 1;
+}
+
+.boton-ver-todos {
+  display: inline-block;
+  background: #F23805;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.boton-ver-todos:hover {
+  background: #ff4400;
+  transform: scale(1.05);
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .servicios-section h2 {
+    font-size: 1.8rem;
   }
-  
+}
+
+/* Móviles */
+@media (max-width: 576px) {
+  .servicios-section {
+    min-height: 60vh;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+
+  /* Cambiar imagen */
+  .servicios-imagen .img-pc {
+    display: none;
+  }
+
+  .servicios-imagen .img-movil {
+    display: block;
+  }
+
+  .servicios-section h2 {
+    font-size: 1rem !important;
+    margin-bottom: 8px;
+    line-height: 1.1;
+  }
+
+  .boton-ver-todos {
+    padding: 8px 18px;
+    font-size: 0.85rem;
+  }
+}
+
+
+/* Botón Ver Más */
+.ver-mas-contenedor {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.ver-mas-btn {
+  background: #F23805;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.ver-mas-btn:hover {
+  background: #ff4400;
+  transform: scale(1.05);
+}
+
+/* ===== Modal Aliados ===== */
+.modal-aliados {
+  display: none; /* oculto por defecto */
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-contenido {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.modal-contenido .cerrar {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* Imagen dentro del modal */
+.img-aliados {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Mostrar solo imagen PC por defecto */
+.img-pc {
+  display: block;
+}
+
+.img-movil {
+  display: none;
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .modal-contenido {
+    width: 90%;
+    max-width: 600px;
+  }
+}
+
+/* Móviles */
+@media (max-width: 576px) {
+  .modal-contenido {
+    width: 95%;
+    max-width: 400px;
+  }
+
+  /* Cambiar imagen: mostrar solo móvil */
+  .img-pc {
+    display: none;
+  }
+
+  .img-movil {
+    display: block;
+  }
+
+  .modal-contenido .cerrar {
+    font-size: 1.5rem;
+    top: 5px;
+    right: 10px;
+  }
+}
+
+
+
+
+
+
+
+
 
 /* Ocultar menú en móviles y mostrar botón */
 @media (max-width: 768px) {

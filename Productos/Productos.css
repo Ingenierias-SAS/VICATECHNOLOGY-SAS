@@ -1,7 +1,25 @@
+
 /* ====== Fuente Montserrat Semibold para títulos ====== */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600; /* Semibold */
+}
+
+/* OVERRIDES: Imagen Infra/Ciber a ancho completo en móviles sin recorte */
+@media (max-width: 768px) {
+  .img-movil { width: 100vw; margin-left: calc(50% - 50vw); margin-right: calc(50% - 50vw); }
+  .img-movil img { width: 100vw !important; max-width: 100vw !important; height: auto !important; display: block; }
+  .img-infra { width: 100vw !important; max-width: 100vw !important; height: auto !important; margin-left: calc(50% - 50vw); margin-right: calc(50% - 50vw); display: block; }
+}
+
+/* Guardas globales anti-overflow y sizing predecible */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
 }
 
 /* ====== RESETEO BÁSICO ====== */
@@ -24,70 +42,37 @@ body, html {
   z-index: -1;
 }
 
-/* ====== HEADER ====== */
+/* ===== HEADER ===== */
 header {
   width: 100%;
   background: black;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
-  transform: translateY(-100%);
-  animation: slideDown 1s ease forwards;
+  z-index: 5000; /* Aumentado para asegurar visibilidad */
 }
 
-@keyframes slideDown {
-  to {
-    transform: translateY(0);
-  }
+/* Evitar scroll del body cuando el menú móvil está abierto */
+body.menu-open {
+  overflow: hidden;
 }
 
+/* ===== LOGO ===== */
 .logo {
-  height: 80px;
-  margin-right: 20px;
-  transform: scale(0);
-  animation: zoomIn 1s ease forwards;
-  animation-delay: 0.5s;
+  height: 70px;
 }
 
-@keyframes zoomIn {
-  to {
-    transform: scale(1);
-  }
-}
-
-/* ====== MENÚ ====== */
+/* ===== MENÚ DESKTOP ===== */
 nav ul {
   list-style: none;
   display: flex;
   margin: 0;
   padding: 0;
   gap: 40px;
-}
-
-nav ul li {
-  margin: 0 15px;
-  opacity: 0;
-  transform: translateY(-20px);
-  animation: fadeInUp 0.8s ease forwards;
-}
-
-nav ul li:nth-child(1) { animation-delay: 0.5s; }
-nav ul li:nth-child(2) { animation-delay: 0.7s; }
-nav ul li:nth-child(3) { animation-delay: 0.9s; }
-nav ul li:nth-child(4) { animation-delay: 1.1s; }
-nav ul li:nth-child(5) { animation-delay: 1.3s; }
-nav ul li:nth-child(6) { animation-delay: 1.5s; }
-
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 nav ul li a {
@@ -100,6 +85,19 @@ nav ul li a {
 nav ul li a:hover {
   color: #F23805;
 }
+
+/* ===== BOTÓN HAMBURGUESA ===== */
+#menu-toggle {
+  font-size: 30px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+  z-index: 6000;
+}
+
+
 
 /* ====== SECCIÓN NOSOTROS ====== */
 .info-section {
@@ -132,11 +130,10 @@ nav ul li a:hover {
   animation-delay: 0.3s;
 }
 
-/* ====== BUNKER SERVICIOS ====== */
-.bunker-servicios {
+/* ====== SERVICIOS SECTION ====== */
+.servicios-section {
   width: 100%;
   min-height: 80vh;
-  background: rgba(0, 0, 0, 0.6);   /* fondo negro transparente */
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -146,6 +143,76 @@ nav ul li a:hover {
   text-align: center;
   overflow: hidden;
 }
+
+.servicios-section h2 {
+  font-size: 48px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 60px;
+  color: #ffffff;
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: slideDown 1s ease forwards;
+}
+
+/* Contenedor de cards */
+.servicios-container {
+  display: flex;
+  gap: 100px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Cada card */
+.servicio-card {
+  background: rgba(0, 0, 0, 0.7); /* opacidad corregida */
+  border-radius: 20px;
+  width: 280px;
+  height: 350px;
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0);
+
+  /* Animación inicial */
+  transform: scale(0.8);
+  opacity: 0;
+  animation: zoomIn 1s ease forwards;
+  animation-delay: 0.8s;
+
+  /* Transiciones suaves */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  gap: 20px;
+}
+
+.servicio-card:hover {
+  transform: scale(1.05);
+  background: #1a1a1a;
+}
+
+
+/* ====== BUNKER SERVICIOS ====== */
+.bunker-servicios {
+  width: 100%;
+  min-height: 80vh;
+  background: rgba(0, 0, 0, 0.9);   /* fondo negro transparente */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+
 
 .bunker-servicios h2 {
   font-size: 48px;
@@ -164,6 +231,30 @@ nav ul li a:hover {
   gap: 100px;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+/* ====== SERVICIOS INFRA ====== */
+.servicios-infra {
+  width: 100%;
+  padding: 80px 40px;
+  background: #f5f7fa;
+  text-align: center;
+}
+
+.servicios-infra h2 {
+  font-size: 42px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  color: #0a0a0a;
+  letter-spacing: 2px;
+}
+
+.servicios-infra .servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 30px;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 /* Cada card tipo botón */
@@ -266,7 +357,7 @@ nav ul li a:hover {
 }
 
 .img-infra {
-  max-width: 1200px;   /* 🔹 grande */
+  max-width: 1600px;   /* 🔹 grande */
   width: 100%;
   height: auto;
   margin: 0 auto;
@@ -326,7 +417,907 @@ nav ul li a:hover {
   }
 }
 
+/* ====== SERVICIOS CIBERSEGURIDAD ====== */
+.servicios-ciber {
+  width: 100%;
+  padding: 80px 40px;
+  background: #f5f7fa; /* fondo gris claro */
+  text-align: center;
+}
 
+.servicios-ciber h2 {
+  font-size: 42px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  color: #0a0a0a;
+  letter-spacing: 2px;
+}
+
+/* Grid de 4 columnas */
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* Caja de servicio */
+.servicio-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  text-align: left;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.servicio-box img {
+  max-width: 100%;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.servicio-box h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #e63946; /* rojo */
+}
+
+.servicio-box h3 span {
+  color: #000;
+  font-weight: normal;
+}
+
+.servicio-box p {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.servicio-box ul {
+  padding-left: 18px;
+  margin-bottom: 20px;
+}
+
+.servicio-box ul li {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+/* Botón */
+.btn-whatsapp {
+  background: #ff3b1f;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  background: #d62828;
+}
+
+/* ====== FOOTER ====== */
+footer {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  z-index: 1;
+  background: rgba(0,0,0,0.6);
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.footer-item h3 {
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  position: relative;
+}
+
+.footer-item h3::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 5px;
+  background-color: #F23805;
+  border-radius: 3px;
+}
+
+.footer-item p {
+  font-size: 16px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.3);
+  padding-top: 15px;
+  font-size: 14px;
+}
+
+.social-icons {
+  margin: 15px 0;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  font-size: 22px;
+  color: #fff;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #1e90ff;
+}
+
+.footer-title-link {
+  display: block;
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 30px;
+  text-align: center;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.footer-title-link:hover {
+  color: #F23805;
+  transform: scale(1.05);
+}
+
+/* ====== ICONOS DE REDES EN EL FOOTER ====== */
+.footer-bottom .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* separación entre íconos */
+  margin: 15px 0;
+}
+
+.footer-bottom .social-icons a img {
+  width: 35px;
+  height: 35px;
+  transition: transform 0.3s, filter 0.3s;
+  cursor: pointer;
+}
+
+.footer-bottom .social-icons a img:hover {
+  transform: scale(1.2);
+  filter: brightness(1) invert(0); /* recupera color original */
+}
+
+/* Responsivo adicional: banderas y grillas sin desbordes */
+@media (max-width: 1024px) and (min-width: 769px) {
+  /* Grillas: 2 columnas en tablet */
+  .servicios-grid { grid-template-columns: repeat(2, 1fr); }
+  .servicios-infra .servicios-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  /* Banderas: envolver para evitar scroll horizontal */
+  .banderas-row { flex-wrap: wrap; gap: 14px; }
+  .bandera { font-size: 12px; }
+  .bandera img { width: 56px; }
+
+  /* Grillas: 1 columna en móvil */
+  .servicios-grid { grid-template-columns: 1fr !important; max-width: 100%; width: 100%; }
+  .servicios-infra .servicios-grid { grid-template-columns: 1fr !important; }
+}
+
+/* ====== BARRA INFERIOR IZQUIERDA ====== */
+.barra-redes {
+  position: fixed;
+  bottom: 20px;                  /* 🔹 se pega abajo */
+  left: 20px;                    /* 🔹 se pega a la izquierda */
+  background: rgba(0, 0, 0, 0.9); /* fondo negro */
+  padding: 10px 15px;
+  border-radius: 10px;           /* bordes redondeados */
+  display: flex;
+  flex-direction: row;           /* 🔹 en fila horizontal */
+  align-items: center;
+  gap: 15px;                     /* separación entre iconos */
+  z-index: 2000;
+}
+
+/* Íconos dentro de la barra */
+.barra-redes a img {
+  width: 35px;
+  height: 35px;
+  transition: transform 0.3s, filter 0.3s;
+  cursor: pointer;
+}
+
+/* Hover: efecto zoom y color */
+.barra-redes a img:hover {
+  transform: scale(1.2);
+  filter: brightness(1) invert(0);   /* recupera color original */
+}
+
+
+/* ====== MARCA DE AGUA ====== */
+.marca-agua {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0.4;
+  z-index: 9999;
+  pointer-events: none;
+  width: 250px;
+}
+
+
+.img-pc {
+  display: block;
+  width: 95%;         /* ✅ casi toda la pantalla */
+  max-width: 1400px;  /* ✅ aún más grande */
+  margin: 30px auto;
+  border-radius: 15px;
+}
+
+.img-movil {
+  display: none;
+}
+
+.infra-servicios {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f5f6f8; /* Fondo gris claro como en tu ejemplo */
+}
+
+
+
+.infra-servicios h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #111;
+}
+
+.planes {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.plan {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  max-width: 340px;
+  box-shadow: 0px 6px 15px rgba(0,0,0,0.1);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.plan:hover {
+  transform: translateY(-8px);
+}
+
+.plan img {
+  max-width: 100%;
+  margin-bottom: 15px;
+  border-radius: 6px;
+}
+
+.plan h3 {
+  color: #e63946; /* Rojo estilo de la imagen */
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.plan h3 span {
+  font-weight: normal;
+  font-size: 16px;
+  color: #000;
+}
+
+.plan p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.plan ul {
+  margin: 0 0 20px 0;
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+.plan ul li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.btn-whatsapp {
+  display: block;
+  text-align: center;
+  background: #ff4000; /* Botón naranja */
+  color: #fff;
+  padding: 12px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-whatsapp:hover {
+  background: #e13300;
+}
+
+
+.paises-section {
+  text-align: center;
+  margin: 0;
+  padding: 120px 20px 60px;
+  background: #fff; 
+  width: 100%;
+}
+
+.paises-section h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.paises-section p {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #111a3b;
+}
+
+.banderas-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap; /* 🔹 asegura que sean exactamente 10 en una fila */
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.bandera {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #111;
+}
+
+.bandera img {
+  width: 70px;
+  height: auto;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+}
+
+
+/* ====== Fuente Montserrat Semibold para títulos ====== */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600; /* Semibold */
+}
+
+/* ====== RESETEO BÁSICO ====== */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* ====== VIDEO DE FONDO ====== */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* ====== HEADER ====== */
+header {
+  width: 100%;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transform: translateY(-100%);
+  animation: slideDown 1s ease forwards;
+}
+
+@keyframes slideDown {
+  to {
+    transform: translateY(0);
+  }
+}
+
+.logo {
+  height: 80px;
+  margin-right: 20px;
+  transform: scale(0);
+  animation: zoomIn 1s ease forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes zoomIn {
+  to {
+    transform: scale(1);
+  }
+}
+
+
+/* ====== MENÚ ====== */
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 40px;
+}
+
+nav ul li {
+  margin: 0 15px;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+nav ul li:nth-child(1) { animation-delay: 0.5s; }
+nav ul li:nth-child(2) { animation-delay: 0.7s; }
+nav ul li:nth-child(3) { animation-delay: 0.9s; }
+nav ul li:nth-child(4) { animation-delay: 1.1s; }
+nav ul li:nth-child(5) { animation-delay: 1.3s; }
+nav ul li:nth-child(6) { animation-delay: 1.5s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #F23805;
+}
+
+/* ====== SECCIÓN NOSOTROS ====== */
+.info-section {
+  background-color: rgba(0, 0, 0, 0.6);
+  min-height: 100vh;
+  padding: 120px 20px 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+}
+
+.info-section h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.info-section p {
+  font-size: 20px;
+  max-width: 700px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  opacity: 0;
+  animation: fadeInUp 1.2s ease forwards;
+  animation-delay: 0.3s;
+}
+
+/* ====== SERVICIOS SECTION ====== */
+.servicios-section {
+  width: 100%;
+  min-height: 80vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.servicios-section h2 {
+  font-size: 48px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 60px;
+  color: #ffffff;
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: slideDown 1s ease forwards;
+}
+
+/* Contenedor de cards */
+.servicios-container {
+  display: flex;
+  gap: 100px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Cada card */
+.servicio-card {
+  background: rgba(0, 0, 0, 0.7); /* opacidad corregida */
+  border-radius: 20px;
+  width: 280px;
+  height: 350px;
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0);
+
+  /* Animación inicial */
+  transform: scale(0.8);
+  opacity: 0;
+  animation: zoomIn 1s ease forwards;
+  animation-delay: 0.8s;
+
+  /* Transiciones suaves */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  gap: 20px;
+}
+
+.servicio-card:hover {
+  transform: scale(1.05);
+  background: #1a1a1a;
+}
+
+
+/* ====== BUNKER SERVICIOS ====== */
+.bunker-servicios {
+  width: 100%;
+  min-height: 80vh;
+  background: rgba(0, 0, 0, 0.9);   /* fondo negro transparente */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+
+
+.bunker-servicios h2 {
+  font-size: 48px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 60px;
+  color: #ffffff;
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: slideDown 1s ease forwards;
+}
+
+/* Contenedor de los dos botones */
+.servicios-container {
+  display: flex;
+  gap: 100px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ====== SERVICIOS INFRA ====== */
+.servicios-infra {
+  width: 100%;
+  padding: 80px 40px;
+  background: #f5f7fa;
+  text-align: center;
+}
+
+.servicios-infra h2 {
+  font-size: 42px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  color: #0a0a0a;
+  letter-spacing: 2px;
+}
+
+.servicios-infra .servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 30px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* Cada card tipo botón */
+.servicio-card {
+  background: rgba(0, 0, 0, 70); /* fondo con opacidad */
+  border-radius: 20px;
+  width: 280px;
+  height: 350px;
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  flex-direction: column;    /* apila elementos */
+  align-items: center;       /* centra horizontalmente */
+  justify-content: space-between;
+  text-align: center;
+  padding: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+
+  /* Animación inicial */
+  transform: scale(0.8);
+  opacity: 0;
+  animation: zoomIn 1s ease forwards;
+  animation-delay: 0.8s; /* empieza después del título */
+
+  /* Transiciones suaves */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  gap: 20px; /* espacio entre imagen, título y botón */
+}
+
+.servicio-card:hover {
+  transform: scale(1.05); /* zoom al pasar el mouse */
+  background: #1a1a1a;
+}
+
+/* ====== ANIMACIONES ====== */
+@keyframes slideDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+/* Imagen dentro del card */
+.servicio-card img {
+  max-width: 520px;   /* 🔹 límite grande de ancho */
+  width: 100%;        /* 🔹 ocupa todo el ancho disponible en la tarjeta */
+  height: auto;       /* 🔹 mantiene proporciones */
+  object-fit: contain;
+  display: block;
+  margin: auto;       /* 🔹 centra horizontal y vertical */
+}
+
+
+/* Hover en imagen */
+.servicio-card:hover img {
+  transform: scale(1.1);
+}
+
+.servicio-btn {
+  padding: 12px 24px;
+  background: #ffffff;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+/* Hover en botón */
+.servicio-btn:hover {
+  transform: scale(1.1);
+  background: #ffffff;
+}
+
+/* Texto abajo */
+.servicio-card span {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* Hover con efecto */
+.servicio-card:hover {
+  transform: scale(1.08);
+  background: #F23805;               /* se ilumina con el color corporativo */
+}
+.servicio-card:hover span {
+  color: #000;
+}
+
+.img-infra {
+  max-width: 1600px;   /* 🔹 grande */
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+
+  /* Animación exclusiva */
+  opacity: 0;
+  transform: translateY(50px) scale(0.9);
+  animation: infraAppear 1.8s ease forwards;
+}
+
+/* Animación aparte para esta imagen */
+@keyframes infraAppear {
+  0% {
+    opacity: 0;
+    transform: translateY(50px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Botón Más Información */
+.btn-info {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 15px 35px;
+  background: #F23805;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: btnInfoAppear 1.8s ease forwards;
+  animation-delay: 1s; /* aparece después de la imagen */
+}
+
+.btn-info:hover {
+  background: #F23805;
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+/* Animación del botón */
+@keyframes btnInfoAppear {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ====== SERVICIOS CIBERSEGURIDAD ====== */
+.servicios-ciber {
+  width: 100%;
+  padding: 80px 40px;
+  background: #f5f7fa; /* fondo gris claro */
+  text-align: center;
+}
+
+.servicios-ciber h2 {
+  font-size: 42px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  color: #0a0a0a;
+  letter-spacing: 2px;
+}
+
+/* Grid de 4 columnas */
+.servicios-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* Caja de servicio */
+.servicio-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  text-align: left;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.servicio-box img {
+  max-width: 100%;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.servicio-box h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #e63946; /* rojo */
+}
+
+.servicio-box h3 span {
+  color: #000;
+  font-weight: normal;
+}
+
+.servicio-box p {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.servicio-box ul {
+  padding-left: 18px;
+  margin-bottom: 20px;
+}
+
+.servicio-box ul li {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+/* Botón */
+.btn-whatsapp {
+  background: #ff3b1f;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  background: #d62828;
+}
 
 /* ====== FOOTER ====== */
 footer {
@@ -480,7 +1471,139 @@ footer {
   display: none;
 }
 
-/* ====== ESTILOS PARA MÓVILES ====== */
+.infra-servicios {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f5f6f8; /* Fondo gris claro como en tu ejemplo */
+}
+
+
+
+.infra-servicios h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #111;
+}
+
+.planes {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.plan {
+  background: #fff;
+  border-radius: 12px;
+  padding: 25px;
+  max-width: 340px;
+  box-shadow: 0px 6px 15px rgba(0,0,0,0.1);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.plan:hover {
+  transform: translateY(-8px);
+}
+
+.plan img {
+  max-width: 100%;
+  margin-bottom: 15px;
+  border-radius: 6px;
+}
+
+.plan h3 {
+  color: #e63946; /* Rojo estilo de la imagen */
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.plan h3 span {
+  font-weight: normal;
+  font-size: 16px;
+  color: #000;
+}
+
+.plan p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.plan ul {
+  margin: 0 0 20px 0;
+  padding-left: 20px;
+  font-size: 14px;
+}
+
+.plan ul li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.btn-whatsapp {
+  display: block;
+  text-align: center;
+  background: #ff4000; /* Botón naranja */
+  color: #fff;
+  padding: 12px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-whatsapp:hover {
+  background: #e13300;
+}
+
+
+.paises-section {
+  text-align: center;
+  margin: 0;
+  padding: 120px 20px 60px;
+  background: #fff; 
+  width: 100%;
+}
+
+.paises-section h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.paises-section p {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  color: #111a3b;
+}
+
+.banderas-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap; /* 🔹 asegura que sean exactamente 10 en una fila */
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.bandera {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: #111;
+}
+
+.bandera img {
+  width: 70px;
+  height: auto;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+}
+
 @media (max-width: 768px) {
   /* Evitar overflow horizontal global */
   body, html {
@@ -600,7 +1723,7 @@ footer {
   }
 
   .bunker-servicios h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 40px;
     letter-spacing: 1.5px;
   }
@@ -684,6 +1807,27 @@ footer {
 
 }
 
+/* Ajustes móviles adicionales (banderas, infra imagen y títulos) */
+@media (max-width: 768px) {
+  /* Banderas en varias filas, 5 por fila aprox */
+  .banderas-row { flex-wrap: wrap; gap: 12px; }
+  .bandera { font-size: 12px; flex: 0 1 calc(20% - 10px); }
+  .bandera img { width: 56px; }
+
+  /* Imagen de infraestructura/ciber más grande en móvil */
+  .img-movil img { width: 100% !important; max-width: 560px !important; }
+  .img-infra { width: 100% !important; max-width: 100% !important; }
+
+  /* Títulos más pequeños en secciones de infra/ciber */
+  .bunker-servicios h2 { font-size: 1.8rem !important; }
+  .servicios-infra h2 { font-size: 1.6rem !important; }
+}
+
+/* Muy pequeño: compactar más las banderas (4 por fila) */
+@media (max-width: 480px) {
+  .bandera { flex: 0 1 calc(25% - 10px); }
+  .bandera img { width: 48px; }
+}
 
   
 /* ====== ESTILOS PARA ESCRITORIO ====== */

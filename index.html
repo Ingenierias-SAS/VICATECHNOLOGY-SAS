@@ -31,6 +31,7 @@
       <li><a href="Nosotros/nosotros.html">NOSOTROS</a></li>
       <li><a href="Metodologia/servicios.html">METODOLOGÍA</a></li>
       <li><a href="Productos/Productos.html">PRODUCTOS</a></li>
+      <li><a href="Blog/blog.html">BLOG</a></li>
       <li><a href="Contacto/Contacto.html">CONTACTO</a></li>
     </ul>
   </nav>
@@ -87,49 +88,27 @@
   </div>
 </section>
 
-<!-- Sección Nuestros Servicios -->
-<section id="servicios" class="servicios">
-  <h2>Nuestros Servicios</h2>
+<!-- ===== SERVICIOS ===== -->
+<section id="servicios" class="servicios-section">
+  <div class="overlay"></div>
 
-  <div class="servicios-grid">
-    <!-- Servicio 1 -->
-    <div class="servicio">
-      <a href="Productos/Productos.html">
-        <img src="img/firewall.png" alt="Servicio 1" class="servicio-img">
-      </a>
-      <p>Firewall o Cortafuegos.</p>
-    </div>
+  <h2>¿Por qué es necesaria la CIBERSEGURIDAD en tu negocio?</h2>
 
-    <!-- Servicio 2 -->
-    <div class="servicio">
-      <a href="Productos/Productos.html">
-        <img src="img/camarasysensores.PNG" alt="Servicio 2" class="servicio-img">
-      </a>
-      <p>Cámaras, Sensores y Biométricos.</p>
-    </div>
-
-    <!-- Servicio 3 -->
-    <div class="servicio">
-      <a href="Productos/Productos.html">
-        <img src="img/nube.png" alt="Servicio 3" class="servicio-img">
-      </a>
-      <p>Sistemas Nube.</p>
-    </div>
-
-    <!-- Servicio 4 -->
-    <div class="servicio">
-      <a href="Productos/Productos.html">
-        <img src="img/switch.png" alt="Servicio 4" class="servicio-img">
-      </a>
-      <p>Switch Administrables.</p>
-    </div>
+  <!-- Imagen en el centro -->
+  <div class="servicios-imagen">
+    <img src="img/porque.png" alt="Nuestros Servicios" class="img-pc">
+    <img src="img/Arrow.png" alt="Nuestros Servicios" class="img-movil">
   </div>
 
+  <!-- Botón debajo -->
   <div class="boton-contenedor">
-      <a href="Productos/Productos.html" class="boton-ver-todos">Ver todos los servicios</a>
-    </div>
-    
+    <a href="Productos/Productos.html" class="boton-ver-todos">Ver todos los servicios</a>
+  </div>
 </section>
+
+
+
+
 
 <section id="clientes" class="clientes-section">
   <h2>Nuestros Clientes</h2>
@@ -151,7 +130,28 @@
       <img src="img/logo4.png" alt="Empresa 4" class="logo-cliente">
     </button>
   </div>
+
+  <!-- Botón nuevo -->
+  <div class="ver-mas-contenedor">
+    <button id="verMasBtn" class="ver-mas-btn">VER MÁS EMPRESAS ALIADAS</button>
+  </div>
 </section>
+
+<!-- Modal con imagen -->
+<div id="modalAliados" class="modal-aliados">
+  <div class="modal-contenido">
+    <span class="cerrar">&times;</span>
+
+    <!-- Imagen para PC -->
+    <img src="img/aliados.png" alt="Empresas Aliadas PC" class="img-aliados img-pc">
+
+    <!-- Imagen para móviles -->
+    <img src="img/aliadosmovil.png" alt="Empresas Aliadas Móvil" class="img-aliados img-movil">
+
+  </div>
+</div>
+
+
 
 <!-- Modal 1 -->
 <div id="modal1" class="modal" onclick="cerrarSiFondo(event,'modal1')">
@@ -225,7 +225,7 @@
     <div class="footer-item">
       <h3>ESCRÍBENOS</h3>
       <p>3132344719</p>
-      <p>gerencia@vica-technology.com</p>
+      <p>comunicaciones@vica-technology.com</p>
     </div>
     <div class="footer-item">
       <h3>HORARIO</h3>
@@ -251,7 +251,7 @@
       </a>
     </div>
       <p>VICATECHNOLOGY S.A.S 2025</p>
-      <p>313 234 4719 | gerencia@vica-technology.com</p>
+      <p>313 234 4719 | comunicaciones@vica-technology.com</p>
     </div>
   </footer>
 

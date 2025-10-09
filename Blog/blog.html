@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contacto - VicaTechnology</title>
+  <title>Metodologia - VicaTechnology</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="../img/logopestaña.png">
-  <link rel="stylesheet" href="../Contacto/Contacto.css">
-  <script src="script.js"></script>
+  <link rel="stylesheet" href="blog.css">
+  <link rel="stylesheet" href="footer.css">
 </head>
 <body>
   <!-- Video de fondo -->
@@ -16,66 +16,86 @@
     Tu navegador no soporta video en HTML5.
   </video>
 
-  <!-- Reutilizamos el header -->
-   <header>
-  <img src="../img/logonuevo2.png" alt="Logo" class="logo">
+  <!-- Header -->
+<header>
+  <img src="../img/logonuevo2.png" alt="Logo" class="logo"> <!-- Logo -->
+
   <!-- Botón hamburguesa -->
   <button id="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-nav">
     &#9776; <!-- icono hamburguesa -->
   </button>
+
   <nav id="menu-nav">
     <ul>
       <li><a href="../index.html">INICIO</a></li>
       <li><a href="../Nosotros/nosotros.html">NOSOTROS</a></li>
       <li><a href="../Metodologia/servicios.html">METODOLOGÍA</a></li>
       <li><a href="../Productos/Productos.html">PRODUCTOS</a></li>
-      <li><a href="../Blog/blog.html">BLOG</a></li>
+      <li><a href="blog.html">BLOG</a></li>
       <li><a href="../Contacto/Contacto.html">CONTACTO</a></li>
     </ul>
   </nav>
 </header>
 
-  <section class="banner-nosotros">
-  <img src="../img/banercontacto.png" alt="Banner" class="banner-img">
-  <div class="banner-contenido">
-    <h1>¿QUÉ ESPERAS?</h1>
-  </div>
+<!-- ===== BLOGS BUNKER ===== -->
+<section class="bunker-blogs">
+  <h2>BLOGS</h2>
+  <button id="new-blog-btn">Crear Nuevo Blog</button>
+  
+  <!-- Contenedor de blogs -->
+  <div id="blogs-container"></div>
 </section>
 
-<!-- Contenido de Nosotros -->
-<section class="info-section" id="nosotros">
-  <div class="info-container">
+<!-- Modal para crear/editar blogs -->
+<div id="blog-modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h3 id="modal-title">Crear Nuevo Blog</h3>
 
-    <h2 class="info-titulo">NUESTROS CANALES <br> DE COMUNICACIÓN</h2>
+    <!-- Campo imagen -->
+    <label for="blog-img">Imagen:</label>
+    <input type="file" id="blog-img" accept="image/*">
 
-    <!-- Imagen izquierda -->
-    <a href="https://calendly.com/vicatechnology/reunion?month=2025-09" class="info-card">
-      <h2>Agenda tu cita</h2>
-      <img src="../img/citaqr.png" alt="QR 1">
-      <p></p>
-    </a>
+    <!-- Campo título -->
+    <label for="blog-title">Título:</label>
+    <input type="text" id="blog-title" placeholder="Título">
 
-    <!-- Imagen derecha -->
-    <a href="https://wa.link/i02t7t" class="info-card">
-      <h2>WhatsApp</h2>
-      <img src="../img/whaqr.png" alt="QR 2">
-      <p>Caterine Orrego Mora <br> 3132344719</p>
-    </a>
+    <!-- Campo texto -->
+    <label for="blog-text">Contenido:</label>
+    <textarea id="blog-text" placeholder="Texto del blog"></textarea>
 
-    <!-- 🔹 Botón llamativo al final -->
-    <div class="boton-cita-contenedor">
-      <a href="https://calendly.com/vicatechnology/reunion?month=2025-09" class="btn-cita">AGENDA TU CITA AQUÍ</a>
+    <!-- Campo clave -->
+    <label for="admin-key">Clave de administrador:</label>
+    <input type="password" id="admin-key" placeholder="Clave de administrador">
+
+    <button id="save-blog-btn">Guardar</button>
+  </div>
+</div>
+
+<!-- Modal para ver blog completo -->
+<div id="blog-view-modal" class="modal">
+  <div class="modal-content">
+    <span class="close-view">&times;</span>
+
+    <!-- Columna izquierda -->
+    <div id="view-left">
+      <h3 id="view-title"></h3>
+      <img id="view-img" src="" alt="Imagen blog">
     </div>
 
+    <!-- Columna derecha -->
+    <div id="view-text-container">
+      <p id="view-text"></p>
+    </div>
   </div>
-</section>
+</div>
 
 
 
 
   <!-- Footer igual al del index -->
   <footer class="footer">
-    <a href="https://wa.link/i02t7t" class="footer-title-link">CONTÁCTANOS</a>
+    <a href="../Contacto/Contacto.html" class="footer-title-link">CONTÁCTANOS</a>
     <div class="footer-top" id="contacto">
       <div class="footer-item">
         <h3>DIRECCIÓN</h3>
@@ -131,6 +151,6 @@
   <!-- Marca de agua -->
   <img src="../img/marcadeaguanueva.png" alt="Marca de Agua" class="marca-agua">
 
-  <script src="../Contacto/contacto.js"></script>
+  <script src="blog.js"></script>
 </body>
 </html>

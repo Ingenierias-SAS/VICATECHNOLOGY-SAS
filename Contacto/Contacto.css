@@ -441,7 +441,71 @@ footer {
   width: 250px;
 }
 
+/* ===== CONTENEDOR PRINCIPAL ===== */
+.info-container {
+  display: flex;
+  flex-direction: column; /* 🔹 apila elementos verticalmente */
+  align-items: center;    /* 🔹 centra todo horizontalmente */
+  text-align: center;
+}
 
+/* ===== TARJETAS ===== */
+.info-card {
+  display: inline-block;
+  margin: 20px;
+  text-align: center;
+}
+
+/* ===== BOTÓN ===== */
+.boton-cita-contenedor {
+  width: 100%;
+  text-align: center;
+  margin-top: 40px; /* separa del contenido anterior */
+}
+
+.btn-cita {
+  display: inline-block;
+  background: linear-gradient(90deg, #F23805, #ff6600);
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  padding: 15px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s ease;
+  box-shadow: 0 0 20px rgba(242, 56, 5, 0.5);
+  animation: pulse 2s infinite;
+}
+
+.btn-cita:hover {
+  transform: scale(1.1);
+  background: linear-gradient(90deg, #ff7a00, #ff4400);
+  box-shadow: 0 0 25px rgba(255, 100, 0, 0.8);
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 15px rgba(242, 56, 5, 0.6); }
+  50% { box-shadow: 0 0 30px rgba(242, 56, 5, 0.9); }
+  100% { box-shadow: 0 0 15px rgba(242, 56, 5, 0.6); }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .info-container {
+    flex-direction: column;
+  }
+
+  .info-card {
+    margin-bottom: 20px;
+  }
+
+  .btn-cita {
+    font-size: 1rem;
+    padding: 12px 30px;
+  }
+}
 
 
 /* ====== ESTILOS PARA MÓVILES ====== */
@@ -585,4 +649,55 @@ footer {
     transition: none;
     display: block;
   }
+
+  /* ====== Responsive adjustments (aligned with Inicio/estilos.css) ====== */
+}
+
+@media (max-width: 768px) {
+  /* Header / logo / menu */
+  header { padding: 8px 12px; }
+  .logo { height: 60px; margin-right: 10px; }
+  #menu-toggle { display: block; }
+  nav ul { flex-direction: column; gap: 12px; align-items: center; }
+
+  /* Banners */
+  .banner-nosotros, .banner-inicio, .banner, .img-section { height: 220px; }
+
+  /* Layouts become single column */
+  .info-container, .servicios-grid, .clientes-logos, .servicios-container {
+    flex-direction: column !important;
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+    padding: 18px;
+  }
+
+  /* Images scale nicely */
+  .info-imagen img, .servicio-img img, .logo-cliente, .img-rectangular img { max-width: 100%; height: auto; }
+
+  /* Buttons full width on small screens */
+  .boton, .boton-info, .boton-ver-todos, .servicio-btn, .btn-info { width: 100%; display: inline-block; box-sizing: border-box; }
+
+  /* Footer and modal */
+  footer .footer-top { flex-direction: column; gap: 18px; }
+  .modal-content { width: 92%; max-width: 520px; }
+
+  /* Bottom-left social bar & watermark */
+  .barra-redes { left: 12px; bottom: 18px; }
+  .marca-agua { display: none; }
+}
+
+@media (min-width: 769px) {
+  /* Desktop: show desktop menu, larger logo and banner */
+  #menu-toggle { display: none; }
+  nav ul { display: flex; flex-direction: row; gap: 30px; }
+  .logo { height: 80px; }
+  .banner-nosotros, .banner-inicio, .banner, .img-section { height: 320px; }
+
+  /* Multi-column grids on desktop */
+  .servicios-grid { grid-template-columns: repeat(3, 1fr); }
+  .clientes-logos { flex-wrap: nowrap; align-items: center; }
+  .info-container { flex-direction: row; align-items: center; gap: 40px; }
+
+  /* Watermark visible on large screens */
+  .marca-agua { display: block; opacity: 0.08; }
 }

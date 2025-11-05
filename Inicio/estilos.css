@@ -27,7 +27,7 @@ body, html {
 /* Barra de navegación centrada */
 header {
   width: 100%;
-  background: black;
+  background: transparent; /* transparente al inicio */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -38,7 +38,18 @@ header {
   z-index: 100;
   transform: translateY(-100%);
   animation: slideDown 1s ease forwards;
+  transition: background-color 0.25s ease, box-shadow 0.25s ease;
 }
+
+/* Fondo negro al hacer scroll */
+header.header-solid {
+  background: #000 !important;
+  background-color: #000 !important;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+/* Alternativa robusta: clase en el body */
+body.scrolled header { background: #000 !important; box-shadow: 0 2px 10px rgba(0,0,0,0.3) !important; }
 
 @keyframes slideDown {
   to {
@@ -92,14 +103,14 @@ nav ul li:nth-child(6) { animation-delay: 1.5s; }
 }
 
 nav ul li a {
-  color: white;
+  color: #F23805;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
 }
 
 nav ul li a:hover {
-  color: #F23805;
+  color: #ffffff;
 }
 
 #menu-toggle {
@@ -274,6 +285,29 @@ nav ul li a:hover {
   max-width: 100%;
   border-radius: 15px;
   box-shadow: 0px 4px 15px rgba(0,0,0,0.6);
+}
+
+/* Conócenos: dar más espacio a la imagen en desktop */
+.info-texto { flex: 0 0 40%; }
+.info-imagen { flex: 0 0 60%; }
+.info-imagen img { width: 100%; height: auto; }
+
+/* Conócenos: mantener imagen al lado del texto también en móvil */
+@media (max-width: 768px) {
+  .info-container { flex-direction: row !important; gap: 16px !important; }
+  .info-texto { flex: 0 0 40% !important; width: 40% !important; text-align: left !important; }
+  .info-imagen { flex: 0 0 60% !important; width: 60% !important; }
+}
+
+/* Conócenos: evitar salto de línea (side-by-side) */
+.info-container { flex-wrap: nowrap !important; gap: 24px !important; }
+.info-texto { flex: 0 0 calc(40% - 12px) !important; }
+.info-imagen { flex: 0 0 calc(60% - 12px) !important; }
+
+@media (max-width: 768px) {
+  .info-container { flex-wrap: nowrap !important; gap: 16px !important; }
+  .info-texto { flex: 0 0 calc(40% - 8px) !important; width: auto !important; }
+  .info-imagen { flex: 0 0 calc(60% - 8px) !important; width: auto !important; }
 }
 
 /* Contenedor del banner */
@@ -1170,4 +1204,21 @@ footer::before {
     padding: 12px 25px !important;
     font-size: 16px !important;
   }
+}
+/* ====== Footer Color Overrides (White BG, Black Text) ====== */
+footer {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+footer a,
+footer .footer-title-link,
+footer .footer-item h3,
+footer .footer-item p,
+footer .footer-bottom {
+  color: #000000 !important;
+}
+/* Remove any dark overlay on footer */
+footer::before {
+  display: none !important;
+  background: transparent !important;
 }

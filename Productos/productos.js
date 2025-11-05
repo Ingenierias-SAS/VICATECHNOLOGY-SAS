@@ -33,5 +33,36 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+
+  // Header transparente -> negro al hacer scroll
+  const header = document.querySelector('header');
+  const onScroll = () => {
+    if (!header) return;
+    const y = window.pageYOffset || document.documentElement.scrollTop || 0;
+    const scrolled = y > 10;
+    header.classList.toggle('header-solid', scrolled);
+    document.body.classList.toggle('scrolled', scrolled);
+  };
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
 });
 
+  // Swap de imagen del banner en móviles (Consultorías)
+  try {
+    const heroImg = document.querySelector('.bunker-servicios img.img-infra');
+    if (heroImg) {
+      const desktopSrc = heroImg.getAttribute('src') || '';
+      // Inserta '-movil' antes de la extensión del archivo actual
+      const mobileSrc = desktopSrc.replace(/(\.[a-z0-9]+)(\?.*)?$/i, '-movil$1');
+      const applySwap = () => {
+        if (window.innerWidth <= 768) {
+          heroImg.setAttribute('src', mobileSrc);
+        } else {
+          heroImg.setAttribute('src', desktopSrc);
+        }
+      };
+      applySwap();
+      window.addEventListener('resize', applySwap);
+    }
+  } catch (_) { /* silencioso */ }
+});

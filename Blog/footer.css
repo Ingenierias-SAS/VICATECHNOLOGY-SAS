@@ -64,3 +64,22 @@ footer.footer::before {
   }
 }
 
+/* ====== Footer Color Overrides (White BG, Black Text) ====== */
+footer,
+footer.footer {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+footer a,
+footer .footer-title-link,
+footer .footer-item h3,
+footer .footer-item p,
+footer .footer-bottom {
+  color: #000000 !important;
+}
+/* Remove any dark overlay on footer */
+footer::before,
+footer.footer::before {
+  display: none !important;
+  background: transparent !important;
+}

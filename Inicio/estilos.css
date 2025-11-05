@@ -27,7 +27,7 @@ body, html {
 /* Barra de navegación centrada */
 header {
   width: 100%;
-  background: transparent; /* transparente al inicio */
+  background: #000; /* fondo negro siempre */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,14 +103,14 @@ nav ul li:nth-child(6) { animation-delay: 1.5s; }
 }
 
 nav ul li a {
-  color: #F23805;
+  color: #ffffff;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
 }
 
 nav ul li a:hover {
-  color: #ffffff;
+  color: #F23805;
 }
 
 #menu-toggle {

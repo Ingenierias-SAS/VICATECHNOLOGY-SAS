@@ -66,7 +66,7 @@ body, html {
 /* ===== HEADER ===== */
 header {
   width: 100%;
-  background: transparent; /* transparente al inicio */
+  background: #000; /* fondo negro siempre */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -77,6 +77,14 @@ header {
   z-index: 5000; /* Aumentado para asegurar visibilidad */
   transition: background-color 0.25s ease, box-shadow 0.25s ease;
 }
+
+/* Altura del header y separación global */
+:root { --header-h: 100px; }
+@media (max-width: 900px) { :root { --header-h: 80px; } }
+body { padding-top: var(--header-h); }
+/* Mantener secciones como estaban */
+.bunker-servicios { margin-top: 0; }
+.infra-fixed-banner { margin-top: 0; }
 
 /* Evitar scroll del body cuando el menú móvil está abierto */
 body.menu-open {
@@ -98,14 +106,14 @@ nav ul {
 }
 
 nav ul li a {
-  color: #F23805;
+  color: #ffffff;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
 }
 
 nav ul li a:hover {
-  color: #ffffff;
+  color: #F23805;
 }
 
 /* Fondo negro al hacer scroll */

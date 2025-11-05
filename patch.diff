@@ -1,0 +1,16 @@
+*** Begin Patch
+*** Update File: Nosotros/nosotros.css
+@@
+ /* ====== HEADER ====== */
+ 
+ header {
+@@
+ }
++
++/* Altura del header y separación para banners */
++:root { --header-h: 100px; }
++@media (max-width: 900px) { :root { --header-h: 80px; } }
++
++/* Evitar que el header tape el banner */
++.banner-nosotros { margin-top: var(--header-h); }
+*** End Patch

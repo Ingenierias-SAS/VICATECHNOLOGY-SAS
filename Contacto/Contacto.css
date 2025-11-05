@@ -27,7 +27,7 @@ body, html {
 /* ====== HEADER ====== */
 header {
   width: 100%;
-  background: transparent; /* transparente al inicio */
+  background: #000; /* fondo negro siempre */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,6 +40,13 @@ header {
   animation: slideDown 1s ease forwards;
   transition: background-color 0.25s ease, box-shadow 0.25s ease;
 }
+
+/* Altura del header y separación global */
+:root { --header-h: 100px; }
+@media (max-width: 900px) { :root { --header-h: 80px; } }
+body { padding-top: var(--header-h); }
+/* Mantener banner como estaba */
+.banner-nosotros { margin-top: 0; }
 
 /* Fondo negro al hacer scroll */
 header.header-solid { background: #000 !important; background-color: #000 !important; box-shadow: 0 2px 10px rgba(0,0,0,0.3); }
@@ -97,14 +104,14 @@ nav ul li:nth-child(6) { animation-delay: 1.5s; }
 }
 
 nav ul li a {
-  color: #F23805;
+  color: #ffffff;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
 }
 
 nav ul li a:hover {
-  color: #ffffff;
+  color: #F23805;
 }
 
 /* ====== HEADER con fondo del banner ====== */

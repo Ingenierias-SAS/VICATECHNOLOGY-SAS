@@ -7,7 +7,7 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #3867d6;
+  background: #25D366; /* WhatsApp green */
   border: none;
   border-radius: 50%;
   width: 60px;
@@ -45,14 +45,26 @@
 }
 
 .chat-header {
-  background: #4b7bec;
+  background: #075E54; /* WhatsApp header */
   color: white;
-  padding: 15px;
-  text-align: center;
+  padding: 12px 48px 12px 12px;
   font-size: 18px;
   font-weight: bold;
   position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
+
+.chat-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #fff;
+}
+
+.chat-meta { display: flex; flex-direction: column; }
 
 .chat-close {
   position: absolute;
@@ -68,7 +80,7 @@
   flex: 1;
   padding: 15px;
   overflow-y: auto;
-  background: #fafafa;
+  background: #ECE5DD; /* WhatsApp chat bg */
   display: flex;
   flex-direction: column;
   color: #1f2937; /* Evita heredar color blanco del body */
@@ -84,9 +96,11 @@
 }
 
 .bot {
-  background: #e3e9ff;
+  background: #ffffff; /* bot bubble */
+  border: 1px solid #e0e0e0;
   align-self: flex-start;
-  color: #1f2937;
+  color: #111;
+  border-top-left-radius: 0;
 }
 
 /* List styling inside bot messages */
@@ -97,9 +111,10 @@
 .message.bot li { margin: 4px 0; }
 
 .user {
-  background: #4b7bec;
-  color: white;
+  background: #DCF8C6; /* WhatsApp user bubble */
+  color: #111;
   align-self: flex-end;
+  border-top-right-radius: 0;
 }
 
 /* Typing indicator */
@@ -171,7 +186,7 @@
 }
 
 .chat-input button {
-  background: #4b7bec;
+  background: #25D366;
   color: white;
   border: none;
   padding: 15px 20px;
@@ -183,7 +198,7 @@
 }
 
 .chat-input button:hover {
-  background: #3867d6;
+  background: #1ebe57;
 }
 
 /* RESPONSIVE */

@@ -126,6 +126,12 @@
     if (!messages) return;
     const div = document.createElement('div');
     div.className = `message ${sender}`;
+    // Ensure displayed assistant name is Xyber
+    try {
+      if (typeof text === 'string') {
+        text = text.replace(/Safyra/g, 'Xyber');
+      }
+    } catch (_) {}
     if (html) { div.innerHTML = text; } else { div.textContent = text; }
     messages.appendChild(div);
     state.history.push({ role: sender, text: html ? div.textContent : text });

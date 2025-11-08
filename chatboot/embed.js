@@ -30,15 +30,18 @@
     btn.id = 'chatToggle';
     btn.setAttribute('aria-label', 'Abrir chat');
     // Inline SVG de burbuja de chat
-    btn.innerHTML = '<svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 2H4a2 2 0 0 0-2 2v18l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z" fill="#fff"/><circle cx="8" cy="11" r="1.5" fill="#4b7bec"/><circle cx="12" cy="11" r="1.5" fill="#4b7bec"/><circle cx="16" cy="11" r="1.5" fill="#4b7bec"/></svg>';
+    btn.innerHTML = '<svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 2H4a2 2 0 0 0-2 2v18l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z" fill="#fff"/><circle cx="8" cy="11" r="1.5" fill="#25D366"/><circle cx="12" cy="11" r="1.5" fill="#25D366"/><circle cx="16" cy="11" r="1.5" fill="#25D366"/></svg>';
 
     const container = document.createElement('div');
     container.className = 'chat-container';
     container.id = 'chatContainer';
     container.innerHTML = `
       <div class="chat-header">
-        <div class="chat-title">Safyra</div>
-        <div class="chat-subtitle">asistente virtual</div>
+        <img class="chat-avatar" src="img/logonuevo2.png" alt="Xyber" />
+        <div class="chat-meta">
+          <div class="chat-title">Xyber</div>
+          <div class="chat-subtitle">en línea</div>
+        </div>
         <span class="chat-close" id="chatClose" aria-label="Cerrar chat" role="button" tabindex="0">&times;</span>
       </div>
       <div class="chat-messages" id="chatMessages"></div>

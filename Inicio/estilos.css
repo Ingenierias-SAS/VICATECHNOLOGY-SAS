@@ -1222,3 +1222,26 @@ footer::before {
   display: none !important;
   background: transparent !important;
 }
+
+/* ===== AJUSTE CONÓCENOS EN MÓVILES ===== */
+@media (max-width: 768px) {
+
+  .info-container {
+    flex-direction: column !important;  /* apila texto + imagen */
+    text-align: center;
+    gap: 25px !important;
+  }
+
+  .info-texto, 
+  .info-imagen {
+    flex: none !important;
+    width: 100% !important;
+  }
+
+  .info-imagen img {
+    width: 90% !important;   /* hace la imagen grande */
+    max-width: 400px;        /* tamaño bonito */
+    margin: 0 auto;          /* centrada */
+    display: block;
+  }
+}

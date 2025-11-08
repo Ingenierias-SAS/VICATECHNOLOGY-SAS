@@ -1960,3 +1960,27 @@ footer::before {
   display: none !important;
   background: transparent !important;
 }
+
+/* ✅ Estilos robustos para el <picture> */
+.hero-illustration {
+  display: block;
+  width: 100%;
+  max-width: 1100px;     /* opcional, quita si quieres full width */
+  margin: 0 auto 20px;   /* centra */
+}
+
+.hero-illustration img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;   /* opcional */
+  box-shadow: 0 5px 20px rgba(0,0,0,0.35); /* opcional */
+}
+
+/* Si tienes reglas antiguas, neutralízalas */
+.img-infra, .img-pc, .img-movil { display: initial !important; }
+
+
+
+
+

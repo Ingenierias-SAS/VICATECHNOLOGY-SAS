@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.classList.toggle('menu-open');
   });
 
-  // Cerrar al hacer clic fuera
   document.addEventListener('click', (e) => {
     if (window.innerWidth <= 900 && menuNav.classList.contains('active')) {
       if (!menuNav.contains(e.target) && e.target !== menuToggle) {
@@ -23,18 +22,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Cerrar al hacer clic en un enlace
   menuNav.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
       if (window.innerWidth <= 900) {
         menuNav.classList.remove('active');
         document.body.classList.remove('menu-open');
-        menuToggle.setAttribute('aria-expanded', 'false');
+        menuToggle.setAttribute('aria-expanded', false);
       }
     });
   });
   
-  // Header transparente -> negro al hacer scroll (Blog)
   const header = document.querySelector('header');
   const onScroll = () => {
     if (!header) return;
@@ -46,6 +43,10 @@ document.addEventListener('DOMContentLoaded', () => {
   onScroll();
   window.addEventListener('scroll', onScroll, { passive: true });
 });
+
+// ======================================================
+// ===============   LÓGICA DEL BLOG   ==================
+// ======================================================
 
 const blogsContainer = document.getElementById("blogs-container");
 const newBlogBtn = document.getElementById("new-blog-btn");
@@ -59,127 +60,123 @@ const titleInput = document.getElementById("blog-title");
 const textInput = document.getElementById("blog-text");
 const adminKeyInput = document.getElementById("admin-key");
 
-let blogs = JSON.parse(localStorage.getItem("blogs")) || [];
-let editIndex = null;
+let blogs = [];
 const ADMIN_KEY = "admin123";
-let currentImage = ""; // almacena la imagen en Base64
+let blogEditID = null;
 
-// ==== Convertir archivo a Base64 ====
-function fileToBase64(file, callback) {
-  const reader = new FileReader();
-  reader.onload = function(event) {
-    callback(event.target.result);
-  };
-  reader.readAsDataURL(file);
+// ====== Cargar blogs desde BD ======
+function cargarBlogs() {
+  fetch("./backend/obtener.php")
+    .then(r => r.json())
+    .then(data => {
+      blogs = data;
+      renderBlogs();
+    });
 }
 
-// Detectar cuando el usuario sube una imagen
-imgInput.addEventListener("change", () => {
-  const file = imgInput.files[0];
-  if (file) {
-    fileToBase64(file, (base64) => {
-      currentImage = base64;
-    });
-  }
-});
-
-// ==== Renderizar blogs ====
+// ====== Render ======
 function renderBlogs() {
   blogsContainer.innerHTML = "";
-  blogs.forEach((blog, index) => {
+  blogs.forEach(blog => {
     const card = document.createElement("div");
     card.className = "blog-card";
     card.innerHTML = `
-      <img src="${blog.img}" alt="Blog image">
+      <img src="${blog.imagen_path}" alt="Blog image">
       <div>
-        <h3>${blog.title}</h3>
-        <p>${blog.text.substring(0,150)}...</p>
+        <h3>${blog.titulo}</h3>
+        <p>${blog.contenido.substring(0,150)}...</p>
         <div class="blog-actions">
           <button class="edit-btn">Modificar</button>
           <button class="delete-btn">Eliminar</button>
         </div>
       </div>
     `;
-    
-    // Ver completo
+
+    // Ver blog completo
     card.addEventListener("click", (e) => {
       if (!e.target.classList.contains("edit-btn") && !e.target.classList.contains("delete-btn")) {
-        document.getElementById("view-img").src = blog.img;
-        document.getElementById("view-title").textContent = blog.title;
-        document.getElementById("view-text").textContent = blog.text;
+        document.getElementById("view-img").src = blog.imagen_path;
+        document.getElementById("view-title").textContent = blog.titulo;
+        document.getElementById("view-text").textContent = blog.contenido;
         viewModal.style.display = "flex";
       }
     });
 
     // Editar
-    card.querySelector(".edit-btn").addEventListener("click", () => {
+    card.querySelector(".edit-btn").addEventListener("click", (e) => {
+      e.stopPropagation();
       const key = prompt("Ingrese la clave:");
-      if (key === ADMIN_KEY) {
-        editIndex = index;
-        currentImage = blog.img;
-        titleInput.value = blog.title;
-        textInput.value = blog.text;
-        modal.style.display = "flex";
-      } else {
-        alert("Clave incorrecta");
-      }
+      if (key !== ADMIN_KEY) return alert("Clave incorrecta");
+
+      blogEditID = blog.id;
+      titleInput.value = blog.titulo;
+      textInput.value = blog.contenido;
+      imgInput.value = "";
+      adminKeyInput.value = "";
+
+      saveBlogBtn.setAttribute("data-mode", "edit");
+      modal.style.display = "flex";
     });
 
     // Eliminar
-    card.querySelector(".delete-btn").addEventListener("click", () => {
+    card.querySelector(".delete-btn").addEventListener("click", (e) => {
+      e.stopPropagation();
       const key = prompt("Ingrese la clave:");
-      if (key === ADMIN_KEY) {
-        blogs.splice(index, 1);
-        localStorage.setItem("blogs", JSON.stringify(blogs));
-        renderBlogs();
-      } else {
-        alert("Clave incorrecta");
-      }
+      if (key !== ADMIN_KEY) return alert("Clave incorrecta");
+
+      const formData = new URLSearchParams();
+      formData.append("id", blog.id);
+      formData.append("admin_key", ADMIN_KEY);
+
+      fetch("./backend/eliminar.php", { method: "POST", body: formData })
+        .then(r => r.text())
+        .then(resp => resp === "OK" ? cargarBlogs() : alert(resp));
     });
 
     blogsContainer.appendChild(card);
   });
 }
 
-// ==== Crear nuevo blog ====
+// ====== Crear nuevo blog ======
 newBlogBtn.onclick = () => {
-  editIndex = null;
-  currentImage = "";
+  blogEditID = null;
+  imgInput.value = "";
+  adminKeyInput.value = "";
   titleInput.value = "";
   textInput.value = "";
-  adminKeyInput.value = "";
-  imgInput.value = "";
+  saveBlogBtn.setAttribute("data-mode", "new");
   modal.style.display = "flex";
 };
 
-// ==== Guardar blog ====
+// ====== Guardar (nuevo o edición) ======
 saveBlogBtn.onclick = () => {
-  if (adminKeyInput.value !== ADMIN_KEY) {
-    alert("Clave incorrecta");
-    return;
+  if (adminKeyInput.value !== ADMIN_KEY) return alert("Clave incorrecta");
+
+  const formData = new FormData();
+  formData.append("admin_key", ADMIN_KEY);
+  formData.append("titulo", titleInput.value);
+  formData.append("contenido", textInput.value);
+
+  if (imgInput.files[0]) formData.append("imagen", imgInput.files[0]);
+
+  // Modo EDITAR
+  if (saveBlogBtn.getAttribute("data-mode") === "edit" && blogEditID !== null) {
+    formData.append("id", blogEditID);
+    fetch("./backend/editar.php", { method: "POST", body: formData })
+      .then(r => r.text())
+      .then(resp => resp === "OK" ? (modal.style.display="none", cargarBlogs()) : alert(resp));
   }
-  if (!currentImage) {
-    alert("Por favor sube una imagen");
-    return;
+  // Modo CREAR
+  else {
+    fetch("./backend/guardar.php", { method: "POST", body: formData })
+      .then(r => r.text())
+      .then(resp => resp === "OK" ? (modal.style.display="none", cargarBlogs()) : alert(resp));
   }
-  const blog = {
-    img: currentImage,
-    title: titleInput.value,
-    text: textInput.value
-  };
-  if (editIndex !== null) {
-    blogs[editIndex] = blog;
-  } else {
-    blogs.push(blog);
-  }
-  localStorage.setItem("blogs", JSON.stringify(blogs));
-  modal.style.display = "none";
-  renderBlogs();
 };
 
-// ==== Cerrar modales ====
+// ====== Cerrar modales ======
 close.onclick = () => modal.style.display = "none";
 closeView.onclick = () => viewModal.style.display = "none";
 
-// ==== Inicializar ====
-renderBlogs();
+// ====== Inicializar ======
+cargarBlogs();

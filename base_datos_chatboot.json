@@ -1,0 +1,3320 @@
+[
+  {
+    "pregunta": "¿Qué es una consultoría tecnológica?",
+    "respuesta": "Es un servicio especializado que analiza las necesidades de tu empresa y propone soluciones tecnológicas para mejorar su productividad, seguridad y eficiencia."
+  },
+  {
+    "pregunta": "¿Por qué mi empresa necesita consultoría tecnológica?",
+    "respuesta": "Porque contar con orientación profesional evita errores, optimiza procesos y te ayuda a tomar decisiones basadas en datos reales, no en suposiciones."
+  },
+  {
+    "pregunta": "¿Qué tipo de consultorías ofrece VicaTechnology?",
+    "respuesta": "Ofrecemos consultorías en ciberseguridad, infraestructura, transformación digital e inteligencia artificial, adaptadas a las necesidades de cada empresa."
+  },
+  {
+    "pregunta": "¿Cómo funciona una consultoría en VicaTechnology?",
+    "respuesta": "Iniciamos con un diagnóstico, identificamos riesgos y oportunidades, diseñamos un plan estratégico y te acompañamos en la implementación paso a paso."
+  },
+  {
+    "pregunta": "¿Cuánto tiempo tarda una consultoría tecnológica?",
+    "respuesta": "Depende del alcance del proyecto. Algunas pueden durar semanas y otras meses. Nuestro objetivo es lograr resultados reales en el menor tiempo posible."
+  },
+  {
+    "pregunta": "¿Qué beneficios obtengo con una consultoría?",
+    "respuesta": "Obtienes una visión clara de tus procesos tecnológicos, mejoras la seguridad, reduces costos y haces más eficiente tu operación diaria."
+  },
+  {
+    "pregunta": "¿Puedo solicitar una evaluación gratuita?",
+    "respuesta": "Sí, en VicaTechnology realizamos diagnósticos iniciales sin costo para identificar las principales oportunidades de mejora en tu empresa."
+  },
+  {
+    "pregunta": "¿Las consultorías son presenciales o virtuales?",
+    "respuesta": "Ofrecemos ambas modalidades. Podemos atenderte de forma remota o presencial según tus preferencias y la ubicación de tu empresa."
+  },
+  {
+    "pregunta": "¿Qué diferencia a VicaTechnology de otras consultoras?",
+    "respuesta": "Nuestra diferencia está en el acompañamiento. No solo asesoramos: implementamos, capacitamos y mantenemos tu tecnología segura y eficiente."
+  },
+  {
+    "pregunta": "¿Qué resultados puedo esperar de una consultoría?",
+    "respuesta": "Resultados medibles: mayor productividad, reducción de riesgos, optimización de procesos y un entorno tecnológico más estable y seguro."
+  },
+  {
+    "pregunta": "¿Qué empresas necesitan consultoría?",
+    "respuesta": "Cualquier empresa que use tecnología puede beneficiarse. Desde pymes hasta corporaciones pueden mejorar con una guía profesional."
+  },
+  {
+    "pregunta": "¿Qué sectores atienden en las consultorías?",
+    "respuesta": "Atendemos empresas del sector industrial, educativo, salud, financiero, comercial y tecnológico. Nos adaptamos a cada tipo de negocio."
+  },
+  {
+    "pregunta": "¿La consultoría incluye auditoría de seguridad?",
+    "respuesta": "Sí, realizamos auditorías técnicas para detectar vulnerabilidades y fortalecer la ciberseguridad de tus sistemas y equipos."
+  },
+  {
+    "pregunta": "¿La consultoría tiene algún costo?",
+    "respuesta": "Sí, pero ofrecemos planes personalizados. Ajustamos la inversión a la magnitud del proyecto y a los objetivos de tu empresa."
+  },
+  {
+    "pregunta": "¿Puedo combinar la consultoría con otros servicios?",
+    "respuesta": "Claro, puedes complementarla con nuestros servicios de infraestructura, soporte, IA o innovación tecnológica para obtener una solución completa."
+  },
+  {
+    "pregunta": "¿Qué tipo de profesionales realizan la consultoría?",
+    "respuesta": "Contamos con ingenieros y especialistas certificados en seguridad, infraestructura e innovación, con amplia experiencia en el sector empresarial."
+  },
+  {
+    "pregunta": "¿Cómo sé si necesito una consultoría tecnológica?",
+    "respuesta": "Si tus sistemas fallan, tus procesos son lentos o hay riesgos de seguridad, es el momento ideal para realizar una consultoría profesional."
+  },
+  {
+    "pregunta": "¿La consultoría mejora la productividad?",
+    "respuesta": "Sí, identificamos cuellos de botella, automatizamos tareas y aplicamos tecnología para que tus equipos trabajen con mayor eficiencia."
+  },
+  {
+    "pregunta": "¿La consultoría aplica para pequeñas empresas?",
+    "respuesta": "Sí, adaptamos nuestros servicios a pymes con soluciones escalables y rentables que impulsan su crecimiento tecnológico."
+  },
+  {
+    "pregunta": "¿Puedo recibir un informe después de la consultoría?",
+    "respuesta": "Sí, entregamos un informe detallado con resultados, recomendaciones y un plan de acción diseñado para tu empresa."
+  },
+  {
+    "pregunta": "¿Qué metodología usa VicaTechnology en sus consultorías?",
+    "respuesta": "Usamos un método integral que incluye diagnóstico, análisis, diseño de estrategias, implementación y seguimiento continuo."
+  },
+  {
+    "pregunta": "¿Cómo solicito una consultoría?",
+    "respuesta": "Solo debes contactarnos por correo, teléfono o formulario web. Nuestro equipo te asesorará y programará la visita o reunión inicial."
+  },
+  {
+    "pregunta": "¿Las consultorías pueden hacerse por etapas?",
+    "respuesta": "Sí, podemos dividirlas en fases según tus necesidades o presupuesto, asegurando resultados sostenibles a largo plazo."
+  },
+  {
+    "pregunta": "¿VicaTechnology ofrece consultorías en IA?",
+    "respuesta": "Sí, ofrecemos consultorías especializadas en inteligencia artificial para ayudarte a implementar herramientas de automatización y análisis de datos."
+  },
+  {
+    "pregunta": "¿La consultoría incluye capacitación?",
+    "respuesta": "Sí, capacitamos a tu equipo para que pueda aprovechar al máximo las soluciones tecnológicas implementadas."
+  },
+  {
+    "pregunta": "¿Qué pasa si ya tengo un área de tecnología?",
+    "respuesta": "Podemos trabajar de la mano con tu equipo interno para fortalecer procesos, aplicar nuevas estrategias y optimizar la infraestructura existente."
+  },
+  {
+    "pregunta": "¿La consultoría evalúa mi red tecnológica?",
+    "respuesta": "Sí, revisamos la configuración, seguridad y estabilidad de tu red para garantizar un funcionamiento eficiente y seguro."
+  },
+  {
+    "pregunta": "¿Ofrecen seguimiento después de la consultoría?",
+    "respuesta": "Sí, nuestro acompañamiento no termina al entregar el informe. Seguimos contigo para asegurar que las recomendaciones se cumplan."
+  },
+  {
+    "pregunta": "¿Qué herramientas utilizan para el análisis?",
+    "respuesta": "Usamos software de diagnóstico, monitoreo, ciberseguridad y análisis de datos para obtener una visión completa del estado de tu empresa."
+  },
+  {
+    "pregunta": "¿Cuánto se tarda en entregar los resultados?",
+    "respuesta": "Generalmente entre 5 y 15 días hábiles, dependiendo de la complejidad del análisis y el tamaño de la empresa."
+  },
+  {
+    "pregunta": "¿La consultoría se adapta a mi presupuesto?",
+    "respuesta": "Sí, ofrecemos planes flexibles que se ajustan a tus posibilidades sin sacrificar la calidad del servicio."
+  },
+  {
+    "pregunta": "¿Qué pasa si no tengo mucha información técnica?",
+    "respuesta": "No te preocupes, explicamos todo en lenguaje claro. Nuestra meta es que comprendas cada paso del proceso."
+  },
+  {
+    "pregunta": "¿Puedo contratar solo una parte del servicio?",
+    "respuesta": "Sí, puedes solicitar solo la etapa que necesites, como diagnóstico, auditoría o implementación."
+  },
+  {
+    "pregunta": "¿Cómo sé si mi empresa tiene riesgos tecnológicos?",
+    "respuesta": "Durante la consultoría realizamos un análisis de vulnerabilidades y riesgos para determinar el nivel de seguridad actual de tu empresa."
+  },
+  {
+    "pregunta": "¿Ofrecen descuentos por varios servicios?",
+    "respuesta": "Sí, contamos con planes especiales cuando contratas más de un servicio, como consultoría + soporte o consultoría + IA."
+  },
+  {
+    "pregunta": "¿Puedo solicitar referencias de otros clientes?",
+    "respuesta": "Claro, podemos mostrarte ejemplos de empresas que han confiado en nosotros y los resultados que obtuvieron."
+  },
+  {
+    "pregunta": "¿Qué resultados han logrado otras empresas con la consultoría?",
+    "respuesta": "Han reducido incidentes de seguridad, mejorado su infraestructura y optimizado sus procesos internos con resultados sostenibles."
+  },
+  {
+    "pregunta": "¿Qué diferencia hay entre consultoría y auditoría?",
+    "respuesta": "La auditoría evalúa lo que ya existe; la consultoría propone soluciones. En VicaTechnology combinamos ambas para ofrecerte una visión completa."
+  },
+  {
+    "pregunta": "¿La consultoría se puede hacer de manera confidencial?",
+    "respuesta": "Sí, garantizamos la privacidad absoluta de la información durante y después del proceso de consultoría."
+  },
+
+  {
+    "pregunta": "¿Qué tan seguido se recomienda hacer una consultoría tecnológica?",
+    "respuesta": "Lo ideal es realizar una consultoría al menos una vez al año, para evaluar los cambios tecnológicos, nuevas amenazas y oportunidades de mejora."
+  },
+  {
+    "pregunta": "¿Qué áreas analiza una consultoría tecnológica?",
+    "respuesta": "Analizamos infraestructura, seguridad, conectividad, rendimiento de sistemas, gestión de datos y procesos operativos."
+  },
+  {
+    "pregunta": "¿Puedo hacer una consultoría enfocada solo en ciberseguridad?",
+    "respuesta": "Sí, contamos con consultorías especializadas en ciberseguridad para identificar vulnerabilidades y proteger tus activos digitales."
+  },
+  {
+    "pregunta": "¿Qué resultados concretos obtendré al finalizar la consultoría?",
+    "respuesta": "Obtendrás un informe con hallazgos técnicos, soluciones recomendadas y un plan de acción para fortalecer tu empresa digitalmente."
+  },
+  {
+    "pregunta": "¿La consultoría se adapta al tamaño de mi empresa?",
+    "respuesta": "Sí, nuestros planes se ajustan a empresas pequeñas, medianas y grandes, asegurando una atención personalizada."
+  },
+  {
+    "pregunta": "¿La consultoría también evalúa la infraestructura de red?",
+    "respuesta": "Por supuesto. Revisamos routers, switches, cableado, configuraciones y medidas de seguridad de tu red corporativa."
+  },
+  {
+    "pregunta": "¿Qué diferencia hay entre una consultoría básica y una avanzada?",
+    "respuesta": "La básica se centra en diagnóstico y recomendaciones; la avanzada incluye análisis profundo, diseño de soluciones y acompañamiento en la implementación."
+  },
+  {
+    "pregunta": "¿Puedo recibir soporte después de la consultoría?",
+    "respuesta": "Sí, ofrecemos planes de soporte y seguimiento para garantizar que las soluciones implementadas funcionen correctamente."
+  },
+  {
+    "pregunta": "¿Puedo usar los resultados de la consultoría para futuras auditorías?",
+    "respuesta": "Claro, los informes que entregamos cumplen estándares técnicos y pueden servir como soporte para certificaciones o auditorías externas."
+  },
+  {
+    "pregunta": "¿Qué nivel de confidencialidad maneja VicaTechnology?",
+    "respuesta": "Total. Firmamos acuerdos de confidencialidad y protegemos toda la información de tu empresa durante el proceso."
+  },
+  {
+    "pregunta": "¿La consultoría ayuda a reducir gastos tecnológicos?",
+    "respuesta": "Sí, identificamos herramientas innecesarias, optimizamos recursos y proponemos soluciones que reducen costos a largo plazo."
+  },
+  {
+    "pregunta": "¿Ofrecen consultoría en transformación digital?",
+    "respuesta": "Sí, te ayudamos a modernizar procesos, automatizar tareas y aprovechar la tecnología para impulsar el crecimiento de tu negocio."
+  },
+  {
+    "pregunta": "¿Puedo hacer la consultoría por departamentos?",
+    "respuesta": "Sí, analizamos áreas específicas como TI, finanzas, operaciones o ventas, según tus prioridades."
+  },
+  {
+    "pregunta": "¿VicaTechnology puede trabajar con mi proveedor actual?",
+    "respuesta": "Sí, coordinamos con tus proveedores o equipos actuales para integrar soluciones sin generar conflictos técnicos."
+  },
+  {
+    "pregunta": "¿Qué beneficios tiene una consultoría externa frente a una interna?",
+    "respuesta": "Una visión externa es más objetiva, detecta detalles que el equipo interno puede pasar por alto y aporta estrategias innovadoras."
+  },
+  {
+    "pregunta": "¿La consultoría puede incluir la creación de políticas de seguridad?",
+    "respuesta": "Sí, diseñamos políticas de seguridad, respaldo y uso de datos para proteger tu empresa de amenazas internas y externas."
+  },
+  {
+    "pregunta": "¿Qué herramientas usa VicaTechnology durante el diagnóstico?",
+    "respuesta": "Utilizamos software especializado para escaneo de vulnerabilidades, monitoreo de red y análisis de rendimiento."
+  },
+  {
+    "pregunta": "¿Puedo recibir orientación antes de contratar la consultoría?",
+    "respuesta": "Sí, puedes agendar una reunión informativa sin costo donde te explicamos el proceso y los beneficios según tu caso."
+  },
+  {
+    "pregunta": "¿Qué tan técnicos son los informes entregados?",
+    "respuesta": "Entregamos un informe profesional pero comprensible, con una sección técnica y otra ejecutiva para facilitar la toma de decisiones."
+  },
+  {
+    "pregunta": "¿Qué ocurre si durante la consultoría detectan fallas críticas?",
+    "respuesta": "Te notificamos de inmediato y proponemos acciones urgentes para evitar daños o interrupciones en tus operaciones."
+  },
+  {
+    "pregunta": "¿La consultoría incluye recomendaciones de software?",
+    "respuesta": "Sí, sugerimos herramientas y licencias adecuadas para tus necesidades, siempre priorizando seguridad y eficiencia."
+  },
+  {
+    "pregunta": "¿Puedo contratar la consultoría solo para auditoría de equipos?",
+    "respuesta": "Sí, puedes solicitar una auditoría puntual enfocada en hardware, software o servidores sin adquirir todo el paquete."
+  },
+  {
+    "pregunta": "¿Qué pasa si no implemento las recomendaciones?",
+    "respuesta": "No pasa nada inmediato, pero las vulnerabilidades o deficiencias podrían mantenerse. Por eso recomendamos actuar lo antes posible."
+  },
+  {
+    "pregunta": "¿La consultoría incluye plan de contingencia?",
+    "respuesta": "Sí, elaboramos planes de contingencia y continuidad operativa para minimizar riesgos ante fallas o ataques cibernéticos."
+  },
+  {
+    "pregunta": "¿Puedo ampliar la consultoría a otros temas después?",
+    "respuesta": "Sí, puedes extenderla en cualquier momento hacia infraestructura, innovación o inteligencia artificial según tus metas."
+  },
+  {
+    "pregunta": "¿Qué duración tiene el acompañamiento posterior?",
+    "respuesta": "Ofrecemos acompañamientos de 3, 6 o 12 meses, según la complejidad del proyecto y las necesidades del cliente."
+  },
+  {
+    "pregunta": "¿Qué nivel de personalización tiene la consultoría?",
+    "respuesta": "Totalmente personalizada. Adaptamos el análisis y las soluciones al tamaño, recursos y objetivos de tu empresa."
+  },
+  {
+    "pregunta": "¿La consultoría puede realizarse en diferentes sedes?",
+    "respuesta": "Sí, atendemos sedes físicas y operaciones remotas, garantizando coherencia en la estrategia general de la empresa."
+  },
+  {
+    "pregunta": "¿Qué papel tiene la capacitación en la consultoría?",
+    "respuesta": "Capacitamos al personal para asegurar que comprendan los cambios y puedan mantener las mejoras en el tiempo."
+  },
+  {
+    "pregunta": "¿Cómo mide VicaTechnology el éxito de una consultoría?",
+    "respuesta": "Medimos resultados mediante indicadores de eficiencia, reducción de riesgos y satisfacción del cliente."
+  },
+  {
+    "pregunta": "¿La consultoría puede incluir evaluación de proveedores tecnológicos?",
+    "respuesta": "Sí, analizamos tus proveedores actuales para garantizar que cumplan con estándares de seguridad y rendimiento."
+  },
+  {
+    "pregunta": "¿Qué información necesito preparar antes de la consultoría?",
+    "respuesta": "Solo información básica sobre tu infraestructura, personal y sistemas. Nosotros hacemos el análisis completo."
+  },
+  {
+    "pregunta": "¿Puedo combinar consultoría y monitoreo?",
+    "respuesta": "Sí, ofrecemos paquetes integrados de consultoría con monitoreo continuo para garantizar resultados sostenibles."
+  },
+  {
+    "pregunta": "¿Qué pasa si mi empresa tiene operaciones internacionales?",
+    "respuesta": "También brindamos soporte remoto y estrategias escalables que pueden aplicarse en filiales o sedes globales."
+  },
+  {
+    "pregunta": "¿La consultoría ayuda con temas de cumplimiento normativo?",
+    "respuesta": "Sí, te orientamos en buenas prácticas y cumplimiento de normativas locales e internacionales relacionadas con tecnología y seguridad."
+  },
+  {
+    "pregunta": "¿Puedo recibir alertas durante el proceso de consultoría?",
+    "respuesta": "Sí, enviamos reportes y notificaciones sobre hallazgos importantes o posibles riesgos detectados en tiempo real."
+  },
+  {
+    "pregunta": "¿Cómo se entrega el resultado final de la consultoría?",
+    "respuesta": "El informe se entrega en formato digital o físico, con todas las recomendaciones priorizadas y explicadas claramente."
+  },
+  {
+    "pregunta": "¿Qué hace diferente a la consultoría de VicaTechnology?",
+    "respuesta": "Integramos tecnología, acompañamiento y ética profesional para lograr resultados reales y sostenibles en cada cliente."
+  },
+  {
+    "pregunta": "¿Puedo solicitar reuniones de seguimiento después del informe?",
+    "respuesta": "Sí, puedes agendar reuniones periódicas para evaluar avances, resolver dudas o actualizar estrategias."
+  },
+  {
+    "pregunta": "¿La consultoría tiene garantía?",
+    "respuesta": "Sí, garantizamos la calidad del servicio y ofrecemos soporte si algo no cumple con lo acordado."
+  },
+
+  {
+    "pregunta": "¿Cómo maneja VicaTechnology la información confidencial del cliente?",
+    "respuesta": "Toda la información se maneja bajo estrictos protocolos de confidencialidad y protección de datos. Nuestro compromiso ético garantiza total seguridad."
+  },
+  {
+    "pregunta": "¿Puedo solicitar una reunión previa para conocer el proceso?",
+    "respuesta": "Sí, agendamos reuniones informativas donde explicamos cada fase del proceso, los beneficios y resolvemos todas tus dudas sin compromiso."
+  },
+  {
+    "pregunta": "¿Qué pasa si no tengo infraestructura tecnológica desarrollada?",
+    "respuesta": "No te preocupes, evaluamos tu punto de partida y diseñamos soluciones escalables que se ajusten a tu nivel de madurez tecnológica."
+  },
+  {
+    "pregunta": "¿La consultoría se puede realizar a distancia?",
+    "respuesta": "Sí, realizamos consultorías remotas mediante plataformas seguras, con el mismo nivel de calidad que una presencial."
+  },
+  {
+    "pregunta": "¿Qué papel cumple el análisis de riesgos en la consultoría?",
+    "respuesta": "Es fundamental. Identificamos riesgos tecnológicos, operativos y humanos para anticipar problemas y fortalecer tus defensas digitales."
+  },
+  {
+    "pregunta": "¿Puedo recibir acompañamiento después de finalizar la consultoría?",
+    "respuesta": "Sí, ofrecemos planes de acompañamiento continuo para que las mejoras implementadas se mantengan y evolucionen con tu empresa."
+  },
+  {
+    "pregunta": "¿Cuáles son los pasos principales del proceso de consultoría?",
+    "respuesta": "Análisis inicial, identificación de riesgos, diseño de estrategias, implementación de soluciones y seguimiento personalizado."
+  },
+  {
+    "pregunta": "¿Qué beneficios obtiene mi equipo de trabajo con la consultoría?",
+    "respuesta": "Tu equipo gana conocimientos, confianza y herramientas para trabajar de forma más segura, rápida y organizada."
+  },
+  {
+    "pregunta": "¿Puedo contratar consultoría solo para optimizar un área específica?",
+    "respuesta": "Sí, puedes enfocarla en un área como soporte, ciberseguridad, redes o infraestructura según tu necesidad."
+  },
+  {
+    "pregunta": "¿Qué tan rápido puedo ver resultados?",
+    "respuesta": "En la mayoría de los casos, los primeros resultados se notan en pocas semanas con mejoras en seguridad, eficiencia o rendimiento."
+  },
+  {
+    "pregunta": "¿La consultoría incluye recomendaciones sobre software empresarial?",
+    "respuesta": "Sí, sugerimos software confiable y compatible con tu operación, priorizando seguridad y facilidad de uso."
+  },
+  {
+    "pregunta": "¿Qué tipo de reportes se entregan?",
+    "respuesta": "Reportes técnicos, ejecutivos y estratégicos que resumen el estado actual, hallazgos y un plan claro de mejora."
+  },
+  {
+    "pregunta": "¿La consultoría puede ayudar a cumplir con auditorías ISO?",
+    "respuesta": "Sí, te ayudamos a cumplir normas ISO 27001 y otras certificaciones relacionadas con seguridad y gestión tecnológica."
+  },
+  {
+    "pregunta": "¿Qué acciones puedo tomar después de la consultoría?",
+    "respuesta": "Puedes implementar los cambios recomendados, contratar soporte continuo o agendar una nueva fase de actualización tecnológica."
+  },
+  {
+    "pregunta": "¿La consultoría incluye evaluación de ciberataques simulados?",
+    "respuesta": "Sí, podemos realizar pruebas de penetración o ataques simulados para medir la resistencia de tus sistemas."
+  },
+  {
+    "pregunta": "¿Qué nivel de experiencia tiene el equipo de consultores?",
+    "respuesta": "Contamos con expertos certificados y con más de 10 años de experiencia en consultoría, auditoría y gestión de tecnología."
+  },
+  {
+    "pregunta": "¿Puedo solicitar una cotización sin compromiso?",
+    "respuesta": "Sí, puedes solicitar una cotización gratuita y personalizada según las características de tu empresa."
+  },
+  {
+    "pregunta": "¿Qué beneficios a largo plazo ofrece una consultoría?",
+    "respuesta": "Mejor seguridad, mayor eficiencia operativa, reducción de costos y una infraestructura lista para el futuro digital."
+  },
+  {
+    "pregunta": "¿La consultoría incluye análisis de hardware?",
+    "respuesta": "Sí, revisamos el estado de los equipos, su rendimiento y capacidad para determinar si requieren mantenimiento o renovación."
+  },
+  {
+    "pregunta": "¿Cómo ayuda la consultoría a la toma de decisiones?",
+    "respuesta": "Proporcionamos información clara y objetiva sobre tu entorno tecnológico, lo que permite tomar decisiones más acertadas."
+  },
+  {
+    "pregunta": "¿La consultoría mejora la seguridad de mi información?",
+    "respuesta": "Sí, una de nuestras prioridades es proteger tus datos, redes y sistemas mediante estrategias de ciberseguridad efectivas."
+  },
+  {
+    "pregunta": "¿Qué pasa si tengo una emergencia tecnológica durante la consultoría?",
+    "respuesta": "Podemos actuar de inmediato con soporte técnico especializado para resolver el incidente sin detener el proceso."
+  },
+  {
+    "pregunta": "¿Puedo acceder a un plan de pagos?",
+    "respuesta": "Sí, ofrecemos opciones de pago flexibles según el alcance y la duración del servicio contratado."
+  },
+  {
+    "pregunta": "¿Qué industrias pueden beneficiarse más de la consultoría?",
+    "respuesta": "Industria, comercio, salud, educación, finanzas y gobierno son algunos sectores donde la consultoría genera alto impacto."
+  },
+  {
+    "pregunta": "¿Cómo sé que los resultados son confiables?",
+    "respuesta": "Usamos herramientas certificadas y metodologías reconocidas, asegurando precisión en los análisis y transparencia en los resultados."
+  },
+  {
+    "pregunta": "¿La consultoría puede realizarse fuera de Colombia?",
+    "respuesta": "Sí, brindamos servicios remotos a nivel internacional, garantizando la misma calidad de atención y seguridad."
+  },
+  {
+    "pregunta": "¿La consultoría incluye respaldo de datos?",
+    "respuesta": "Sí, revisamos tus políticas de backup y recomendamos sistemas adecuados para asegurar la continuidad del negocio."
+  },
+  {
+    "pregunta": "¿Puedo recibir alertas si se detectan vulnerabilidades críticas?",
+    "respuesta": "Sí, notificamos cualquier hallazgo crítico durante el proceso para que tomes decisiones rápidas y evites riesgos mayores."
+  },
+  {
+    "pregunta": "¿Qué herramientas recomiendan para gestión tecnológica?",
+    "respuesta": "Depende de tu empresa, pero solemos recomendar herramientas de monitoreo, seguridad, colaboración y automatización comprobadas."
+  },
+  {
+    "pregunta": "¿La consultoría puede incluir capacitación personalizada?",
+    "respuesta": "Sí, ofrecemos entrenamientos a medida para que tu equipo se familiarice con las nuevas soluciones implementadas."
+  },
+  {
+    "pregunta": "¿Qué ocurre después de implementar las recomendaciones?",
+    "respuesta": "Hacemos seguimiento para evaluar los resultados y ajustar estrategias según los avances obtenidos."
+  },
+  {
+    "pregunta": "¿Cómo puedo preparar a mi empresa antes de iniciar la consultoría?",
+    "respuesta": "Con recopilar información básica sobre sistemas y procesos es suficiente. Nosotros nos encargamos del resto."
+  },
+  {
+    "pregunta": "¿Qué duración tiene el informe final?",
+    "respuesta": "Depende del proyecto, pero normalmente el informe es de 15 a 40 páginas, con secciones técnicas y ejecutivas claras."
+  },
+  {
+    "pregunta": "¿Puedo recibir los resultados en formato digital?",
+    "respuesta": "Sí, entregamos todos los informes en formato PDF o editable para tu comodidad."
+  },
+  {
+    "pregunta": "¿La consultoría puede ayudar a detectar fugas de información?",
+    "respuesta": "Sí, realizamos análisis de vulnerabilidades que pueden revelar brechas de seguridad o accesos indebidos."
+  },
+  {
+    "pregunta": "¿Qué tipo de mantenimiento se recomienda después de la consultoría?",
+    "respuesta": "Recomendamos mantenimiento preventivo mensual o trimestral, dependiendo del tamaño de la infraestructura."
+  },
+  {
+    "pregunta": "¿La consultoría aplica a instituciones públicas?",
+    "respuesta": "Sí, también brindamos servicios de consultoría tecnológica a entidades públicas con enfoque en transparencia y eficiencia."
+  },
+  {
+    "pregunta": "¿Qué indicadores usan para medir el éxito del proyecto?",
+    "respuesta": "Usamos indicadores de productividad, reducción de incidentes y satisfacción del cliente como principales métricas de éxito."
+  },
+  {
+    "pregunta": "¿Puedo actualizar la consultoría con el tiempo?",
+    "respuesta": "Sí, puedes solicitar actualizaciones cada seis meses o cuando haya cambios en tu infraestructura tecnológica."
+  },
+
+  {
+    "pregunta": "¿Puedo solicitar una segunda consultoría después de aplicar las recomendaciones?",
+    "respuesta": "Sí, de hecho es recomendable. Una segunda consultoría permite verificar los avances, medir resultados y detectar nuevas oportunidades de mejora."
+  },
+  {
+    "pregunta": "¿Qué herramientas de análisis utilizan en la consultoría?",
+    "respuesta": "Usamos software especializado en monitoreo, análisis de red, ciberseguridad y gestión de infraestructura, siempre actualizado a las últimas versiones."
+  },
+  {
+    "pregunta": "¿Puedo recibir un resumen ejecutivo de la consultoría?",
+    "respuesta": "Sí, entregamos un resumen claro y visual con los puntos más importantes para la alta dirección o tomadores de decisiones."
+  },
+  {
+    "pregunta": "¿Qué pasa si los resultados de la consultoría muestran graves fallas?",
+    "respuesta": "No te preocupes, te presentamos un plan de acción inmediato para mitigar riesgos y restaurar la operatividad de forma segura."
+  },
+  {
+    "pregunta": "¿Puedo hacer seguimiento a los cambios recomendados?",
+    "respuesta": "Sí, realizamos reuniones de seguimiento para revisar avances y garantizar que las mejoras se estén aplicando correctamente."
+  },
+  {
+    "pregunta": "¿Qué impacto tiene la consultoría en la productividad del equipo?",
+    "respuesta": "La consultoría mejora la organización, reduce fallas y permite que el personal trabaje con herramientas más eficientes y seguras."
+  },
+  {
+    "pregunta": "¿La consultoría puede incluir un análisis financiero de la tecnología?",
+    "respuesta": "Sí, podemos incluir un análisis del retorno de inversión y costos tecnológicos para ayudarte a optimizar recursos."
+  },
+  {
+    "pregunta": "¿Puedo solicitar que la consultoría se enfoque en innovación?",
+    "respuesta": "Sí, adaptamos el servicio para orientarlo hacia la innovación, automatización o integración de nuevas tecnologías en tu negocio."
+  },
+  {
+    "pregunta": "¿Qué beneficios obtengo al combinar consultoría y soporte?",
+    "respuesta": "Obtienes acompañamiento constante, respuesta rápida ante incidentes y mejoras continuas en tus sistemas tecnológicos."
+  },
+  {
+    "pregunta": "¿La consultoría ayuda a crear una cultura digital en mi empresa?",
+    "respuesta": "Sí, promovemos la adopción tecnológica y capacitamos a tu equipo para que la transformación digital sea sostenible."
+  },
+  {
+    "pregunta": "¿Qué enfoque tiene VicaTechnology en sus consultorías?",
+    "respuesta": "Nuestro enfoque es integral: unimos tecnología, estrategia y acompañamiento humano para obtener resultados reales."
+  },
+  {
+    "pregunta": "¿Cuáles son los errores más comunes que detectan en las consultorías?",
+    "respuesta": "Generalmente falta de políticas de seguridad, infraestructura obsoleta y ausencia de planes de contingencia. Todos solucionables con una buena estrategia."
+  },
+  {
+    "pregunta": "¿Puedo recibir asistencia técnica durante la consultoría?",
+    "respuesta": "Sí, nuestro equipo técnico puede intervenir en cualquier momento si se detectan fallas que afecten la operación."
+  },
+  {
+    "pregunta": "¿La consultoría incluye revisión de políticas de respaldo?",
+    "respuesta": "Sí, verificamos que tus sistemas de backup sean seguros, actualizados y con frecuencia adecuada para proteger tu información."
+  },
+  {
+    "pregunta": "¿Qué beneficios tiene una consultoría a largo plazo?",
+    "respuesta": "Fortalece tu infraestructura, mejora la toma de decisiones y garantiza que tu empresa evolucione junto con la tecnología."
+  },
+  {
+    "pregunta": "¿Qué experiencia tiene VicaTechnology en consultoría empresarial?",
+    "respuesta": "Contamos con más de seis años de experiencia brindando soluciones tecnológicas, consultorías y auditorías a empresas de diferentes sectores."
+  },
+  {
+    "pregunta": "¿La consultoría puede realizarse fuera del horario laboral?",
+    "respuesta": "Sí, podemos coordinar horarios flexibles para no interrumpir la operación de tu empresa."
+  },
+  {
+    "pregunta": "¿Qué tan personalizada es la consultoría?",
+    "respuesta": "Cada consultoría es única. Diseñamos estrategias específicas según el tamaño, rubro y objetivos de tu empresa."
+  },
+  {
+    "pregunta": "¿La consultoría ayuda con la planeación estratégica de TI?",
+    "respuesta": "Sí, te ayudamos a definir metas, presupuestos y cronogramas tecnológicos para alinear la tecnología con tus objetivos empresariales."
+  },
+  {
+    "pregunta": "¿Puedo combinar la consultoría con auditorías periódicas?",
+    "respuesta": "Sí, puedes programar auditorías trimestrales o semestrales para garantizar la mejora continua de tu infraestructura tecnológica."
+  },
+  {
+    "pregunta": "¿La consultoría puede incluir implementación inmediata?",
+    "respuesta": "Sí, si se requiere acción rápida, nuestro equipo puede comenzar la implementación de soluciones durante el mismo proceso."
+  },
+  {
+    "pregunta": "¿Qué tipo de empresa obtiene mayor beneficio de una consultoría?",
+    "respuesta": "Las empresas que buscan crecer, digitalizarse o mejorar su seguridad son las que más se benefician de una consultoría tecnológica."
+  },
+  {
+    "pregunta": "¿Puedo recibir soporte remoto durante la consultoría?",
+    "respuesta": "Sí, brindamos soporte remoto inmediato ante cualquier inconveniente técnico que se presente durante el proceso."
+  },
+  {
+    "pregunta": "¿Cómo se asegura la calidad de la consultoría?",
+    "respuesta": "Seguimos estándares internacionales, aplicamos auditorías internas y validamos cada resultado antes de entregarlo al cliente."
+  },
+  {
+    "pregunta": "¿Qué hace única a la metodología de VicaTechnology?",
+    "respuesta": "Integra diagnóstico, estrategia, implementación y capacitación, asegurando un ciclo completo de mejora tecnológica."
+  },
+  {
+    "pregunta": "¿Puedo contratar consultoría solo para revisar mi red de datos?",
+    "respuesta": "Sí, ofrecemos consultorías específicas de redes, seguridad perimetral y conectividad empresarial."
+  },
+  {
+    "pregunta": "¿Qué perfil tienen los consultores de VicaTechnology?",
+    "respuesta": "Son profesionales en ingeniería, ciberseguridad y gestión de TI con certificaciones nacionales e internacionales."
+  },
+  {
+    "pregunta": "¿La consultoría incluye revisión de políticas internas?",
+    "respuesta": "Sí, revisamos y actualizamos tus políticas internas de uso tecnológico, acceso, contraseñas y protección de datos."
+  },
+  {
+    "pregunta": "¿Puedo recibir apoyo para justificar la inversión tecnológica ante la gerencia?",
+    "respuesta": "Sí, elaboramos informes ejecutivos que muestran el retorno esperado y el impacto positivo en la productividad."
+  },
+  {
+    "pregunta": "¿La consultoría aplica para universidades o colegios?",
+    "respuesta": "Sí, ofrecemos servicios educativos para instituciones que buscan mejorar su seguridad y modernizar sus plataformas digitales."
+  },
+  {
+    "pregunta": "¿Qué tan flexible es el proceso de consultoría?",
+    "respuesta": "Es completamente flexible. Ajustamos el cronograma y el enfoque a la disponibilidad y ritmo de tu empresa."
+  },
+  {
+    "pregunta": "¿Puedo solicitar un informe de riesgos específicos?",
+    "respuesta": "Sí, entregamos reportes personalizados sobre los riesgos más críticos detectados en tu entorno tecnológico."
+  },
+  {
+    "pregunta": "¿La consultoría puede incluir análisis de IA?",
+    "respuesta": "Sí, analizamos cómo la inteligencia artificial puede mejorar tus procesos, seguridad y toma de decisiones."
+  },
+  {
+    "pregunta": "¿Qué ocurre si mi infraestructura no cumple los requisitos mínimos?",
+    "respuesta": "Te ayudamos a planificar una actualización gradual y rentable para alcanzar los estándares recomendados."
+  },
+  {
+    "pregunta": "¿Ofrecen consultoría continua durante el año?",
+    "respuesta": "Sí, puedes contratar un plan anual de consultoría con revisiones periódicas para mantener tu tecnología siempre optimizada."
+  },
+  {
+    "pregunta": "¿La consultoría cubre todo el país?",
+    "respuesta": "Sí, brindamos cobertura nacional y atención personalizada en todas las regiones de Colombia, presencial o remota."
+  },
+  {
+    "pregunta": "¿Puedo recibir soporte adicional después de la entrega?",
+    "respuesta": "Sí, ofrecemos seguimiento técnico y asesoría post-servicio para garantizar la estabilidad de las soluciones implementadas."
+  },
+  {
+    "pregunta": "¿Qué importancia tiene la consultoría en la prevención de riesgos?",
+    "respuesta": "Es clave. Permite detectar vulnerabilidades a tiempo y evitar pérdidas económicas o interrupciones operativas."
+  },
+  {
+    "pregunta": "¿La consultoría evalúa la madurez digital de la empresa?",
+    "respuesta": "Sí, medimos el nivel de madurez tecnológica y diseñamos un plan de evolución adaptado a tus objetivos."
+  },
+  {
+    "pregunta": "¿Puedo obtener una presentación ejecutiva del diagnóstico?",
+    "respuesta": "Sí, entregamos una presentación visual con gráficos e indicadores para facilitar la comunicación de resultados ante la gerencia."
+  },
+
+  {
+    "pregunta": "¿Puedo recibir acompañamiento para implementar las recomendaciones?",
+    "respuesta": "Sí, nuestro equipo puede ayudarte a ejecutar cada recomendación del informe, garantizando una implementación efectiva y segura."
+  },
+  {
+    "pregunta": "¿La consultoría incluye la creación de políticas digitales?",
+    "respuesta": "Sí, diseñamos políticas tecnológicas, de uso responsable, respaldo y seguridad adaptadas a las necesidades de tu empresa."
+  },
+  {
+    "pregunta": "¿Qué tipo de empresas ya han trabajado con VicaTechnology?",
+    "respuesta": "Hemos trabajado con empresas del sector industrial, educativo, comercial y de servicios, fortaleciendo su seguridad e infraestructura tecnológica."
+  },
+  {
+    "pregunta": "¿La consultoría puede ayudar a mejorar la atención al cliente?",
+    "respuesta": "Sí, al optimizar tus sistemas y automatizar tareas, tus equipos podrán ofrecer respuestas más rápidas y un servicio más eficiente."
+  },
+  {
+    "pregunta": "¿Qué tipo de problemas detecta comúnmente una consultoría?",
+    "respuesta": "Detectamos vulnerabilidades en redes, falta de políticas de seguridad, obsolescencia tecnológica y deficiencias en respaldo de datos."
+  },
+  {
+    "pregunta": "¿Puedo usar los resultados de la consultoría para solicitar financiamiento?",
+    "respuesta": "Sí, nuestros informes pueden servir como soporte para justificar inversiones tecnológicas o financiamiento ante entidades o aliados."
+  },
+  {
+    "pregunta": "¿Qué tipo de soporte ofrecen después de la consultoría?",
+    "respuesta": "Ofrecemos soporte técnico, mantenimiento preventivo y monitoreo remoto para asegurar que todo funcione correctamente."
+  },
+  {
+    "pregunta": "¿La consultoría también analiza los procesos administrativos?",
+    "respuesta": "Sí, revisamos procesos administrativos relacionados con tecnología y seguridad de la información para mejorar su eficiencia."
+  },
+  {
+    "pregunta": "¿Qué ocurre si los resultados muestran una infraestructura obsoleta?",
+    "respuesta": "Te ayudamos a priorizar inversiones y a modernizar tu infraestructura con soluciones rentables y seguras."
+  },
+  {
+    "pregunta": "¿La consultoría incluye herramientas de gestión documental?",
+    "respuesta": "Sí, recomendamos e implementamos herramientas digitales que facilitan el manejo de archivos y documentación empresarial."
+  },
+  {
+    "pregunta": "¿Puedo solicitar una reunión final de presentación del informe?",
+    "respuesta": "Sí, siempre realizamos una reunión de cierre para presentar los resultados y explicar cada recomendación en detalle."
+  },
+  {
+    "pregunta": "¿Qué beneficios tiene la consultoría frente a un diagnóstico básico?",
+    "respuesta": "La consultoría no solo identifica fallas, sino que plantea estrategias, acompañamiento y soluciones sostenibles para tu empresa."
+  },
+  {
+    "pregunta": "¿VicaTechnology ofrece seguimiento trimestral?",
+    "respuesta": "Sí, ofrecemos planes trimestrales o semestrales para revisar avances y garantizar el cumplimiento del plan de mejora."
+  },
+  {
+    "pregunta": "¿Qué resultados inmediatos puedo notar después de la consultoría?",
+    "respuesta": "Mayor estabilidad en tus sistemas, mejor rendimiento, reducción de fallos y una visión clara del estado tecnológico de tu empresa."
+  },
+  {
+    "pregunta": "¿Puedo solicitar la consultoría fuera de mi ciudad?",
+    "respuesta": "Sí, brindamos servicios en todo el país con atención presencial o virtual, según tus necesidades."
+  },
+  {
+    "pregunta": "¿Qué beneficios obtiene la alta dirección con la consultoría?",
+    "respuesta": "Obtiene una visión técnica y estratégica para tomar decisiones informadas sobre inversiones y seguridad digital."
+  },
+  {
+    "pregunta": "¿La consultoría puede incluir análisis de cumplimiento legal?",
+    "respuesta": "Sí, evaluamos cumplimiento con normas como Habeas Data y Ley 1581, ayudando a proteger la información de tus clientes."
+  },
+  {
+    "pregunta": "¿Cómo garantizan la independencia de los resultados?",
+    "respuesta": "Nuestros análisis son objetivos e imparciales. Basamos los resultados en datos técnicos y evidencias verificables."
+  },
+  {
+    "pregunta": "¿Qué tipo de informes se entregan al final?",
+    "respuesta": "Entregamos un informe técnico, uno ejecutivo y una hoja de ruta con las acciones recomendadas y prioridades estratégicas."
+  },
+  {
+    "pregunta": "¿La consultoría puede incluir proyección tecnológica a futuro?",
+    "respuesta": "Sí, elaboramos un plan de evolución tecnológica para anticipar necesidades y preparar tu empresa para los próximos años."
+  },
+  {
+    "pregunta": "¿Puedo recibir asistencia en la implementación del plan de acción?",
+    "respuesta": "Sí, podemos acompañarte durante la ejecución del plan y ayudarte a configurar las soluciones recomendadas."
+  },
+  {
+    "pregunta": "¿La consultoría puede incluir indicadores de desempeño?",
+    "respuesta": "Sí, definimos KPIs y métricas que te ayudarán a medir el impacto de las mejoras implementadas."
+  },
+  {
+    "pregunta": "¿Qué impacto tiene la consultoría en la ciberseguridad?",
+    "respuesta": "Ayuda a identificar vulnerabilidades, fortalecer defensas y crear políticas de seguridad adaptadas a tus sistemas."
+  },
+  {
+    "pregunta": "¿Puedo combinar la consultoría con servicios de IA o Big Data?",
+    "respuesta": "Sí, nuestras consultorías se integran con herramientas de inteligencia artificial y análisis de datos para potenciar tus resultados."
+  },
+  {
+    "pregunta": "¿Qué valor agregado ofrece VicaTechnology en consultoría?",
+    "respuesta": "Ofrecemos acompañamiento humano, transparencia total y soluciones tecnológicas que realmente aportan valor a tu negocio."
+  },
+  {
+    "pregunta": "¿Cómo puedo agendar una consultoría con ustedes?",
+    "respuesta": "Puedes comunicarte por correo a gerencia@vica-technology.com o llamarnos al 313 234 4719. También puedes llenar el formulario web."
+  },
+  {
+    "pregunta": "¿Puedo contratar una consultoría de emergencia?",
+    "respuesta": "Sí, ofrecemos atención prioritaria en casos críticos que requieran diagnóstico y acción inmediata."
+  },
+  {
+    "pregunta": "¿La consultoría incluye revisión de licencias de software?",
+    "respuesta": "Sí, revisamos tus licencias y te orientamos sobre su legalidad, actualización y compatibilidad con tus sistemas."
+  },
+  {
+    "pregunta": "¿Qué diferencia hay entre consultoría correctiva y preventiva?",
+    "respuesta": "La consultoría correctiva soluciona problemas actuales; la preventiva anticipa riesgos y evita fallas futuras."
+  },
+  {
+    "pregunta": "¿Qué beneficios financieros tiene invertir en consultoría?",
+    "respuesta": "Evitas pérdidas por fallos o ciberataques, reduces costos operativos y mejoras la rentabilidad a largo plazo."
+  },
+  {
+    "pregunta": "¿La consultoría puede incluir talleres o capacitaciones?",
+    "respuesta": "Sí, ofrecemos talleres prácticos para que tu equipo comprenda las soluciones implementadas y adopte buenas prácticas."
+  },
+  {
+    "pregunta": "¿Qué tipo de seguimiento ofrecen después del cierre del proyecto?",
+    "respuesta": "Ofrecemos monitoreo remoto, reuniones de control y evaluación de resultados trimestral o semestral."
+  },
+  {
+    "pregunta": "¿La consultoría está certificada por alguna norma?",
+    "respuesta": "Aplicamos buenas prácticas basadas en normas ISO y metodologías internacionales de gestión tecnológica."
+  },
+  {
+    "pregunta": "¿Puedo integrar la consultoría con mis sistemas actuales?",
+    "respuesta": "Sí, trabajamos con tus herramientas existentes, mejorando su rendimiento y asegurando compatibilidad total."
+  },
+  {
+    "pregunta": "¿Qué tipo de reportes recibe la gerencia durante la consultoría?",
+    "respuesta": "Reportes ejecutivos con avances, hallazgos y recomendaciones claras para la toma de decisiones estratégicas."
+  },
+  {
+    "pregunta": "¿La consultoría puede hacerse en diferentes etapas del año?",
+    "respuesta": "Sí, puedes programar fases en distintos momentos del año según tu disponibilidad y objetivos empresariales."
+  },
+  {
+    "pregunta": "¿Qué impacto tiene la consultoría en la reputación de mi empresa?",
+    "respuesta": "Fortalece la imagen corporativa al demostrar compromiso con la seguridad, eficiencia e innovación tecnológica."
+  },
+  {
+    "pregunta": "¿Qué pasa si tengo personal nuevo en tecnología?",
+    "respuesta": "Podemos capacitarlos y actualizarlos para que se adapten a las estrategias tecnológicas definidas en la consultoría."
+  },
+  {
+    "pregunta": "¿Puedo renovar la consultoría anualmente?",
+    "respuesta": "Sí, ofrecemos programas de consultoría anual con revisión constante de tu entorno tecnológico."
+  },
+  {
+    "pregunta": "¿Qué ventajas tiene la consultoría frente a contratar más personal?",
+    "respuesta": "Obtienes experiencia especializada sin costos fijos adicionales, con una visión externa más objetiva y estratégica."
+  },
+  {
+    "pregunta": "¿Puedo recibir ejemplos de casos de éxito?",
+    "respuesta": "Sí, podemos mostrarte testimonios de empresas que mejoraron su seguridad, productividad y eficiencia gracias a nuestras consultorías."
+  },
+  {
+    "pregunta": "¿Qué diferencia hay entre una consultoría técnica y una estratégica?",
+    "respuesta": "La técnica se enfoca en infraestructura; la estratégica integra tecnología con los objetivos del negocio."
+  },
+  {
+    "pregunta": "¿Qué valores guían las consultorías de VicaTechnology?",
+    "respuesta": "Ética, compromiso, acompañamiento y excelencia profesional. Buscamos proteger y potenciar tu empresa con responsabilidad."
+  },
+  {
+    "pregunta": "¿Qué obtengo al finalizar una consultoría con VicaTechnology?",
+    "respuesta": "Un plan completo para fortalecer tu empresa, respaldado por expertos y con resultados medibles desde el primer mes."
+  },
+
+  {
+    "pregunta": "¿Qué es el servicio de soporte técnico?",
+    "respuesta": "Es la atención especializada que ofrecemos para resolver fallas, mantener tus equipos en óptimas condiciones y garantizar el funcionamiento continuo de tus sistemas."
+  },
+  {
+    "pregunta": "¿Por qué es importante contar con soporte técnico?",
+    "respuesta": "Porque previene pérdidas de información, reduce tiempos de inactividad y asegura la productividad de tu empresa ante cualquier imprevisto tecnológico."
+  },
+  {
+    "pregunta": "¿Qué tipo de soporte ofrece VicaTechnology?",
+    "respuesta": "Ofrecemos soporte presencial, remoto y preventivo. Solucionamos fallas, realizamos mantenimiento y supervisamos tus sistemas de forma constante."
+  },
+  {
+    "pregunta": "¿El soporte técnico cubre tanto hardware como software?",
+    "respuesta": "Sí, brindamos soporte integral que cubre equipos, sistemas operativos, redes y programas de gestión empresarial."
+  },
+  {
+    "pregunta": "¿Puedo solicitar soporte remoto?",
+    "respuesta": "Por supuesto. Nuestro equipo puede conectarse de forma segura a tus sistemas para resolver incidentes sin necesidad de desplazamiento."
+  },
+  {
+    "pregunta": "¿El soporte tiene un horario específico?",
+    "respuesta": "Trabajamos con horarios flexibles y atención prioritaria en casos críticos, adaptándonos al ritmo operativo de tu empresa."
+  },
+  {
+    "pregunta": "¿Qué diferencia hay entre soporte correctivo y preventivo?",
+    "respuesta": "El soporte correctivo soluciona fallas existentes; el preventivo se enfoca en evitar que ocurran, garantizando estabilidad y eficiencia."
+  },
+  {
+    "pregunta": "¿Ofrecen contratos de soporte continuo?",
+    "respuesta": "Sí, puedes contratar planes mensuales, trimestrales o anuales que incluyen mantenimiento, monitoreo y asistencia prioritaria."
+  },
+  {
+    "pregunta": "¿El soporte incluye respaldo de información?",
+    "respuesta": "Sí, realizamos copias de seguridad y configuramos sistemas de backup para proteger tu información frente a fallos o ataques."
+  },
+  {
+    "pregunta": "¿Qué ocurre si mi equipo deja de funcionar?",
+    "respuesta": "Nuestros técnicos diagnostican el problema, reparan el equipo o recomiendan la mejor alternativa para recuperar la operación rápidamente."
+  },
+  {
+    "pregunta": "¿Puedo solicitar soporte solo cuando lo necesite?",
+    "respuesta": "Sí, ofrecemos soporte bajo demanda o por contrato, según tus necesidades y frecuencia de uso."
+  },
+  {
+    "pregunta": "¿Qué ventajas tiene el soporte remoto?",
+    "respuesta": "Permite resolver fallas en minutos, reduce costos de traslado y ofrece asistencia inmediata sin afectar la productividad."
+  },
+  {
+    "pregunta": "¿El soporte cubre impresoras y periféricos?",
+    "respuesta": "Sí, brindamos soporte a equipos periféricos como impresoras, escáneres, cámaras y dispositivos de red."
+  },
+  {
+    "pregunta": "¿Qué beneficios tiene contratar soporte con VicaTechnology?",
+    "respuesta": "Obtienes acompañamiento continuo, atención rápida, técnicos certificados y soluciones confiables adaptadas a tu entorno."
+  },
+  {
+    "pregunta": "¿Cómo solicito soporte técnico?",
+    "respuesta": "Puedes contactarnos por teléfono, correo o formulario web. Nuestro equipo te atenderá de inmediato y asignará un técnico especializado."
+  },
+  {
+    "pregunta": "¿Ofrecen soporte los fines de semana?",
+    "respuesta": "Sí, brindamos atención especial en fines de semana o festivos según el plan contratado o la urgencia del caso."
+  },
+  {
+    "pregunta": "¿El soporte incluye revisión de redes?",
+    "respuesta": "Sí, realizamos diagnósticos de red, verificación de conectividad y resolución de problemas de comunicación entre equipos."
+  },
+  {
+    "pregunta": "¿Qué tipo de empresas pueden contratar soporte?",
+    "respuesta": "Cualquier empresa que utilice tecnología puede beneficiarse. Adaptamos el servicio a tus equipos, tamaño y presupuesto."
+  },
+  {
+    "pregunta": "¿El soporte se puede hacer por suscripción?",
+    "respuesta": "Sí, contamos con planes de suscripción que garantizan atención prioritaria, mantenimientos programados y monitoreo constante."
+  },
+  {
+    "pregunta": "¿Qué incluye un plan de soporte preventivo?",
+    "respuesta": "Limpieza física y lógica, revisión de antivirus, optimización de red, respaldo de información y monitoreo del estado general de tus equipos."
+  },
+  {
+    "pregunta": "¿Qué pasa si tengo varios equipos dañados?",
+    "respuesta": "Podemos realizar una intervención masiva, diagnosticando y reparando todos los equipos en un solo proceso organizado."
+  },
+  {
+    "pregunta": "¿El soporte incluye asesoría tecnológica?",
+    "respuesta": "Sí, además de resolver fallas, te orientamos sobre mejoras, renovaciones y estrategias para optimizar tus sistemas."
+  },
+  {
+    "pregunta": "¿Puedo combinar soporte con mantenimiento preventivo?",
+    "respuesta": "Sí, nuestros planes integran ambos servicios para garantizar un funcionamiento estable durante todo el año."
+  },
+  {
+    "pregunta": "¿Qué tiempo de respuesta tienen?",
+    "respuesta": "Atendemos de forma inmediata en soporte remoto y en menos de 24 horas para servicios presenciales, según el nivel de prioridad."
+  },
+  {
+    "pregunta": "¿El soporte cubre servidores y redes empresariales?",
+    "respuesta": "Sí, ofrecemos soporte especializado en servidores, redes, configuraciones, dominios y controladores de red."
+  },
+  {
+    "pregunta": "¿Qué diferencia hay entre mantenimiento correctivo y predictivo?",
+    "respuesta": "El correctivo actúa cuando hay una falla; el predictivo anticipa posibles problemas mediante monitoreo y análisis de rendimiento."
+  },
+  {
+    "pregunta": "¿Puedo solicitar soporte sin ser cliente frecuente?",
+    "respuesta": "Sí, ofrecemos atención puntual para cualquier empresa o persona que necesite asistencia técnica sin contrato previo."
+  },
+  {
+    "pregunta": "¿Qué beneficios tiene el soporte continuo?",
+    "respuesta": "Mantiene tus sistemas actualizados, evita interrupciones inesperadas y garantiza un rendimiento óptimo en todo momento."
+  },
+  {
+    "pregunta": "¿El soporte incluye actualización de software?",
+    "respuesta": "Sí, actualizamos sistemas operativos, antivirus y programas empresariales para mantenerlos seguros y eficientes."
+  },
+  {
+    "pregunta": "¿Cómo se priorizan los casos de soporte?",
+    "respuesta": "Priorizamos según el nivel de criticidad y el plan contratado. Las emergencias se atienden con prioridad máxima."
+  },
+  {
+    "pregunta": "¿El soporte incluye configuración de correos y usuarios?",
+    "respuesta": "Sí, realizamos configuración de cuentas, sincronización de dispositivos y recuperación de acceso en caso de fallas."
+  },
+  {
+    "pregunta": "¿Puedo solicitar soporte por WhatsApp?",
+    "respuesta": "Sí, puedes contactarnos por WhatsApp para atención rápida y seguimiento personalizado del caso."
+  },
+  {
+    "pregunta": "¿Qué pasa si mi equipo está fuera de garantía?",
+    "respuesta": "Podemos repararlo igualmente. Ofrecemos soluciones económicas y te informamos las mejores opciones según el caso."
+  },
+  {
+    "pregunta": "¿El soporte cubre cámaras de seguridad?",
+    "respuesta": "Sí, realizamos instalación, configuración y mantenimiento de sistemas de videovigilancia y monitoreo."
+  },
+  {
+    "pregunta": "¿El soporte puede incluir licenciamiento de software?",
+    "respuesta": "Sí, te ayudamos a gestionar licencias originales y actualizaciones legales para mantener tus sistemas en regla."
+  },
+  {
+    "pregunta": "¿Cómo se realiza el mantenimiento preventivo?",
+    "respuesta": "Hacemos limpieza física interna, revisión de ventilación, optimización de sistema operativo y pruebas de rendimiento general."
+  },
+  {
+    "pregunta": "¿El soporte cubre equipos Apple o solo Windows?",
+    "respuesta": "Cubrimos ambas plataformas, incluyendo equipos con macOS, Windows y Linux."
+  },
+  {
+    "pregunta": "¿Qué ocurre si mi empresa crece y necesito más soporte?",
+    "respuesta": "Podemos ampliar tu plan y asignarte un equipo técnico dedicado para atender el nuevo volumen de trabajo."
+  },
+  {
+    "pregunta": "¿El soporte incluye monitoreo en tiempo real?",
+    "respuesta": "Sí, ofrecemos monitoreo 24/7 con alertas de fallas, consumo de recursos y actividad sospechosa."
+  },
+  {
+    "pregunta": "¿Qué hace diferente el soporte de VicaTechnology?",
+    "respuesta": "Nuestro soporte combina atención humana, rapidez, seguimiento constante y asesoría estratégica para cada cliente."
+  },
+
+  {
+    "pregunta": "¿Cómo solicito mantenimiento para varios equipos al tiempo?",
+    "respuesta": "Solo debes contactarnos y agendamos una visita técnica grupal. Diagnosticamos y optimizamos todos los equipos en una sola jornada."
+  },
+  {
+    "pregunta": "¿El soporte incluye limpieza de virus y malware?",
+    "respuesta": "Sí, eliminamos virus, spyware y amenazas, reforzando la seguridad con configuraciones y herramientas de protección actualizadas."
+  },
+  {
+    "pregunta": "¿Puedo contratar soporte para una sola sede?",
+    "respuesta": "Sí, atendemos sedes individuales o múltiples, ajustando el plan de soporte al tamaño y ubicación de tu empresa."
+  },
+  {
+    "pregunta": "¿Qué tan rápido responden ante una emergencia?",
+    "respuesta": "En casos críticos actuamos de inmediato con asistencia remota o presencial, dependiendo del tipo de incidente."
+  },
+  {
+    "pregunta": "¿El soporte incluye recuperación de información?",
+    "respuesta": "Sí, recuperamos datos eliminados o dañados y configuramos sistemas de respaldo para evitar futuras pérdidas."
+  },
+  {
+    "pregunta": "¿Puedo combinar soporte con consultoría tecnológica?",
+    "respuesta": "Sí, es una excelente opción. Analizamos tus sistemas y luego aplicamos acciones técnicas correctivas o preventivas."
+  },
+  {
+    "pregunta": "¿Qué tipo de reportes entregan después del soporte?",
+    "respuesta": "Entregamos un informe con el diagnóstico, las acciones realizadas y recomendaciones para evitar futuras fallas."
+  },
+  {
+    "pregunta": "¿El soporte puede incluir monitoreo de red?",
+    "respuesta": "Sí, supervisamos el tráfico, la conectividad y el uso de recursos de tu red para prevenir saturaciones o ataques."
+  },
+  {
+    "pregunta": "¿Ofrecen mantenimiento programado mensual?",
+    "respuesta": "Sí, realizamos visitas periódicas mensuales o trimestrales según el contrato, garantizando estabilidad en tus sistemas."
+  },
+  {
+    "pregunta": "¿Qué pasa si el soporte no soluciona el problema?",
+    "respuesta": "En ese caso, escalamos el caso a un especialista y hacemos seguimiento hasta resolverlo completamente, sin costo adicional."
+  },
+  {
+    "pregunta": "¿El soporte incluye instalación de programas?",
+    "respuesta": "Sí, instalamos y configuramos software autorizado, garantizando su funcionamiento correcto y seguro."
+  },
+  {
+    "pregunta": "¿Puedo pedir soporte fuera del horario de oficina?",
+    "respuesta": "Sí, contamos con atención de emergencia y horarios extendidos según el plan contratado."
+  },
+  {
+    "pregunta": "¿El soporte puede mejorar la velocidad de mis equipos?",
+    "respuesta": "Sí, optimizamos rendimiento, eliminamos archivos innecesarios y configuramos los equipos para un mejor desempeño."
+  },
+  {
+    "pregunta": "¿Ofrecen mantenimiento de servidores?",
+    "respuesta": "Sí, realizamos mantenimiento físico y lógico, verificación de rendimiento, backups y seguridad de servidores."
+  },
+  {
+    "pregunta": "¿Qué incluye el diagnóstico técnico?",
+    "respuesta": "Incluye revisión de hardware, software, red, seguridad y rendimiento general del sistema."
+  },
+  {
+    "pregunta": "¿Puedo recibir soporte sin tener contrato?",
+    "respuesta": "Sí, ofrecemos servicios puntuales de soporte técnico cuando lo necesites, sin compromisos a largo plazo."
+  },
+  {
+    "pregunta": "¿El soporte cubre sistemas contables o de gestión?",
+    "respuesta": "Sí, brindamos asistencia en sistemas empresariales, configuraciones, copias de seguridad y soporte funcional básico."
+  },
+  {
+    "pregunta": "¿Qué medios de contacto tienen para soporte?",
+    "respuesta": "Puedes comunicarte por correo, teléfono, WhatsApp o formulario web. Siempre tendrás respuesta rápida de nuestro equipo."
+  },
+  {
+    "pregunta": "¿Qué pasa si mi empresa no tiene área de TI?",
+    "respuesta": "Nos convertimos en tu aliado tecnológico, asumiendo el soporte completo de tus equipos y sistemas."
+  },
+  {
+    "pregunta": "¿El soporte incluye configuración de cámaras IP?",
+    "respuesta": "Sí, instalamos y configuramos cámaras IP, DVR y NVR, integrándolas a tus sistemas de monitoreo."
+  },
+  {
+    "pregunta": "¿Qué beneficios tiene el mantenimiento preventivo?",
+    "respuesta": "Evita fallas, alarga la vida útil de tus equipos y mantiene la seguridad y velocidad de tus sistemas."
+  },
+  {
+    "pregunta": "¿Puedo recibir soporte durante un evento empresarial?",
+    "respuesta": "Sí, ofrecemos asistencia técnica en eventos, capacitaciones o presentaciones donde se requiera estabilidad tecnológica."
+  },
+  {
+    "pregunta": "¿El soporte incluye cableado estructurado?",
+    "respuesta": "Sí, realizamos mantenimiento, organización y certificación de cableado para redes empresariales."
+  },
+  {
+    "pregunta": "¿Puedo agendar soporte recurrente?",
+    "respuesta": "Sí, puedes programar visitas técnicas recurrentes según tu cronograma operativo o de mantenimiento."
+  },
+  {
+    "pregunta": "¿El soporte incluye optimización de conexión a internet?",
+    "respuesta": "Sí, analizamos tu red y ajustamos configuraciones para mejorar la estabilidad y velocidad de conexión."
+  },
+  {
+    "pregunta": "¿El soporte aplica a instituciones educativas?",
+    "respuesta": "Sí, brindamos soporte a colegios y universidades con soluciones seguras, confiables y adaptadas a su entorno académico."
+  },
+  {
+    "pregunta": "¿Qué sucede si un equipo no tiene reparación?",
+    "respuesta": "Te asesoramos en opciones de reemplazo y migración de datos para no perder información ni productividad."
+  },
+  {
+    "pregunta": "¿El soporte incluye configuración de redes Wi-Fi?",
+    "respuesta": "Sí, configuramos redes seguras, con control de acceso y estabilidad para oficinas o instalaciones grandes."
+  },
+  {
+    "pregunta": "¿Puedo contratar soporte por horas?",
+    "respuesta": "Sí, ofrecemos paquetes por horas para atención puntual o mantenimiento rápido de equipos."
+  },
+  {
+    "pregunta": "¿El soporte cubre antivirus y seguridad digital?",
+    "respuesta": "Sí, instalamos y actualizamos antivirus, firewall y herramientas de protección contra amenazas digitales."
+  },
+  {
+    "pregunta": "¿Qué información necesito para solicitar soporte?",
+    "respuesta": "Solo debes indicar el tipo de problema y equipo afectado. Nuestro técnico recopilará el resto durante el diagnóstico."
+  },
+  {
+    "pregunta": "¿El soporte puede incluir revisión eléctrica de equipos?",
+    "respuesta": "Sí, revisamos la instalación eléctrica y los puntos de conexión para prevenir daños o sobrecargas."
+  },
+  {
+    "pregunta": "¿Qué diferencia hay entre soporte remoto y presencial?",
+    "respuesta": "El remoto se hace a distancia por conexión segura; el presencial requiere visita técnica cuando el problema es físico."
+  },
+  {
+    "pregunta": "¿Puedo solicitar soporte con contrato personalizado?",
+    "respuesta": "Sí, creamos planes ajustados a tus requerimientos técnicos, horarios y tipo de infraestructura."
+  },
+  {
+    "pregunta": "¿El soporte puede incluir supervisión de licencias?",
+    "respuesta": "Sí, verificamos que tus programas estén correctamente licenciados y actualizados para evitar sanciones o errores."
+  },
+  {
+    "pregunta": "¿Qué tipo de mantenimiento hacen a impresoras?",
+    "respuesta": "Limpieza interna, cambio de repuestos, calibración, configuración de red e instalación de controladores."
+  },
+  {
+    "pregunta": "¿Ofrecen soporte para sistemas Mac empresariales?",
+    "respuesta": "Sí, contamos con técnicos especializados en macOS, ofreciendo mantenimiento y optimización para entornos Apple."
+  },
+  {
+    "pregunta": "¿Puedo solicitar asistencia continua durante el año?",
+    "respuesta": "Sí, ofrecemos contratos anuales con mantenimiento, monitoreo y atención técnica prioritaria."
+  },
+  {
+    "pregunta": "¿El soporte cubre equipos de vigilancia o biometría?",
+    "respuesta": "Sí, damos soporte a equipos de control de acceso, cámaras y sistemas biométricos empresariales."
+  },
+  {
+    "pregunta": "¿Qué valor agregado ofrece el soporte de VicaTechnology?",
+    "respuesta": "Nuestro soporte no se limita a resolver fallas: te acompañamos, asesoramos y ayudamos a mantener tu empresa siempre operativa y segura."
+  },
+
+  {
+    "pregunta": "¿El soporte incluye mantenimiento de cámaras de seguridad?",
+    "respuesta": "Sí, realizamos mantenimiento preventivo y correctivo de cámaras, DVR, NVR y sistemas de videovigilancia para garantizar su correcto funcionamiento."
+  },
+  {
+    "pregunta": "¿Puedo recibir asesoría sobre qué equipos comprar?",
+    "respuesta": "Sí, te orientamos para elegir los equipos adecuados según tus necesidades, presupuesto y entorno tecnológico."
+  },
+  {
+    "pregunta": "¿El soporte puede incluir instalación de nuevos equipos?",
+    "respuesta": "Sí, instalamos y configuramos equipos nuevos asegurando compatibilidad, seguridad y máximo rendimiento."
+  },
+  {
+    "pregunta": "¿Cómo garantizan la seguridad durante el soporte remoto?",
+    "respuesta": "Utilizamos canales cifrados y conexiones seguras para proteger tus datos en cada sesión de soporte remoto."
+  },
+  {
+    "pregunta": "¿El soporte cubre fallas en red local?",
+    "respuesta": "Sí, diagnosticamos y corregimos problemas de conectividad, IP, routers, switches y cableado estructurado."
+  },
+  {
+    "pregunta": "¿Puedo solicitar soporte para varios usuarios al mismo tiempo?",
+    "respuesta": "Sí, atendemos múltiples usuarios simultáneamente y asignamos técnicos según la prioridad de cada caso."
+  },
+  {
+    "pregunta": "¿El soporte incluye asesoría en ciberseguridad?",
+    "respuesta": "Sí, además de solucionar problemas, te ayudamos a fortalecer la seguridad digital y prevenir futuros ataques."
+  },
+  {
+    "pregunta": "¿Puedo contratar soporte temporal para un proyecto?",
+    "respuesta": "Sí, puedes solicitar soporte por proyecto, ideal para eventos, campañas o implementaciones específicas."
+  },
+  {
+    "pregunta": "¿El soporte técnico aplica a servidores virtuales?",
+    "respuesta": "Sí, brindamos asistencia en entornos virtualizados, configuraciones en la nube y monitoreo de servidores remotos."
+  },
+  {
+    "pregunta": "¿Qué pasa si mi empresa tiene muchas sucursales?",
+    "respuesta": "Podemos coordinar soporte remoto o presencial en todas tus sedes, manteniendo un control centralizado de los servicios."
+  },
+  {
+    "pregunta": "¿El soporte incluye control de acceso y biometría?",
+    "respuesta": "Sí, realizamos mantenimiento y configuración de sistemas biométricos y dispositivos de control de acceso."
+  },
+  {
+    "pregunta": "¿Puedo recibir alertas sobre fallos detectados?",
+    "respuesta": "Sí, te notificamos en tiempo real si se detecta una anomalía o riesgo en tus equipos o red."
+  },
+  {
+    "pregunta": "¿El soporte cubre mantenimiento de routers y switches?",
+    "respuesta": "Sí, revisamos el estado de routers, switches y demás equipos de red para asegurar conectividad estable y segura."
+  },
+  {
+    "pregunta": "¿Qué tan confiable es el soporte remoto?",
+    "respuesta": "Es completamente seguro y eficiente. Más del 80% de los problemas se resuelven remotamente en menos de una hora."
+  },
+  {
+    "pregunta": "¿Puedo solicitar un informe técnico después de cada soporte?",
+    "respuesta": "Sí, siempre entregamos un reporte con el diagnóstico, solución aplicada y recomendaciones preventivas."
+  },
+  {
+    "pregunta": "¿El soporte incluye pruebas de red?",
+    "respuesta": "Sí, realizamos pruebas de conectividad, velocidad, estabilidad y cobertura Wi-Fi para garantizar un buen rendimiento."
+  },
+  {
+    "pregunta": "¿Qué ocurre si un equipo presenta el mismo fallo varias veces?",
+    "respuesta": "Revisamos el caso a fondo, aplicamos medidas correctivas definitivas y, si es necesario, reemplazamos componentes."
+  },
+  {
+    "pregunta": "¿El soporte cubre impresoras en red?",
+    "respuesta": "Sí, instalamos, configuramos y reparamos impresoras conectadas a red local o Wi-Fi."
+  },
+  {
+    "pregunta": "¿Puedo tener soporte especializado para mi software empresarial?",
+    "respuesta": "Sí, ofrecemos soporte en sistemas de gestión, contabilidad y CRM, ayudando a su correcta operación y actualización."
+  },
+  {
+    "pregunta": "¿El soporte incluye optimización de antivirus?",
+    "respuesta": "Sí, verificamos la configuración, actualizamos definiciones y reforzamos la protección contra amenazas."
+  },
+  {
+    "pregunta": "¿Puedo recibir asistencia en la instalación de licencias?",
+    "respuesta": "Sí, instalamos y activamos licencias originales garantizando la legalidad y estabilidad de tus sistemas."
+  },
+  {
+    "pregunta": "¿El soporte cubre mantenimiento de notebooks y laptops?",
+    "respuesta": "Sí, hacemos limpieza interna, cambio de pasta térmica, revisión de baterías y optimización general del sistema."
+  },
+  {
+    "pregunta": "¿Ofrecen soporte para equipos de red empresariales?",
+    "respuesta": "Sí, brindamos soporte completo a infraestructura de red: servidores, routers, switches y puntos de acceso."
+  },
+  {
+    "pregunta": "¿El soporte incluye respaldo de bases de datos?",
+    "respuesta": "Sí, realizamos copias de seguridad periódicas y te ayudamos a crear políticas de respaldo seguras."
+  },
+  {
+    "pregunta": "¿Qué ventajas tiene el monitoreo remoto?",
+    "respuesta": "Detecta fallas antes de que ocurran, evita interrupciones y permite actuar de forma preventiva sin afectar tus operaciones."
+  },
+  {
+    "pregunta": "¿Puedo solicitar soporte en horarios nocturnos?",
+    "respuesta": "Sí, tenemos atención especial para turnos nocturnos o empresas que operan 24/7."
+  },
+  {
+    "pregunta": "¿El soporte incluye mantenimiento de cableado eléctrico?",
+    "respuesta": "Sí, revisamos conexiones, puntos eléctricos y tomas de corriente relacionadas con equipos informáticos."
+  },
+  {
+    "pregunta": "¿Qué tan frecuente se recomienda hacer mantenimiento?",
+    "respuesta": "Recomendamos mantenimiento preventivo cada 3 a 6 meses para garantizar el rendimiento óptimo de tus equipos."
+  },
+  {
+    "pregunta": "¿El soporte cubre actualizaciones del sistema operativo?",
+    "respuesta": "Sí, mantenemos tus sistemas actualizados, seguidos de pruebas para garantizar compatibilidad y estabilidad."
+  },
+  {
+    "pregunta": "¿Qué medidas de seguridad toman al manipular equipos?",
+    "respuesta": "Usamos procedimientos técnicos certificados y medidas antiestáticas para proteger componentes delicados."
+  },
+  {
+    "pregunta": "¿El soporte incluye limpieza física de equipos?",
+    "respuesta": "Sí, realizamos limpieza interna y externa con productos especializados para prolongar la vida útil del hardware."
+  },
+  {
+    "pregunta": "¿Puedo contratar soporte para sistemas de vigilancia IP?",
+    "respuesta": "Sí, damos soporte completo a sistemas de vigilancia IP, cámaras inteligentes y grabadores digitales."
+  },
+  {
+    "pregunta": "¿El soporte incluye configuración de usuarios en red?",
+    "respuesta": "Sí, creamos, modificamos y administramos usuarios y permisos dentro de tus sistemas empresariales."
+  },
+  {
+    "pregunta": "¿Puedo solicitar soporte solo cuando falle mi equipo?",
+    "respuesta": "Sí, ofrecemos soporte por evento, ideal para empresas o personas que requieren atención puntual."
+  },
+  {
+    "pregunta": "¿El soporte incluye respaldo en la nube?",
+    "respuesta": "Sí, configuramos soluciones de respaldo en la nube seguras y personalizadas para tu empresa."
+  },
+  {
+    "pregunta": "¿Puedo recibir soporte para instalación de redes nuevas?",
+    "respuesta": "Sí, diseñamos e instalamos redes desde cero, asegurando cobertura, seguridad y velocidad óptima."
+  },
+  {
+    "pregunta": "¿Qué garantía ofrece el servicio de soporte?",
+    "respuesta": "Garantizamos calidad, rapidez y efectividad. Si el problema persiste, realizamos seguimiento sin costo adicional."
+  },
+  {
+    "pregunta": "¿El soporte incluye mantenimiento a servidores físicos?",
+    "respuesta": "Sí, revisamos hardware, ventilación, rendimiento de discos y sistemas de respaldo para garantizar su estabilidad."
+  },
+  {
+    "pregunta": "¿Puedo combinar soporte con capacitación?",
+    "respuesta": "Sí, capacitamos a tu equipo para que aprenda a prevenir fallas y aprovechar mejor las herramientas tecnológicas."
+  },
+  {
+    "pregunta": "¿El soporte cubre equipos nuevos en garantía?",
+    "respuesta": "Sí, trabajamos junto con el fabricante para no afectar tu garantía y resolver el problema de manera oficial."
+  },
+  {
+    "pregunta": "¿Qué tipo de incidentes atienden con prioridad?",
+    "respuesta": "Emergencias que afecten servidores, red principal o datos críticos reciben atención inmediata y prioritaria."
+  },
+
+  {
+    "pregunta": "¿El soporte cubre fallas de internet o red lenta?",
+    "respuesta": "Sí, analizamos la red, verificamos tu proveedor de internet, configuraciones y puntos de acceso para mejorar la velocidad y estabilidad."
+  },
+  {
+    "pregunta": "¿Puedo solicitar una visita técnica preventiva?",
+    "respuesta": "Sí, puedes agendar visitas preventivas para revisar tus equipos y evitar fallas antes de que afecten tu operación."
+  },
+  {
+    "pregunta": "¿El soporte incluye configuración de servidores de correo?",
+    "respuesta": "Sí, configuramos y optimizamos servidores de correo corporativo como Outlook, Exchange o Gmail empresarial."
+  },
+  {
+    "pregunta": "¿Qué pasa si el soporte remoto no soluciona mi problema?",
+    "respuesta": "Si el problema requiere revisión física, enviamos un técnico presencial para resolverlo sin costo adicional dentro del contrato."
+  },
+  {
+    "pregunta": "¿El soporte incluye mantenimiento a equipos gamer o de alto rendimiento?",
+    "respuesta": "Sí, atendemos equipos de alto rendimiento, estaciones de trabajo o PCs especializadas en diseño, desarrollo o simulación."
+  },
+  {
+    "pregunta": "¿Puedo solicitar soporte en fechas festivas?",
+    "respuesta": "Sí, tenemos cobertura especial para emergencias en días festivos según tu plan contratado."
+  },
+  {
+    "pregunta": "¿El soporte cubre cámaras térmicas o sensores?",
+    "respuesta": "Sí, damos soporte a cámaras térmicas y sensores industriales, verificando calibración y comunicación de datos."
+  },
+  {
+    "pregunta": "¿Puedo recibir asistencia para migrar sistemas a la nube?",
+    "respuesta": "Sí, te ayudamos a planificar y ejecutar migraciones seguras a plataformas en la nube con respaldo completo."
+  },
+  {
+    "pregunta": "¿El soporte incluye control de versiones de software?",
+    "respuesta": "Sí, gestionamos actualizaciones y compatibilidad de versiones para evitar errores o conflictos en tus sistemas."
+  },
+  {
+    "pregunta": "¿Puedo combinar soporte y auditoría técnica?",
+    "respuesta": "Sí, puedes complementar tu plan de soporte con una auditoría para conocer el estado general de tu infraestructura tecnológica."
+  },
+  {
+    "pregunta": "¿Qué medios usan para hacer soporte remoto?",
+    "respuesta": "Utilizamos plataformas seguras de conexión remota como AnyDesk o TeamViewer, con autenticación cifrada."
+  },
+  {
+    "pregunta": "¿El soporte puede realizarse fuera del país?",
+    "respuesta": "Sí, ofrecemos soporte remoto internacional en cualquier lugar donde tengas equipos conectados a internet."
+  },
+  {
+    "pregunta": "¿Qué garantía ofrecen por el mantenimiento realizado?",
+    "respuesta": "Garantizamos cada servicio durante un periodo específico. Si el problema reaparece, lo resolvemos sin costo adicional."
+  },
+  {
+    "pregunta": "¿Puedo tener un técnico asignado a mi empresa?",
+    "respuesta": "Sí, ofrecemos la opción de técnico dedicado según el tamaño de tu contrato o volumen de equipos."
+  },
+  {
+    "pregunta": "¿El soporte incluye optimización de energía en equipos?",
+    "respuesta": "Sí, configuramos planes de energía eficientes para reducir consumo y aumentar la vida útil de los dispositivos."
+  },
+  {
+    "pregunta": "¿Qué beneficios tiene un plan de soporte anual?",
+    "respuesta": "Te garantiza atención prioritaria, revisiones programadas, monitoreo continuo y estabilidad en toda tu infraestructura tecnológica."
+  },
+  {
+    "pregunta": "¿Puedo recibir soporte en instalaciones industriales?",
+    "respuesta": "Sí, atendemos plantas, talleres y entornos industriales, con técnicos especializados en equipos robustos y redes complejas."
+  },
+  {
+    "pregunta": "¿El soporte incluye pruebas de seguridad?",
+    "respuesta": "Sí, realizamos pruebas de firewall, antivirus y accesos para detectar vulnerabilidades y mejorar la protección."
+  },
+  {
+    "pregunta": "¿Puedo combinar soporte y capacitación en seguridad informática?",
+    "respuesta": "Sí, capacitamos a tu personal para que adopte buenas prácticas y reduzca el riesgo de incidentes digitales."
+  },
+  {
+    "pregunta": "¿El soporte puede incluir control de inventario de equipos?",
+    "respuesta": "Sí, llevamos registro detallado de tus activos tecnológicos, su estado y mantenimiento programado."
+  },
+  {
+    "pregunta": "¿Qué pasa si necesito ampliar mi contrato de soporte?",
+    "respuesta": "Puedes ampliarlo en cualquier momento. Solo ajustamos los equipos o servicios adicionales al nuevo plan."
+  },
+  {
+    "pregunta": "¿El soporte cubre configuraciones de red VPN?",
+    "respuesta": "Sí, instalamos y configuramos redes privadas virtuales para conexiones seguras entre sedes o usuarios remotos."
+  },
+  {
+    "pregunta": "¿Puedo solicitar soporte en proyectos temporales?",
+    "respuesta": "Sí, brindamos soporte por proyectos o campañas específicas, con técnicos asignados por el tiempo que los necesites."
+  },
+  {
+    "pregunta": "¿El soporte incluye mantenimiento de servidores en nube?",
+    "respuesta": "Sí, gestionamos y monitoreamos servidores virtuales en la nube con respaldo y actualizaciones automáticas."
+  },
+  {
+    "pregunta": "¿Qué ocurre si el soporte remoto se interrumpe?",
+    "respuesta": "Reanudamos la conexión de inmediato o cambiamos a asistencia telefónica hasta resolver el caso completamente."
+  },
+  {
+    "pregunta": "¿El soporte incluye configuración de accesos de usuarios?",
+    "respuesta": "Sí, gestionamos permisos y accesos para garantizar la seguridad y organización dentro de tu red corporativa."
+  },
+  {
+    "pregunta": "¿Puedo recibir soporte en entornos híbridos (nube y físico)?",
+    "respuesta": "Sí, atendemos entornos mixtos con infraestructura local y servicios en la nube para mantener todo sincronizado."
+  },
+  {
+    "pregunta": "¿El soporte incluye pruebas de conectividad entre sedes?",
+    "respuesta": "Sí, realizamos pruebas y ajustes para asegurar una comunicación estable entre todas tus sucursales o filiales."
+  },
+  {
+    "pregunta": "¿Qué tan segura es la información durante el soporte?",
+    "respuesta": "Toda la información se maneja bajo políticas de confidencialidad y protocolos de protección de datos corporativos."
+  },
+  {
+    "pregunta": "¿El soporte cubre mantenimiento de sistemas POS?",
+    "respuesta": "Sí, brindamos mantenimiento y respaldo a sistemas de punto de venta para que tus operaciones comerciales no se detengan."
+  },
+  {
+    "pregunta": "¿Puedo recibir notificaciones automáticas de mantenimiento?",
+    "respuesta": "Sí, te enviamos recordatorios y alertas para que no olvides tus mantenimientos programados."
+  },
+  {
+    "pregunta": "¿El soporte incluye revisión de antivirus corporativo?",
+    "respuesta": "Sí, verificamos licencias, versiones y configuraciones para garantizar una protección efectiva."
+  },
+  {
+    "pregunta": "¿Puedo solicitar soporte para servidores Linux?",
+    "respuesta": "Sí, nuestros técnicos manejan entornos Linux, Windows Server y macOS con igual profesionalismo."
+  },
+  {
+    "pregunta": "¿Qué medios usan para enviar reportes de soporte?",
+    "respuesta": "Enviamos reportes en formato digital (PDF o Excel) y también podemos integrarlos a tu sistema de gestión interna."
+  },
+  {
+    "pregunta": "¿El soporte cubre configuración de dispositivos móviles?",
+    "respuesta": "Sí, damos soporte a smartphones, tablets y otros dispositivos conectados a tu red empresarial."
+  },
+  {
+    "pregunta": "¿Puedo tener asistencia inmediata por chat o llamada?",
+    "respuesta": "Sí, contamos con canales de atención directa por chat, WhatsApp o teléfono para asistencia en tiempo real."
+  },
+  {
+    "pregunta": "¿El soporte incluye revisión de sistemas de respaldo eléctrico?",
+    "respuesta": "Sí, verificamos UPS, reguladores y plantas eléctricas que protegen tus equipos ante cortes de energía."
+  },
+  {
+    "pregunta": "¿Qué diferencia hay entre soporte básico y avanzado?",
+    "respuesta": "El básico cubre incidencias comunes; el avanzado incluye monitoreo, optimización y atención prioritaria con técnicos especializados."
+  },
+  {
+    "pregunta": "¿El soporte puede incluir inventario digitalizado de equipos?",
+    "respuesta": "Sí, creamos un inventario electrónico que facilita el control, mantenimiento y planificación tecnológica."
+  },
+
+  {
+    "pregunta": "¿Puedo combinar soporte con monitoreo remoto 24/7?",
+    "respuesta": "Sí, puedes integrar soporte técnico con monitoreo permanente para detectar fallas en tiempo real y actuar de inmediato."
+  },
+  {
+    "pregunta": "¿El soporte incluye control de acceso por usuarios?",
+    "respuesta": "Sí, configuramos roles y permisos para que cada usuario tenga acceso solo a lo que necesita, reforzando la seguridad interna."
+  },
+  {
+    "pregunta": "¿Puedo recibir alertas personalizadas de fallas?",
+    "respuesta": "Sí, te enviamos alertas automáticas cuando detectamos fallos, sobrecargas o comportamientos inusuales en tus sistemas."
+  },
+  {
+    "pregunta": "¿El soporte cubre fallas de energía en equipos?",
+    "respuesta": "Sí, revisamos los sistemas eléctricos y de respaldo, y te recomendamos soluciones UPS o reguladores adecuados."
+  },
+  {
+    "pregunta": "¿Puedo contratar soporte especializado por área?",
+    "respuesta": "Sí, ofrecemos soporte especializado en redes, seguridad, infraestructura o software, según tus necesidades."
+  },
+  {
+    "pregunta": "¿El soporte incluye instalación de actualizaciones críticas?",
+    "respuesta": "Sí, instalamos parches de seguridad y actualizaciones importantes para proteger tus sistemas de vulnerabilidades."
+  },
+  {
+    "pregunta": "¿Puedo solicitar soporte para servidores dedicados?",
+    "respuesta": "Sí, brindamos soporte especializado en servidores dedicados, tanto físicos como virtuales."
+  },
+  {
+    "pregunta": "¿El soporte cubre problemas de impresoras en red?",
+    "respuesta": "Sí, diagnosticamos y resolvemos problemas de impresión compartida, drivers y conectividad de red."
+  },
+  {
+    "pregunta": "¿Qué diferencia hay entre soporte corporativo y básico?",
+    "respuesta": "El soporte corporativo incluye atención prioritaria, monitoreo y técnicos asignados; el básico se enfoca en incidencias puntuales."
+  },
+  {
+    "pregunta": "¿Puedo recibir soporte para instalación de software especializado?",
+    "respuesta": "Sí, instalamos software industrial, contable o de diseño, garantizando su correcto funcionamiento en tu entorno."
+  },
+  {
+    "pregunta": "¿El soporte cubre conexiones de red entre sedes?",
+    "respuesta": "Sí, configuramos y mantenemos enlaces VPN o conexiones seguras entre sucursales de tu empresa."
+  },
+  {
+    "pregunta": "¿Puedo tener un canal exclusivo de atención?",
+    "respuesta": "Sí, los clientes con plan empresarial cuentan con un canal de soporte exclusivo con atención prioritaria."
+  },
+  {
+    "pregunta": "¿El soporte incluye monitoreo de temperatura en servidores?",
+    "respuesta": "Sí, revisamos y monitoreamos temperatura, ventilación y desempeño para evitar sobrecalentamientos."
+  },
+  {
+    "pregunta": "¿Puedo recibir soporte durante auditorías tecnológicas?",
+    "respuesta": "Sí, te acompañamos durante auditorías para garantizar que los equipos y sistemas cumplan los estándares requeridos."
+  },
+  {
+    "pregunta": "¿El soporte incluye revisión de contraseñas y accesos?",
+    "respuesta": "Sí, ayudamos a crear políticas de contraseñas seguras y controlamos accesos para evitar brechas de seguridad."
+  },
+  {
+    "pregunta": "¿Puedo solicitar soporte fuera del país?",
+    "respuesta": "Sí, ofrecemos soporte remoto internacional, con comunicación segura y asistencia inmediata desde Colombia."
+  },
+  {
+    "pregunta": "¿El soporte cubre redes de datos industriales?",
+    "respuesta": "Sí, damos soporte a redes industriales, sensores, PLCs y equipos conectados en entornos productivos."
+  },
+  {
+    "pregunta": "¿Puedo tener soporte con visitas periódicas?",
+    "respuesta": "Sí, puedes programar visitas mensuales o trimestrales para mantenimiento y revisión general."
+  },
+  {
+    "pregunta": "¿El soporte incluye asesoría para renovación tecnológica?",
+    "respuesta": "Sí, te ayudamos a planificar la renovación de equipos y software según tu presupuesto y necesidades de crecimiento."
+  },
+  {
+    "pregunta": "¿Qué pasa si no realizo mantenimiento frecuente?",
+    "respuesta": "Los equipos pueden degradarse más rápido, generar fallas críticas y poner en riesgo la información empresarial."
+  },
+  {
+    "pregunta": "¿El soporte incluye control remoto permanente?",
+    "respuesta": "Sí, con tu autorización podemos acceder a tus sistemas cuando sea necesario para resolver incidencias."
+  },
+  {
+    "pregunta": "¿Puedo tener soporte integrado para mis sedes en todo el país?",
+    "respuesta": "Sí, coordinamos soporte remoto y presencial para todas tus sedes, manteniendo un control centralizado."
+  },
+  {
+    "pregunta": "¿El soporte cubre sistemas operativos antiguos?",
+    "respuesta": "Sí, pero recomendamos migrar a versiones más recientes por seguridad y compatibilidad."
+  },
+  {
+    "pregunta": "¿Puedo solicitar asistencia técnica inmediata?",
+    "respuesta": "Sí, contamos con atención prioritaria para emergencias, disponible por teléfono, WhatsApp o correo."
+  },
+  {
+    "pregunta": "¿El soporte incluye revisión de licencias de software?",
+    "respuesta": "Sí, validamos tus licencias y te ayudamos a mantener tus sistemas actualizados y legales."
+  },
+  {
+    "pregunta": "¿Puedo solicitar soporte para hardware industrial?",
+    "respuesta": "Sí, ofrecemos soporte técnico especializado para equipos industriales y sistemas de automatización."
+  },
+  {
+    "pregunta": "¿El soporte incluye mantenimiento a redes inalámbricas?",
+    "respuesta": "Sí, realizamos mantenimiento, configuración y optimización de redes Wi-Fi empresariales."
+  },
+  {
+    "pregunta": "¿Puedo combinar soporte con monitoreo de seguridad?",
+    "respuesta": "Sí, podemos integrar cámaras, sensores y monitoreo digital con soporte técnico continuo."
+  },
+  {
+    "pregunta": "¿El soporte cubre fallas de software contable?",
+    "respuesta": "Sí, damos soporte funcional y técnico en programas contables y administrativos comunes en empresas."
+  },
+  {
+    "pregunta": "¿Puedo solicitar asistencia mensual fija?",
+    "respuesta": "Sí, ofrecemos planes mensuales con mantenimiento programado y soporte ilimitado según tus necesidades."
+  },
+  {
+    "pregunta": "¿El soporte incluye actualización de firmware en equipos?",
+    "respuesta": "Sí, actualizamos firmware de routers, switches, impresoras y otros dispositivos para mejorar su rendimiento."
+  },
+  {
+    "pregunta": "¿Puedo solicitar soporte técnico urgente?",
+    "respuesta": "Sí, contamos con atención de emergencia inmediata en menos de una hora para casos críticos."
+  },
+  {
+    "pregunta": "¿El soporte cubre equipos de respaldo de energía?",
+    "respuesta": "Sí, verificamos UPS, reguladores y mantenemos tu sistema de respaldo operativo."
+  },
+  {
+    "pregunta": "¿Qué beneficios obtengo con soporte continuo?",
+    "respuesta": "Obtienes tranquilidad, equipos estables, prevención de fallas y atención prioritaria siempre que la necesites."
+  },
+  {
+    "pregunta": "¿El soporte incluye administración de usuarios?",
+    "respuesta": "Sí, gestionamos altas, bajas y permisos de usuarios dentro de tu infraestructura tecnológica."
+  },
+  {
+    "pregunta": "¿Puedo solicitar soporte para servidores web?",
+    "respuesta": "Sí, ofrecemos soporte en servidores web, hosting, correos corporativos y mantenimiento de sitios empresariales."
+  },
+  {
+    "pregunta": "¿El soporte cubre mantenimiento de sistemas de climatización TI?",
+    "respuesta": "Sí, revisamos sistemas de ventilación y refrigeración en cuartos de servidores para garantizar su estabilidad."
+  },
+  {
+    "pregunta": "¿Puedo combinar soporte con consultoría estratégica?",
+    "respuesta": "Sí, puedes integrar ambos servicios para alinear tu tecnología con los objetivos de crecimiento de tu empresa."
+  },
+  {
+    "pregunta": "¿Qué valor agregado ofrece el soporte empresarial?",
+    "respuesta": "Acompañamiento constante, atención personalizada, reducción de tiempos muertos y optimización de procesos tecnológicos."
+  },
+  {
+    "pregunta": "¿Puedo renovar mi contrato de soporte cuando expire?",
+    "respuesta": "Sí, puedes renovarlo fácilmente. Además, te ofrecemos mejoras o descuentos por fidelidad."
+  },
+  {
+    "pregunta": "¿El soporte incluye capacitación para mi personal?",
+    "respuesta": "Sí, capacitamos a tu equipo para que identifique fallas comunes y use correctamente las herramientas tecnológicas."
+  },
+  {
+    "pregunta": "¿Qué obtengo al contratar soporte con VicaTechnology?",
+    "respuesta": "Obtienes un aliado confiable, con asistencia profesional, soluciones rápidas y una tecnología siempre lista para funcionar."
+  },
+
+  {
+    "pregunta": "¿Cómo puedo solicitar una cotización?",
+    "respuesta": "Puedes solicitar tu cotización a través del formulario web, por WhatsApp o escribiéndonos al correo comercial@vica-technology.com. Te responderemos en pocas horas con una propuesta ajustada a tus necesidades."
+  },
+  {
+    "pregunta": "¿Qué información necesito para pedir una cotización?",
+    "respuesta": "Solo necesitamos conocer el tipo de servicio o producto que requieres, la cantidad aproximada y tus datos de contacto. Nosotros elaboramos la propuesta completa."
+  },
+  {
+    "pregunta": "¿Cuánto tiempo tarda una cotización?",
+    "respuesta": "Generalmente entre 24 y 48 horas, dependiendo de la complejidad del servicio solicitado."
+  },
+  {
+    "pregunta": "¿Puedo recibir asesoría antes de comprar?",
+    "respuesta": "Sí, ofrecemos asesoría gratuita para ayudarte a elegir la mejor solución según el tamaño y las necesidades de tu empresa."
+  },
+  {
+    "pregunta": "¿Qué medios de pago aceptan?",
+    "respuesta": "Aceptamos transferencias bancarias, consignaciones y pagos electrónicos. También puedes solicitar opciones de pago diferido según el proyecto."
+  },
+  {
+    "pregunta": "¿Venden productos o solo servicios?",
+    "respuesta": "Ofrecemos ambos. Distribuimos equipos tecnológicos, cámaras, servidores y software, además de prestar servicios técnicos y de consultoría."
+  },
+  {
+    "pregunta": "¿Puedo recibir una visita comercial?",
+    "respuesta": "Sí, nuestros asesores pueden visitarte para evaluar tus necesidades y ofrecerte una propuesta personalizada."
+  },
+  {
+    "pregunta": "¿Ofrecen descuentos por volumen o fidelidad?",
+    "respuesta": "Sí, manejamos descuentos especiales para compras al por mayor o contratos de servicio a largo plazo."
+  },
+  {
+    "pregunta": "¿Puedo hacer seguimiento a mi cotización?",
+    "respuesta": "Sí, puedes contactarnos por correo o WhatsApp para conocer el estado de tu solicitud y recibir actualizaciones."
+  },
+  {
+    "pregunta": "¿Qué beneficios obtengo al trabajar con VicaTechnology?",
+    "respuesta": "Obtienes acompañamiento personalizado, productos de alta calidad, soporte continuo y soluciones diseñadas para impulsar tu empresa."
+  },
+  {
+    "pregunta": "¿Realizan envíos a otras ciudades?",
+    "respuesta": "Sí, realizamos envíos a nivel nacional y coordinamos la entrega segura con transporte confiable."
+  },
+  {
+    "pregunta": "¿Qué pasa si necesito una cotización urgente?",
+    "respuesta": "Podemos priorizar tu solicitud. Indícanos la urgencia y te enviaremos la propuesta en el menor tiempo posible."
+  },
+  {
+    "pregunta": "¿Puedo pagar en cuotas?",
+    "respuesta": "Sí, en algunos proyectos ofrecemos facilidades de pago o planes de financiación según el monto y la duración del contrato."
+  },
+  {
+    "pregunta": "¿Venden productos tecnológicos específicos?",
+    "respuesta": "Sí, comercializamos equipos de red, seguridad, cómputo y software especializado para empresas e instituciones."
+  },
+  {
+    "pregunta": "¿Ofrecen planes empresariales?",
+    "respuesta": "Sí, contamos con planes personalizados para empresas, con descuentos, soporte incluido y beneficios exclusivos."
+  },
+  {
+    "pregunta": "¿Puedo solicitar una demostración de los servicios?",
+    "respuesta": "Sí, realizamos demostraciones virtuales o presenciales para que conozcas cómo funcionan nuestras soluciones antes de contratar."
+  },
+  {
+    "pregunta": "¿Los precios incluyen instalación?",
+    "respuesta": "Depende del producto o servicio. En la mayoría de los casos, la instalación puede incluirse o cotizarse aparte según el alcance."
+  },
+  {
+    "pregunta": "¿Ofrecen mantenimiento posterior a la venta?",
+    "respuesta": "Sí, ofrecemos soporte y mantenimiento para garantizar el correcto funcionamiento de los productos adquiridos."
+  },
+  {
+    "pregunta": "¿Puedo solicitar soporte después de la compra?",
+    "respuesta": "Sí, todos nuestros clientes tienen acceso a soporte técnico y acompañamiento postventa."
+  },
+  {
+    "pregunta": "¿Cuál es el tiempo de entrega de los productos?",
+    "respuesta": "Depende del tipo de producto y la ubicación. Normalmente la entrega se realiza entre 2 y 5 días hábiles."
+  },
+  {
+    "pregunta": "¿Realizan instalación del equipo adquirido?",
+    "respuesta": "Sí, ofrecemos instalación profesional, configuración y capacitación para que el equipo quede completamente operativo."
+  },
+  {
+    "pregunta": "¿Puedo obtener una cotización sin compromiso?",
+    "respuesta": "Claro, puedes solicitar una cotización gratuita y sin compromiso. Nos interesa que tomes la mejor decisión con toda la información disponible."
+  },
+  {
+    "pregunta": "¿Tienen garantía en los productos vendidos?",
+    "respuesta": "Sí, todos nuestros productos cuentan con garantía directa del fabricante o de VicaTechnology, dependiendo del caso."
+  },
+  {
+    "pregunta": "¿Qué tipos de productos comercializan?",
+    "respuesta": "Cámaras de seguridad, servidores, routers, equipos de cómputo, software y soluciones empresariales de infraestructura y redes."
+  },
+  {
+    "pregunta": "¿El servicio incluye capacitación?",
+    "respuesta": "Sí, ofrecemos capacitaciones básicas o avanzadas según el tipo de solución implementada."
+  },
+  {
+    "pregunta": "¿Puedo solicitar asesoría virtual?",
+    "respuesta": "Sí, realizamos reuniones virtuales mediante videollamada o plataformas colaborativas para ofrecerte una atención más rápida."
+  },
+  {
+    "pregunta": "¿Qué beneficios tiene contratar un servicio con ustedes?",
+    "respuesta": "Recibes atención personalizada, seguimiento constante, soluciones integradas y soporte garantizado después de la venta."
+  },
+  {
+    "pregunta": "¿Puedo solicitar cotización para licencias de software?",
+    "respuesta": "Sí, cotizamos licencias originales de software empresarial, antivirus, sistemas de gestión y más."
+  },
+  {
+    "pregunta": "¿El envío de equipos tiene costo adicional?",
+    "respuesta": "Depende de la ubicación. Para ciudades principales el envío suele ser gratuito; para otras regiones puede aplicarse un costo logístico."
+  },
+  {
+    "pregunta": "¿Qué pasa si el producto llega defectuoso?",
+    "respuesta": "Puedes reportarlo inmediatamente. Activamos la garantía y realizamos el cambio o reparación según corresponda."
+  },
+  {
+    "pregunta": "¿Puedo solicitar una reunión comercial presencial?",
+    "respuesta": "Sí, puedes agendar una visita con nuestros asesores para revisar tus necesidades y elaborar una propuesta personalizada."
+  },
+  {
+    "pregunta": "¿Ofrecen descuentos por convenios empresariales?",
+    "respuesta": "Sí, creamos convenios y alianzas con empresas e instituciones para ofrecer tarifas especiales y beneficios adicionales."
+  },
+  {
+    "pregunta": "¿Puedo combinar varios servicios en una misma cotización?",
+    "respuesta": "Sí, puedes solicitar un paquete que integre consultoría, infraestructura, soporte o innovación en una sola propuesta."
+  },
+  {
+    "pregunta": "¿Cuál es la cobertura del servicio comercial?",
+    "respuesta": "Brindamos atención comercial en todo el país, tanto presencial como virtual, con cobertura en múltiples sectores."
+  },
+  {
+    "pregunta": "¿Cómo puedo contactar al área comercial?",
+    "respuesta": "Puedes escribirnos al correo comercial@vica-technology.com o comunicarte al 313 234 4719 para atención directa."
+  },
+  {
+    "pregunta": "¿Puedo solicitar una lista de precios actualizada?",
+    "respuesta": "Sí, enviamos listados actualizados con precios, promociones y disponibilidad de productos según tu sector."
+  },
+  {
+    "pregunta": "¿Los productos incluyen soporte técnico?",
+    "respuesta": "Sí, todos los productos cuentan con soporte postventa y acompañamiento para la instalación o configuración inicial."
+  },
+  {
+    "pregunta": "¿Ofrecen planes de renovación tecnológica?",
+    "respuesta": "Sí, te ayudamos a actualizar tus equipos con planes de renovación, descuentos y recolección de tecnología obsoleta."
+  },
+  {
+    "pregunta": "¿Qué diferencia hay entre un servicio estándar y uno empresarial?",
+    "respuesta": "El empresarial incluye personalización completa, soporte prioritario y monitoreo continuo; el estándar cubre necesidades básicas con menor frecuencia de atención."
+  },
+  {
+    "pregunta": "¿Puedo recibir soporte de ventas fuera del horario laboral?",
+    "respuesta": "Sí, ofrecemos atención extendida para clientes empresariales y urgencias comerciales."
+  },
+  {
+    "pregunta": "¿Cómo saber cuál servicio es el más adecuado para mi empresa?",
+    "respuesta": "Nuestro equipo comercial te asesora sin costo. Analizamos tus operaciones y te recomendamos la solución más eficiente."
+  },
+
+  {
+    "pregunta": "¿Puedo solicitar cotización para cámaras de seguridad?",
+    "respuesta": "Sí, contamos con un amplio catálogo de cámaras, DVR, NVR y accesorios. Te ayudamos a elegir el sistema que mejor se adapte a tu espacio y presupuesto."
+  },
+  {
+    "pregunta": "¿Realizan alianzas con empresas o instituciones?",
+    "respuesta": "Sí, establecemos convenios corporativos con beneficios especiales, descuentos y soporte prioritario."
+  },
+  {
+    "pregunta": "¿Puedo pagar por transferencia electrónica?",
+    "respuesta": "Sí, aceptamos transferencias bancarias a nuestras cuentas oficiales y te enviamos comprobante de pago y factura electrónica."
+  },
+  {
+    "pregunta": "¿Qué beneficios tiene contratar con VicaTechnology frente a otras empresas?",
+    "respuesta": "Nuestro diferencial está en la atención humana, la transparencia y la calidad técnica. No solo vendemos, acompañamos todo el proceso hasta que el cliente esté satisfecho."
+  },
+  {
+    "pregunta": "¿El asesor comercial puede visitar mi empresa?",
+    "respuesta": "Sí, nuestros asesores pueden desplazarse a tus instalaciones para conocer tus necesidades y diseñar una propuesta personalizada."
+  },
+  {
+    "pregunta": "¿Ofrecen paquetes combinados de servicios?",
+    "respuesta": "Sí, puedes solicitar paquetes que incluyan instalación, soporte, mantenimiento o consultoría con tarifas preferenciales."
+  },
+  {
+    "pregunta": "¿Puedo obtener una cotización en línea?",
+    "respuesta": "Sí, puedes solicitarla desde nuestro sitio web o por WhatsApp. Solo debes llenar un breve formulario con tus datos y requerimientos."
+  },
+  {
+    "pregunta": "¿Ofrecen asesorías para proyectos de infraestructura tecnológica?",
+    "respuesta": "Sí, nuestro equipo técnico-comercial te ayuda a planificar y dimensionar tu proyecto desde la fase inicial hasta la implementación."
+  },
+  {
+    "pregunta": "¿Qué pasa si tengo dudas después de recibir la cotización?",
+    "respuesta": "Tu asesor comercial estará disponible para explicarte cada punto de la propuesta y ajustar lo que sea necesario."
+  },
+  {
+    "pregunta": "¿Puedo solicitar demostraciones de productos tecnológicos?",
+    "respuesta": "Sí, hacemos demostraciones presenciales o virtuales para que conozcas el funcionamiento real antes de comprar."
+  },
+  {
+    "pregunta": "¿Ofrecen servicios a nivel internacional?",
+    "respuesta": "Sí, brindamos soporte remoto, asesoría y venta de soluciones digitales fuera de Colombia bajo acuerdos específicos."
+  },
+  {
+    "pregunta": "¿Puedo recibir una cotización en dólares?",
+    "respuesta": "Sí, realizamos cotizaciones en moneda nacional o extranjera, dependiendo del tipo de proyecto o proveedor."
+  },
+  {
+    "pregunta": "¿Tienen atención comercial para empresas grandes?",
+    "respuesta": "Sí, contamos con un equipo especializado en atender proyectos empresariales e industriales de gran escala."
+  },
+  {
+    "pregunta": "¿El proceso de compra es rápido?",
+    "respuesta": "Sí, una vez apruebas la cotización, el despacho o programación del servicio se realiza de inmediato."
+  },
+  {
+    "pregunta": "¿Puedo solicitar cotización para licencias y software empresarial?",
+    "respuesta": "Sí, ofrecemos cotizaciones personalizadas para software de gestión, seguridad, bases de datos y licencias Microsoft u Oracle."
+  },
+  {
+    "pregunta": "¿Puedo recibir promociones exclusivas?",
+    "respuesta": "Sí, los clientes registrados en nuestra base reciben promociones y beneficios exclusivos por correo o WhatsApp."
+  },
+  {
+    "pregunta": "¿Ofrecen precios especiales para distribuidores?",
+    "respuesta": "Sí, manejamos tarifas diferenciadas y programas de fidelidad para distribuidores y aliados estratégicos."
+  },
+  {
+    "pregunta": "¿El asesor comercial puede ayudarme con la instalación?",
+    "respuesta": "Sí, coordinamos directamente con nuestro equipo técnico para garantizar una instalación rápida y profesional."
+  },
+  {
+    "pregunta": "¿Puedo agendar una reunión virtual de ventas?",
+    "respuesta": "Sí, puedes solicitar una videollamada con un asesor para resolver tus dudas y conocer nuestras soluciones en tiempo real."
+  },
+  {
+    "pregunta": "¿Qué diferencia hay entre una cotización básica y una detallada?",
+    "respuesta": "La básica muestra precios y productos; la detallada incluye especificaciones técnicas, tiempos de entrega y opciones de instalación."
+  },
+  {
+    "pregunta": "¿Puedo pagar por medios electrónicos?",
+    "respuesta": "Sí, aceptamos transferencias y pagos digitales a través de plataformas bancarias seguras."
+  },
+  {
+    "pregunta": "¿Realizan entregas a domicilio?",
+    "respuesta": "Sí, entregamos directamente en tus instalaciones o en la dirección que nos indiques dentro del territorio nacional."
+  },
+  {
+    "pregunta": "¿Qué pasa si necesito varios servicios en una sola compra?",
+    "respuesta": "Podemos agruparlos en un solo contrato o factura. Así simplificas la gestión y obtienes beneficios adicionales por volumen."
+  },
+  {
+    "pregunta": "¿El área comercial atiende por WhatsApp?",
+    "respuesta": "Sí, nuestro canal de WhatsApp comercial está disponible para atención rápida, cotizaciones y seguimiento de pedidos."
+  },
+  {
+    "pregunta": "¿Puedo solicitar cotización para infraestructura de red?",
+    "respuesta": "Sí, realizamos cotizaciones completas que incluyen cableado estructurado, routers, switches y configuración de red."
+  },
+  {
+    "pregunta": "¿Ofrecen atención personalizada para pymes?",
+    "respuesta": "Sí, atendemos pequeñas y medianas empresas con soluciones escalables y precios accesibles."
+  },
+  {
+    "pregunta": "¿Qué beneficios obtengo como cliente recurrente?",
+    "respuesta": "Descuentos exclusivos, prioridad en atención, asesoría gratuita y acceso a nuevas promociones antes que el público general."
+  },
+  {
+    "pregunta": "¿Puedo financiar un proyecto grande?",
+    "respuesta": "Sí, analizamos el alcance del proyecto y ofrecemos opciones de pago parcial o financiación según tus necesidades."
+  },
+  {
+    "pregunta": "¿Qué tipo de clientes atienden?",
+    "respuesta": "Atendemos empresas, instituciones, comercios, industrias y particulares que buscan soluciones tecnológicas confiables."
+  },
+  {
+    "pregunta": "¿Puedo combinar compra de equipos con mantenimiento?",
+    "respuesta": "Sí, puedes adquirir tus equipos con planes de mantenimiento incluidos para garantizar su funcionamiento a largo plazo."
+  },
+  {
+    "pregunta": "¿Puedo obtener una visita técnica sin costo?",
+    "respuesta": "Sí, en la mayoría de los casos ofrecemos visitas sin costo dentro de las principales ciudades del país."
+  },
+  {
+    "pregunta": "¿El servicio de ventas incluye asesoría postventa?",
+    "respuesta": "Sí, te acompañamos después de la compra para asegurarnos de que todo funcione correctamente."
+  },
+  {
+    "pregunta": "¿Puedo cotizar instalación de redes eléctricas?",
+    "respuesta": "Sí, cotizamos proyectos eléctricos empresariales, cableado y mantenimiento general de infraestructura."
+  },
+  {
+    "pregunta": "¿Ofrecen garantías extendidas?",
+    "respuesta": "Sí, puedes adquirir garantía extendida en productos o servicios para cubrir fallas fuera del periodo estándar."
+  },
+  {
+    "pregunta": "¿Puedo solicitar una asesoría para transformación digital?",
+    "respuesta": "Sí, nuestros asesores están capacitados para guiarte en procesos de digitalización y adopción tecnológica."
+  },
+  {
+    "pregunta": "¿Qué tiempo de vigencia tiene una cotización?",
+    "respuesta": "Normalmente 15 días hábiles, aunque puede variar según el producto o servicio cotizado."
+  },
+  {
+    "pregunta": "¿Puedo recibir información sobre promociones vigentes?",
+    "respuesta": "Sí, puedes solicitar nuestro catálogo de promociones actualizado o suscribirte a nuestro boletín comercial."
+  },
+  {
+    "pregunta": "¿Puedo solicitar cotización sin tener empresa registrada?",
+    "respuesta": "Sí, también atendemos a personas naturales y emprendedores que deseen implementar soluciones tecnológicas."
+  },
+  {
+    "pregunta": "¿Ofrecen servicios por suscripción mensual?",
+    "respuesta": "Sí, algunos servicios como monitoreo o soporte pueden contratarse bajo modalidad de suscripción."
+  },
+  {
+    "pregunta": "¿Qué ventajas tengo al comprar directamente con ustedes?",
+    "respuesta": "Recibes atención personalizada, garantía oficial, instalación segura y soporte postventa sin intermediarios."
+  },
+
+  {
+    "pregunta": "¿Puedo solicitar cotización para equipos de cómputo?",
+    "respuesta": "Sí, contamos con variedad de computadores de escritorio, portátiles y estaciones de trabajo. Te asesoramos según el uso y presupuesto que manejes."
+  },
+  {
+    "pregunta": "¿El área comercial atiende fines de semana?",
+    "respuesta": "Sí, ofrecemos atención especial los sábados y, en casos urgentes, también en domingos o festivos con cita previa."
+  },
+  {
+    "pregunta": "¿Puedo comprar solo un producto?",
+    "respuesta": "Sí, no hay mínimo de compra. Atendemos tanto pedidos individuales como proyectos empresariales completos."
+  },
+  {
+    "pregunta": "¿Qué beneficios tiene comprar en VicaTechnology?",
+    "respuesta": "Obtienes asesoría especializada, productos originales, soporte postventa y soluciones integrales que optimizan tu empresa."
+  },
+  {
+    "pregunta": "¿Ofrecen descuentos por recomendación?",
+    "respuesta": "Sí, contamos con un programa de referidos donde puedes obtener descuentos si recomiendas nuestros servicios a otros clientes."
+  },
+  {
+    "pregunta": "¿Puedo hacer seguimiento a mi pedido?",
+    "respuesta": "Sí, te mantenemos informado del estado de tu pedido hasta la entrega final, con actualizaciones por correo o WhatsApp."
+  },
+  {
+    "pregunta": "¿El envío incluye seguro?",
+    "respuesta": "Sí, todos nuestros envíos cuentan con seguro para garantizar la entrega segura y sin contratiempos."
+  },
+  {
+    "pregunta": "¿Puedo solicitar asesoría para elegir un plan?",
+    "respuesta": "Sí, nuestros asesores te orientan paso a paso para identificar el servicio o producto más conveniente para tu empresa."
+  },
+  {
+    "pregunta": "¿Tienen servicio para proyectos grandes o institucionales?",
+    "respuesta": "Sí, desarrollamos propuestas integrales para proyectos empresariales, industriales o institucionales, desde la planeación hasta la ejecución."
+  },
+  {
+    "pregunta": "¿Puedo combinar diferentes marcas en una misma compra?",
+    "respuesta": "Sí, trabajamos con múltiples marcas y te ayudamos a integrar equipos compatibles dentro del mismo proyecto."
+  },
+  {
+    "pregunta": "¿El servicio de ventas incluye visita técnica previa?",
+    "respuesta": "Sí, en proyectos que lo requieran, realizamos una visita técnica para evaluar las condiciones y necesidades del cliente antes de cotizar."
+  },
+  {
+    "pregunta": "¿Puedo comprar desde otra ciudad?",
+    "respuesta": "Sí, atendemos clientes en todo el país con envíos seguros y soporte remoto posterior a la instalación."
+  },
+  {
+    "pregunta": "¿El equipo comercial maneja cuentas corporativas?",
+    "respuesta": "Sí, cada empresa cuenta con un ejecutivo comercial asignado que se encarga de su seguimiento y atención personalizada."
+  },
+  {
+    "pregunta": "¿Puedo solicitar varias cotizaciones al mismo tiempo?",
+    "respuesta": "Sí, puedes solicitar distintas cotizaciones para comparar opciones o evaluar diferentes tipos de soluciones."
+  },
+  {
+    "pregunta": "¿El área comercial atiende por videollamada?",
+    "respuesta": "Sí, puedes agendar una videollamada para recibir atención personalizada sin moverte de tu oficina."
+  },
+  {
+    "pregunta": "¿Puedo solicitar demostración de productos en sitio?",
+    "respuesta": "Sí, dependiendo del tipo de producto, podemos coordinar demostraciones presenciales con nuestro equipo técnico-comercial."
+  },
+  {
+    "pregunta": "¿Qué métodos de pago recomiendan para empresas?",
+    "respuesta": "Transferencias electrónicas o consignaciones directas, ya que garantizan trazabilidad y agilidad en la facturación."
+  },
+  {
+    "pregunta": "¿Puedo recibir factura electrónica?",
+    "respuesta": "Sí, emitimos factura electrónica en cumplimiento de la normatividad vigente de la DIAN."
+  },
+  {
+    "pregunta": "¿El área comercial maneja clientes internacionales?",
+    "respuesta": "Sí, atendemos clientes fuera de Colombia mediante soporte remoto y acuerdos comerciales específicos."
+  },
+  {
+    "pregunta": "¿Puedo solicitar descuentos por pronto pago?",
+    "respuesta": "Sí, ofrecemos descuentos especiales si realizas el pago anticipado o dentro de los primeros días de la factura."
+  },
+  {
+    "pregunta": "¿Ofrecen asesorías presenciales sin compromiso?",
+    "respuesta": "Sí, realizamos asesorías iniciales gratuitas para entender tus necesidades antes de cotizar."
+  },
+  {
+    "pregunta": "¿Puedo recibir un catálogo de productos?",
+    "respuesta": "Sí, contamos con catálogos digitales y físicos con especificaciones, precios y disponibilidad de productos tecnológicos."
+  },
+  {
+    "pregunta": "¿El área comercial puede atender por correo corporativo?",
+    "respuesta": "Sí, puedes escribirnos directamente a comercial@vica-technology.com para recibir atención formal y seguimiento."
+  },
+  {
+    "pregunta": "¿Puedo solicitar instalación inmediata después de la compra?",
+    "respuesta": "Sí, coordinamos la instalación tan pronto como se confirme el pago y se entreguen los equipos."
+  },
+  {
+    "pregunta": "¿Qué beneficios obtengo al ser cliente frecuente?",
+    "respuesta": "Tienes prioridad en atención, acceso a promociones exclusivas, descuentos progresivos y soporte personalizado."
+  },
+  {
+    "pregunta": "¿Puedo solicitar asesoría para equipar una oficina completa?",
+    "respuesta": "Sí, realizamos proyectos llave en mano que incluyen cómputo, redes, seguridad, mobiliario y soporte técnico."
+  },
+  {
+    "pregunta": "¿Qué pasa si el producto que quiero no está disponible?",
+    "respuesta": "Te ofrecemos una alternativa equivalente o te informamos la fecha estimada de reposición."
+  },
+  {
+    "pregunta": "¿El área comercial maneja licitaciones?",
+    "respuesta": "Sí, participamos en licitaciones públicas y privadas con experiencia en documentación técnica y legal."
+  },
+  {
+    "pregunta": "¿Puedo recibir una visita comercial fuera de horario?",
+    "respuesta": "Sí, podemos coordinar visitas en horarios extendidos o fines de semana según tu disponibilidad."
+  },
+  {
+    "pregunta": "¿Ofrecen planes especiales para instituciones educativas?",
+    "respuesta": "Sí, tenemos planes exclusivos para colegios y universidades con precios preferenciales y soporte continuo."
+  },
+  {
+    "pregunta": "¿Puedo solicitar cotización para mantenimiento empresarial?",
+    "respuesta": "Sí, cotizamos mantenimiento preventivo o correctivo de equipos e infraestructura tecnológica."
+  },
+  {
+    "pregunta": "¿El área comercial puede asesorar sobre proyectos de innovación?",
+    "respuesta": "Sí, te ayudamos a identificar oportunidades tecnológicas y proyectos de innovación para tu empresa."
+  },
+  {
+    "pregunta": "¿Puedo pagar en diferentes cuotas?",
+    "respuesta": "Sí, dependiendo del proyecto, ofrecemos pagos parciales en etapas de avance o mediante acuerdos comerciales."
+  },
+  {
+    "pregunta": "¿Ofrecen descuentos estacionales?",
+    "respuesta": "Sí, lanzamos promociones en temporadas específicas como mitad de año, fin de año o eventos empresariales."
+  },
+  {
+    "pregunta": "¿Puedo recibir soporte comercial personalizado?",
+    "respuesta": "Sí, asignamos un asesor que te acompaña en todo el proceso, desde la primera llamada hasta la entrega final."
+  },
+  {
+    "pregunta": "¿El área comercial maneja productos ecológicos o sostenibles?",
+    "respuesta": "Sí, promovemos soluciones tecnológicas de bajo consumo energético y materiales sostenibles para reducir el impacto ambiental."
+  },
+  {
+    "pregunta": "¿Puedo solicitar información sobre garantías extendidas?",
+    "respuesta": "Sí, te explicamos los planes de garantía ampliada disponibles para cada producto o servicio contratado."
+  },
+  {
+    "pregunta": "¿El área comercial ofrece seguimiento postventa?",
+    "respuesta": "Sí, realizamos seguimiento después de la entrega para garantizar tu satisfacción y funcionamiento correcto del servicio."
+  },
+  {
+    "pregunta": "¿Puedo recibir atención prioritaria como cliente empresarial?",
+    "respuesta": "Sí, los clientes empresariales tienen atención preferencial con líneas directas de comunicación."
+  },
+  {
+    "pregunta": "¿Ofrecen atención comercial a través de redes sociales?",
+    "respuesta": "Sí, puedes contactarnos en nuestras redes oficiales como Instagram, Facebook o LinkedIn para atención rápida y personalizada."
+  },
+
+  {
+    "pregunta": "¿Puedo cotizar instalación de cámaras de seguridad?",
+    "respuesta": "Sí, te enviamos una cotización completa con equipos, instalación, configuración y garantía. También realizamos visitas técnicas si lo necesitas."
+  },
+  {
+    "pregunta": "¿El área comercial atiende en todo el país?",
+    "respuesta": "Sí, tenemos cobertura nacional. Atendemos clientes en cualquier ciudad con asesoría virtual o presencial según el proyecto."
+  },
+  {
+    "pregunta": "¿Puedo solicitar cotización para un sistema de videovigilancia?",
+    "respuesta": "Sí, elaboramos cotizaciones personalizadas según el número de cámaras, tipo de grabación y características de tu espacio."
+  },
+  {
+    "pregunta": "¿El área comercial ofrece visitas presenciales?",
+    "respuesta": "Sí, realizamos visitas comerciales para conocer tus necesidades y presentar propuestas ajustadas a tu empresa."
+  },
+  {
+    "pregunta": "¿Puedo solicitar cotización para cableado estructurado?",
+    "respuesta": "Sí, diseñamos e instalamos redes de datos certificadas, con materiales de alta calidad y garantía de funcionamiento."
+  },
+  {
+    "pregunta": "¿Qué beneficios tiene trabajar con ustedes?",
+    "respuesta": "Acompañamiento permanente, asesoría profesional, equipos de calidad y soluciones que realmente se adaptan a tu negocio."
+  },
+  {
+    "pregunta": "¿El área comercial puede atender emergencias?",
+    "respuesta": "Sí, si necesitas atención urgente, asignamos un asesor para responder rápidamente a tu solicitud."
+  },
+  {
+    "pregunta": "¿Puedo solicitar una propuesta técnica detallada?",
+    "respuesta": "Sí, elaboramos propuestas técnicas con diagramas, materiales, costos y tiempos estimados de ejecución."
+  },
+  {
+    "pregunta": "¿El área comercial puede ayudarme con licitaciones públicas?",
+    "respuesta": "Sí, contamos con experiencia en procesos de contratación pública y privada. Te asesoramos en documentación y presentación."
+  },
+  {
+    "pregunta": "¿Puedo recibir asesoría para implementar infraestructura tecnológica?",
+    "respuesta": "Sí, te orientamos desde la planeación hasta la implementación para que inviertas de forma segura y eficiente."
+  },
+  {
+    "pregunta": "¿El área comercial ofrece visitas sin costo?",
+    "respuesta": "Sí, en ciudades principales ofrecemos visitas de diagnóstico gratuitas para evaluar tu necesidad antes de cotizar."
+  },
+  {
+    "pregunta": "¿Puedo solicitar cotización para mantenimiento preventivo?",
+    "respuesta": "Sí, realizamos mantenimiento preventivo y correctivo con planes mensuales o anuales según tus requerimientos."
+  },
+  {
+    "pregunta": "¿El área comercial ofrece soporte postventa?",
+    "respuesta": "Sí, después de cada compra o instalación, damos seguimiento para garantizar que todo funcione correctamente."
+  },
+  {
+    "pregunta": "¿Puedo cotizar soluciones en la nube?",
+    "respuesta": "Sí, ofrecemos servicios en la nube como almacenamiento, hosting, servidores y respaldo remoto empresarial."
+  },
+  {
+    "pregunta": "¿El área comercial ofrece asesorías técnicas?",
+    "respuesta": "Sí, trabajamos junto con nuestro equipo técnico para brindarte una asesoría completa antes de tomar decisiones."
+  },
+  {
+    "pregunta": "¿Puedo recibir apoyo para proyectos tecnológicos grandes?",
+    "respuesta": "Sí, desarrollamos proyectos empresariales e institucionales con planificación, control y ejecución profesional."
+  },
+  {
+    "pregunta": "¿El área comercial puede preparar licencias de software empresarial?",
+    "respuesta": "Sí, cotizamos y suministramos licencias originales de software, antivirus, sistemas operativos y herramientas corporativas."
+  },
+  {
+    "pregunta": "¿Puedo recibir información de convenios empresariales?",
+    "respuesta": "Sí, manejamos convenios y acuerdos especiales para clientes corporativos con beneficios en precios y soporte."
+  },
+  {
+    "pregunta": "¿El área comercial ofrece atención prioritaria a empresas?",
+    "respuesta": "Sí, los clientes empresariales tienen atención preferencial con asesor comercial exclusivo y tiempos de respuesta más cortos."
+  },
+  {
+    "pregunta": "¿Puedo recibir asesoría para elegir sistemas de seguridad?",
+    "respuesta": "Sí, te orientamos sobre qué tipo de cámaras, sensores o grabadores se ajustan mejor a tu entorno y presupuesto."
+  },
+  {
+    "pregunta": "¿El área comercial puede asesorar en transformación digital?",
+    "respuesta": "Sí, te ayudamos a identificar procesos que pueden automatizarse o mejorarse con tecnología e innovación."
+  },
+  {
+    "pregunta": "¿Puedo combinar varios servicios tecnológicos?",
+    "respuesta": "Sí, puedes integrar infraestructura, soporte, innovación y seguridad en una sola propuesta global."
+  },
+  {
+    "pregunta": "¿El área comercial maneja pedidos al por mayor?",
+    "respuesta": "Sí, ofrecemos descuentos por volumen y soporte logístico para grandes pedidos empresariales."
+  },
+  {
+    "pregunta": "¿Puedo solicitar cotización para soluciones de videollamada o teletrabajo?",
+    "respuesta": "Sí, tenemos equipos, cámaras y software para salas de videoconferencia y trabajo remoto seguro."
+  },
+  {
+    "pregunta": "¿El área comercial trabaja con entidades públicas?",
+    "respuesta": "Sí, atendemos entidades estatales bajo contratación directa o licitaciones con cumplimiento legal completo."
+  },
+  {
+    "pregunta": "¿Puedo recibir una cotización para automatización industrial?",
+    "respuesta": "Sí, ofrecemos soluciones en control, sensores y sistemas automatizados para líneas de producción."
+  },
+  {
+    "pregunta": "¿El área comercial ofrece seguimiento a clientes antiguos?",
+    "respuesta": "Sí, realizamos seguimiento constante para mantener la relación y ofrecer mejoras o actualizaciones tecnológicas."
+  },
+  {
+    "pregunta": "¿Puedo recibir asistencia en la instalación de equipos adquiridos?",
+    "respuesta": "Sí, nuestros técnicos especializados se encargan de la instalación y configuración completa."
+  },
+  {
+    "pregunta": "¿El área comercial ofrece capacitaciones de producto?",
+    "respuesta": "Sí, capacitamos a tu personal en el uso correcto de los equipos o software que adquieras con nosotros."
+  },
+  {
+    "pregunta": "¿Puedo solicitar un contrato de mantenimiento con descuento?",
+    "respuesta": "Sí, los contratos anuales incluyen descuentos y atención prioritaria en todos los servicios."
+  },
+  {
+    "pregunta": "¿El área comercial asesora proyectos educativos?",
+    "respuesta": "Sí, apoyamos instituciones educativas en la implementación de aulas tecnológicas, redes y seguridad."
+  },
+  {
+    "pregunta": "¿Puedo solicitar una propuesta para mi empresa?",
+    "respuesta": "Sí, elaboramos propuestas personalizadas con enfoque técnico y financiero según el tamaño de tu organización."
+  },
+  {
+    "pregunta": "¿El área comercial ofrece atención en inglés?",
+    "respuesta": "Sí, contamos con asesores que pueden atenderte en inglés para proyectos internacionales o bilingües."
+  },
+  {
+    "pregunta": "¿Puedo solicitar cotización para cableado eléctrico empresarial?",
+    "respuesta": "Sí, diseñamos e instalamos sistemas eléctricos certificados con materiales de alta eficiencia y seguridad."
+  },
+  {
+    "pregunta": "¿El área comercial puede brindar asesoría en TI?",
+    "respuesta": "Sí, nuestro equipo combina experiencia técnica y comercial para ayudarte a tomar decisiones inteligentes en tecnología."
+  },
+  {
+    "pregunta": "¿Puedo recibir atención personalizada según mi sector?",
+    "respuesta": "Sí, adaptamos nuestras soluciones para sectores industriales, comerciales, educativos o institucionales."
+  },
+  {
+    "pregunta": "¿El área comercial ofrece atención en ferias o eventos?",
+    "respuesta": "Sí, participamos en ferias tecnológicas y eventos empresariales donde puedes conocer nuestros productos directamente."
+  },
+  {
+    "pregunta": "¿Puedo solicitar cotización para monitoreo remoto?",
+    "respuesta": "Sí, cotizamos sistemas de monitoreo 24/7 con cámaras, sensores y soporte técnico especializado."
+  },
+  {
+    "pregunta": "¿El área comercial puede ayudarme con documentación para contratos?",
+    "respuesta": "Sí, te apoyamos con los documentos técnicos, fiscales y de cumplimiento requeridos para formalizar el contrato."
+  },
+
+  {
+    "pregunta": "¿Puedo solicitar cotización para soluciones de inteligencia artificial?",
+    "respuesta": "Sí, te ofrecemos soluciones con IA adaptadas a tu negocio, desde chatbots hasta automatización de procesos y análisis de datos."
+  },
+  {
+    "pregunta": "¿El área comercial ofrece propuestas integrales?",
+    "respuesta": "Sí, elaboramos propuestas completas que incluyen asesoría, instalación, soporte y mantenimiento en un solo paquete."
+  },
+  {
+    "pregunta": "¿Puedo recibir asesoría para implementar ciberseguridad?",
+    "respuesta": "Sí, nuestros expertos te orientan sobre cómo proteger tu información con soluciones modernas y escalables."
+  },
+  {
+    "pregunta": "¿El área comercial ofrece planes empresariales personalizados?",
+    "respuesta": "Sí, diseñamos planes a la medida de cada empresa, según su tamaño, presupuesto y objetivos tecnológicos."
+  },
+  {
+    "pregunta": "¿Puedo solicitar una demostración práctica de IA?",
+    "respuesta": "Sí, realizamos demostraciones virtuales o presenciales para mostrar cómo la inteligencia artificial puede potenciar tu operación."
+  },
+  {
+    "pregunta": "¿El área comercial maneja proyectos de automatización?",
+    "respuesta": "Sí, trabajamos en automatización de tareas, integración de sistemas y control inteligente de procesos industriales."
+  },
+  {
+    "pregunta": "¿Puedo recibir apoyo técnico después de la venta?",
+    "respuesta": "Sí, todos nuestros productos y servicios incluyen acompañamiento postventa y soporte especializado."
+  },
+  {
+    "pregunta": "¿El área comercial coordina con el área técnica?",
+    "respuesta": "Sí, trabajamos de forma integrada para garantizar que lo cotizado se ejecute correctamente y cumpla tus expectativas."
+  },
+  {
+    "pregunta": "¿Puedo solicitar cotización para servicios de soporte remoto?",
+    "respuesta": "Sí, ofrecemos soporte técnico remoto con monitoreo, diagnóstico y mantenimiento sin necesidad de desplazamiento."
+  },
+  {
+    "pregunta": "¿El área comercial puede crear propuestas con varias fases?",
+    "respuesta": "Sí, elaboramos propuestas por etapas para proyectos complejos, facilitando la planificación y ejecución progresiva."
+  },
+  {
+    "pregunta": "¿Puedo recibir descuentos por fidelidad?",
+    "respuesta": "Sí, premiamos la confianza de nuestros clientes con beneficios y descuentos exclusivos en renovaciones o nuevas compras."
+  },
+  {
+    "pregunta": "¿El área comercial maneja convenios con universidades?",
+    "respuesta": "Sí, desarrollamos alianzas académicas para proyectos tecnológicos, capacitación y asesoría técnica especializada."
+  },
+  {
+    "pregunta": "¿Puedo solicitar cotización para domótica o automatización del hogar?",
+    "respuesta": "Sí, implementamos sistemas inteligentes para hogares y oficinas que optimizan la energía y la seguridad."
+  },
+  {
+    "pregunta": "¿El área comercial ofrece acompañamiento en todo el proceso?",
+    "respuesta": "Sí, te acompañamos desde la primera cotización hasta la entrega y puesta en marcha del proyecto."
+  },
+  {
+    "pregunta": "¿Puedo solicitar cotización para mantenimiento de redes?",
+    "respuesta": "Sí, cotizamos mantenimiento preventivo o correctivo en redes empresariales, cableado y equipos de comunicación."
+  },
+  {
+    "pregunta": "¿El área comercial puede preparar licencias para software educativo?",
+    "respuesta": "Sí, gestionamos licencias académicas o institucionales con proveedores autorizados y soporte incluido."
+  },
+  {
+    "pregunta": "¿Puedo solicitar asesoría sobre actualización tecnológica?",
+    "respuesta": "Sí, te guiamos para renovar equipos, mejorar tu infraestructura y mantener tu empresa tecnológicamente competitiva."
+  },
+  {
+    "pregunta": "¿El área comercial ofrece atención internacional?",
+    "respuesta": "Sí, ofrecemos asesoría virtual y soporte remoto para clientes en el exterior con comunicación fluida y segura."
+  },
+  {
+    "pregunta": "¿Puedo combinar varios proyectos en un solo contrato?",
+    "respuesta": "Sí, integramos todos tus requerimientos en un único contrato global para mayor facilidad administrativa y financiera."
+  },
+  {
+    "pregunta": "¿El área comercial puede asesorar sobre innovación tecnológica?",
+    "respuesta": "Sí, nuestros expertos te ayudan a identificar oportunidades de innovación para modernizar tus operaciones."
+  },
+  {
+    "pregunta": "¿Puedo recibir información sobre programas de fidelización?",
+    "respuesta": "Sí, tenemos programas de fidelidad con beneficios progresivos, descuentos y soporte preferencial para clientes constantes."
+  },
+  {
+    "pregunta": "¿El área comercial ofrece seguimiento a proyectos implementados?",
+    "respuesta": "Sí, realizamos revisiones periódicas para asegurarnos de que los proyectos ejecutados sigan cumpliendo sus objetivos."
+  },
+  {
+    "pregunta": "¿Puedo recibir atención por videollamada o Teams?",
+    "respuesta": "Sí, atendemos por videollamada, Google Meet o Microsoft Teams para ofrecerte una comunicación más cercana y ágil."
+  },
+  {
+    "pregunta": "¿El área comercial maneja soluciones para pymes?",
+    "respuesta": "Sí, diseñamos soluciones escalables con precios accesibles especialmente para pequeñas y medianas empresas."
+  },
+  {
+    "pregunta": "¿Puedo solicitar una cotización para servidores empresariales?",
+    "respuesta": "Sí, cotizamos servidores físicos o virtuales, con instalación, configuración y soporte técnico incluido."
+  },
+  {
+    "pregunta": "¿El área comercial ofrece consultoría previa a proyectos?",
+    "respuesta": "Sí, te asesoramos antes de iniciar cualquier proyecto para garantizar una inversión segura y rentable."
+  },
+  {
+    "pregunta": "¿Puedo solicitar cotización para soluciones de realidad virtual?",
+    "respuesta": "Sí, desarrollamos entornos de realidad virtual y experiencias inmersivas para educación, marketing o industria."
+  },
+  {
+    "pregunta": "¿El área comercial asesora sobre innovación en IA?",
+    "respuesta": "Sí, te mostramos cómo la inteligencia artificial puede mejorar procesos, reducir costos y aumentar tu productividad."
+  },
+  {
+    "pregunta": "¿Puedo recibir propuestas personalizadas por sector?",
+    "respuesta": "Sí, adaptamos nuestras soluciones a sectores específicos como salud, educación, industria o comercio."
+  },
+  {
+    "pregunta": "¿El área comercial trabaja junto al equipo de innovación?",
+    "respuesta": "Sí, colaboramos con nuestro equipo de innovación para ofrecer propuestas modernas y tecnológicamente actualizadas."
+  },
+  {
+    "pregunta": "¿Puedo solicitar un acompañamiento comercial continuo?",
+    "respuesta": "Sí, ofrecemos seguimiento constante con asesor asignado para tus proyectos tecnológicos y de mantenimiento."
+  },
+  {
+    "pregunta": "¿El área comercial puede ayudarme a planificar mi presupuesto anual?",
+    "respuesta": "Sí, te ayudamos a distribuir tus inversiones tecnológicas de forma estratégica durante el año."
+  },
+  {
+    "pregunta": "¿Puedo recibir soporte técnico y comercial al mismo tiempo?",
+    "respuesta": "Sí, nuestros departamentos trabajan integrados para ofrecerte una atención rápida y coordinada."
+  },
+  {
+    "pregunta": "¿El área comercial puede brindar asesoría en licencias empresariales?",
+    "respuesta": "Sí, gestionamos y renovamos licencias corporativas con proveedores oficiales garantizando autenticidad y soporte."
+  },
+  {
+    "pregunta": "¿Puedo recibir atención en eventos empresariales o ferias?",
+    "respuesta": "Sí, participamos en eventos donde puedes conocer nuestras soluciones en vivo y contactar a nuestros asesores."
+  },
+  {
+    "pregunta": "¿El área comercial ofrece cotizaciones para proyectos híbridos?",
+    "respuesta": "Sí, cotizamos proyectos que combinan infraestructura física y servicios en la nube con soporte integral."
+  },
+  {
+    "pregunta": "¿Puedo solicitar asesoría sobre digitalización de procesos?",
+    "respuesta": "Sí, te orientamos para automatizar y digitalizar tareas mediante software, IA y soluciones tecnológicas modernas."
+  },
+  {
+    "pregunta": "¿El área comercial maneja proyectos de innovación industrial?",
+    "respuesta": "Sí, apoyamos empresas industriales en automatización, sensorización y mejora tecnológica de procesos."
+  },
+  {
+    "pregunta": "¿Puedo recibir propuestas comerciales comparativas?",
+    "respuesta": "Sí, elaboramos propuestas comparativas para que elijas la opción que más se ajuste a tus necesidades y presupuesto."
+  },
+  {
+    "pregunta": "¿El área comercial puede gestionar alianzas con mi empresa?",
+    "respuesta": "Sí, trabajamos bajo convenios estratégicos y alianzas comerciales de beneficio mutuo."
+  },
+  {
+    "pregunta": "¿Puedo solicitar cotización para soluciones integradas?",
+    "respuesta": "Sí, elaboramos cotizaciones que combinan distintas áreas: consultoría, soporte, innovación e infraestructura."
+  },
+  {
+    "pregunta": "¿El área comercial ofrece capacitaciones sobre productos?",
+    "respuesta": "Sí, capacitamos a tu equipo en el manejo y mantenimiento de los equipos o software adquiridos."
+  },
+  {
+    "pregunta": "¿Qué diferencia tiene VicaTechnology frente a otras empresas?",
+    "respuesta": "Nuestro enfoque humano y técnico nos distingue. Nos interesa acompañarte, no solo venderte, para que cada proyecto sea un éxito."
+  },
+  {
+    "pregunta": "¿Puedo renovar mis servicios comerciales anualmente?",
+    "respuesta": "Sí, puedes renovar tus servicios y mejorar tus planes según el crecimiento de tu empresa o tus nuevas metas."
+  },
+  {
+    "pregunta": "¿El área comercial ofrece atención para proyectos internacionales?",
+    "respuesta": "Sí, atendemos empresas en otros países mediante comunicación remota, con propuestas adaptadas al mercado local."
+  },
+  {
+    "pregunta": "¿Puedo recibir asesoría gratuita antes de contratar?",
+    "respuesta": "Sí, ofrecemos una asesoría inicial sin costo para conocer tu caso y presentarte la mejor opción."
+  },
+  {
+    "pregunta": "¿El área comercial puede gestionar soporte postventa?",
+    "respuesta": "Sí, trabajamos junto al área técnica para garantizar seguimiento y atención después de la entrega."
+  },
+  {
+    "pregunta": "¿Puedo recibir acompañamiento personalizado durante mi proyecto?",
+    "respuesta": "Sí, asignamos un asesor comercial que te acompaña durante todo el proceso, desde la planeación hasta la implementación final."
+  },
+  {
+    "pregunta": "¿El área comercial asesora sobre transformación digital?",
+    "respuesta": "Sí, te ayudamos a modernizar tu empresa con estrategias digitales, automatización y soluciones basadas en IA."
+  },
+
+  {
+    "pregunta": "¿Qué es el área de innovación de VicaTechnology?",
+    "respuesta": "Es el equipo que impulsa nuevas soluciones tecnológicas basadas en inteligencia artificial, automatización y realidad virtual para modernizar procesos empresariales."
+  },
+  {
+    "pregunta": "¿Qué tipo de proyectos desarrollan en innovación?",
+    "respuesta": "Desarrollamos proyectos de IA, automatización, realidad aumentada, soluciones web interactivas y experiencias inmersivas personalizadas."
+  },
+  {
+    "pregunta": "¿Puedo contratar desarrollo de inteligencia artificial?",
+    "respuesta": "Sí, creamos sistemas inteligentes, chatbots, asistentes virtuales y modelos de IA ajustados a las necesidades de tu negocio."
+  },
+  {
+    "pregunta": "¿Qué beneficios ofrece el área de innovación?",
+    "respuesta": "Te ayudamos a optimizar procesos, reducir costos y aumentar la productividad mediante tecnología avanzada y soluciones digitales personalizadas."
+  },
+  {
+    "pregunta": "¿Desarrollan aplicaciones personalizadas?",
+    "respuesta": "Sí, diseñamos y programamos aplicaciones web y móviles según los objetivos de cada empresa."
+  },
+  {
+    "pregunta": "¿Puedo solicitar un proyecto de realidad virtual?",
+    "respuesta": "Sí, creamos entornos inmersivos para educación, marketing o simulaciones industriales con experiencias visuales de alto impacto."
+  },
+  {
+    "pregunta": "¿Trabajan con inteligencia artificial generativa?",
+    "respuesta": "Sí, usamos IA generativa para crear chatbots inteligentes, sistemas de recomendación y herramientas creativas automatizadas."
+  },
+  {
+    "pregunta": "¿Qué diferencia tiene la innovación de VicaTechnology frente a otras empresas?",
+    "respuesta": "Integramos tecnología, diseño y estrategia. No solo implementamos herramientas, transformamos ideas en soluciones funcionales."
+  },
+  {
+    "pregunta": "¿Ofrecen asesorías sobre transformación digital?",
+    "respuesta": "Sí, analizamos el estado tecnológico de tu empresa y te guiamos paso a paso en el proceso de digitalización e innovación."
+  },
+  {
+    "pregunta": "¿Puedo recibir demostraciones de proyectos innovadores?",
+    "respuesta": "Sí, realizamos demostraciones virtuales o presenciales para mostrarte cómo aplicamos la innovación en distintos sectores."
+  },
+  {
+    "pregunta": "¿Desarrollan software a medida?",
+    "respuesta": "Sí, creamos software empresarial personalizado, desde sistemas de gestión hasta plataformas interactivas."
+  },
+  {
+    "pregunta": "¿Puedo integrar inteligencia artificial a mi empresa?",
+    "respuesta": "Sí, analizamos tus procesos y te proponemos soluciones con IA para mejorar atención al cliente, análisis de datos o eficiencia operativa."
+  },
+  {
+    "pregunta": "¿El área de innovación ofrece consultoría?",
+    "respuesta": "Sí, te asesoramos sobre cómo incorporar innovación en tus proyectos, procesos o estrategias de crecimiento."
+  },
+  {
+    "pregunta": "¿Desarrollan chatbots empresariales?",
+    "respuesta": "Sí, creamos chatbots inteligentes capaces de atender clientes, resolver consultas y aprender de tus interacciones."
+  },
+  {
+    "pregunta": "¿Puedo solicitar una prueba piloto de innovación?",
+    "respuesta": "Sí, desarrollamos pilotos para validar el impacto de las nuevas tecnologías antes de implementarlas a gran escala."
+  },
+  {
+    "pregunta": "¿El área de innovación trabaja con realidad aumentada?",
+    "respuesta": "Sí, creamos experiencias en realidad aumentada para mostrar productos, capacitar personal o mejorar procesos industriales."
+  },
+  {
+    "pregunta": "¿Desarrollan sistemas de monitoreo inteligente?",
+    "respuesta": "Sí, integramos sensores, IA y análisis de datos para monitorear entornos y optimizar decisiones empresariales."
+  },
+  {
+    "pregunta": "¿Puedo innovar sin invertir grandes presupuestos?",
+    "respuesta": "Sí, adaptamos las soluciones a tu capacidad actual, comenzando con proyectos escalables que crecen contigo."
+  },
+  {
+    "pregunta": "¿El área de innovación puede automatizar procesos internos?",
+    "respuesta": "Sí, analizamos tus flujos de trabajo y desarrollamos automatizaciones para reducir tiempos y errores operativos."
+  },
+  {
+    "pregunta": "¿Puedo solicitar desarrollo de plataformas interactivas?",
+    "respuesta": "Sí, diseñamos portales web, paneles administrativos y sistemas interactivos que mejoran la experiencia del usuario."
+  },
+  {
+    "pregunta": "¿Desarrollan inteligencia artificial para atención al cliente?",
+    "respuesta": "Sí, implementamos asistentes virtuales que atienden consultas, registran datos y aprenden del comportamiento de los usuarios."
+  },
+  {
+    "pregunta": "¿Puedo participar en un proyecto de innovación colaborativa?",
+    "respuesta": "Sí, trabajamos con empresas y aliados estratégicos para crear proyectos conjuntos de innovación tecnológica."
+  },
+  {
+    "pregunta": "¿El área de innovación trabaja con tecnologías emergentes?",
+    "respuesta": "Sí, exploramos IA, IoT, Big Data, blockchain y otras tecnologías que impulsan la transformación digital."
+  },
+  {
+    "pregunta": "¿Desarrollan interfaces con diseño futurista?",
+    "respuesta": "Sí, cuidamos cada detalle visual y funcional para que las interfaces sean modernas, intuitivas y atractivas."
+  },
+  {
+    "pregunta": "¿Puedo innovar mi sitio web con su equipo?",
+    "respuesta": "Sí, rediseñamos tu web con tecnología avanzada, animaciones interactivas y herramientas inteligentes que mejoran la experiencia del usuario."
+  },
+  {
+    "pregunta": "¿Ofrecen capacitación en herramientas innovadoras?",
+    "respuesta": "Sí, capacitamos a tu equipo en IA, automatización, herramientas digitales y nuevas tecnologías aplicadas a tu sector."
+  },
+  {
+    "pregunta": "¿Puedo solicitar una auditoría tecnológica para innovar?",
+    "respuesta": "Sí, realizamos auditorías que identifican oportunidades de mejora y te orientan hacia soluciones más modernas."
+  },
+  {
+    "pregunta": "¿Desarrollan simuladores virtuales?",
+    "respuesta": "Sí, creamos simuladores educativos e industriales para formación y entrenamiento en entornos digitales realistas."
+  },
+  {
+    "pregunta": "¿Puedo digitalizar mis procesos empresariales?",
+    "respuesta": "Sí, transformamos tus procesos manuales en flujos digitales automatizados para mayor eficiencia y control."
+  },
+  {
+    "pregunta": "¿El área de innovación puede crear sistemas inteligentes para industria?",
+    "respuesta": "Sí, desarrollamos soluciones con IA y sensores que optimizan la producción, mantenimiento y control industrial."
+  },
+  {
+    "pregunta": "¿Puedo solicitar asesoría en tendencias tecnológicas?",
+    "respuesta": "Sí, te mantenemos actualizado sobre las últimas tendencias e innovaciones aplicables a tu negocio."
+  },
+  {
+    "pregunta": "¿Desarrollan proyectos con Internet de las Cosas (IoT)?",
+    "respuesta": "Sí, conectamos dispositivos inteligentes que recopilan y analizan datos para mejorar la toma de decisiones."
+  },
+  {
+    "pregunta": "¿Puedo automatizar la gestión de mi empresa con IA?",
+    "respuesta": "Sí, aplicamos inteligencia artificial para analizar datos, prever escenarios y automatizar tareas administrativas."
+  },
+  {
+    "pregunta": "¿El área de innovación ofrece mentorías tecnológicas?",
+    "respuesta": "Sí, acompañamos a emprendedores y empresas en el desarrollo de ideas tecnológicas desde su conceptualización."
+  },
+  {
+    "pregunta": "¿Desarrollan soluciones de análisis de datos?",
+    "respuesta": "Sí, creamos plataformas que recopilan y analizan información para ayudarte a tomar decisiones estratégicas basadas en datos."
+  },
+  {
+    "pregunta": "¿Puedo integrar mis sistemas actuales con sus soluciones?",
+    "respuesta": "Sí, garantizamos compatibilidad e integración con tus plataformas actuales sin afectar la operación de tu empresa."
+  },
+  {
+    "pregunta": "¿Desarrollan proyectos de innovación para educación?",
+    "respuesta": "Sí, creamos herramientas interactivas, plataformas virtuales y recursos educativos digitales innovadores."
+  },
+  {
+    "pregunta": "¿Puedo participar en proyectos de innovación abierta?",
+    "respuesta": "Sí, colaboramos con aliados, universidades y empresas en proyectos de investigación e innovación abierta."
+  },
+  {
+    "pregunta": "¿El área de innovación puede personalizar soluciones IA?",
+    "respuesta": "Sí, diseñamos sistemas de inteligencia artificial hechos a la medida para resolver tus retos específicos."
+  },
+
+  {
+    "pregunta": "¿Desarrollan proyectos de automatización inteligente?",
+    "respuesta": "Sí, implementamos sistemas automatizados que optimizan procesos industriales, administrativos o comerciales utilizando inteligencia artificial y sensores."
+  },
+  {
+    "pregunta": "¿Puedo solicitar integración de IA con mis sistemas actuales?",
+    "respuesta": "Sí, desarrollamos integraciones que conectan tu software actual con soluciones de IA sin alterar la estructura principal de tus operaciones."
+  },
+  {
+    "pregunta": "¿El área de innovación realiza pruebas de concepto?",
+    "respuesta": "Sí, hacemos pruebas de concepto (PoC) para validar la viabilidad técnica y funcional de tus ideas antes de invertir."
+  },
+  {
+    "pregunta": "¿Puedo desarrollar una app innovadora con ustedes?",
+    "respuesta": "Sí, diseñamos y programamos aplicaciones móviles o web únicas, combinando estética, rendimiento e inteligencia artificial."
+  },
+  {
+    "pregunta": "¿Ofrecen innovación aplicada al marketing digital?",
+    "respuesta": "Sí, usamos IA y automatización para crear campañas personalizadas, análisis predictivo y experiencias interactivas con tus clientes."
+  },
+  {
+    "pregunta": "¿Puedo contratar innovación para el sector industrial?",
+    "respuesta": "Sí, diseñamos soluciones de automatización, control y monitoreo en entornos industriales con enfoque en eficiencia y seguridad."
+  },
+  {
+    "pregunta": "¿El área de innovación ofrece prototipado rápido?",
+    "respuesta": "Sí, desarrollamos prototipos funcionales en poco tiempo para que puedas visualizar y probar tu proyecto antes de escalarlo."
+  },
+  {
+    "pregunta": "¿Desarrollan soluciones con visión por computadora?",
+    "respuesta": "Sí, aplicamos IA para reconocer objetos, detectar fallas y automatizar tareas visuales en tiempo real."
+  },
+  {
+    "pregunta": "¿Puedo solicitar innovación para educación virtual?",
+    "respuesta": "Sí, creamos plataformas educativas interactivas, simuladores y contenidos inmersivos que mejoran el aprendizaje digital."
+  },
+  {
+    "pregunta": "¿El área de innovación trabaja con análisis predictivo?",
+    "respuesta": "Sí, utilizamos algoritmos que anticipan tendencias, detectan patrones y apoyan la toma de decisiones empresariales."
+  },
+  {
+    "pregunta": "¿Puedo solicitar asesoría en innovación digital?",
+    "respuesta": "Sí, realizamos diagnósticos tecnológicos para identificar oportunidades de mejora e innovación dentro de tu organización."
+  },
+  {
+    "pregunta": "¿Desarrollan proyectos con machine learning?",
+    "respuesta": "Sí, implementamos modelos de aprendizaje automático que optimizan procesos, clasifican información y generan predicciones precisas."
+  },
+  {
+    "pregunta": "¿Puedo participar en programas de innovación empresarial?",
+    "respuesta": "Sí, ofrecemos programas personalizados donde impulsamos la creatividad y la adopción tecnológica en tu empresa."
+  },
+  {
+    "pregunta": "¿El área de innovación apoya startups tecnológicas?",
+    "respuesta": "Sí, colaboramos con emprendimientos para convertir sus ideas en productos digitales sostenibles y escalables."
+  },
+  {
+    "pregunta": "¿Desarrollan soluciones con análisis de datos en tiempo real?",
+    "respuesta": "Sí, conectamos sensores y sistemas para procesar y visualizar información en tiempo real mediante dashboards inteligentes."
+  },
+  {
+    "pregunta": "¿Puedo automatizar mi servicio al cliente?",
+    "respuesta": "Sí, implementamos chatbots, respuestas automáticas y flujos inteligentes que mejoran la atención y reducen tiempos de espera."
+  },
+  {
+    "pregunta": "¿El área de innovación ofrece entrenamiento en IA?",
+    "respuesta": "Sí, capacitamos a equipos empresariales en el uso y aplicación de inteligencia artificial y herramientas de automatización."
+  },
+  {
+    "pregunta": "¿Desarrollan soluciones con realidad mixta?",
+    "respuesta": "Sí, combinamos realidad aumentada y virtual para crear experiencias híbridas aplicadas a industria, educación o marketing."
+  },
+  {
+    "pregunta": "¿Puedo solicitar acompañamiento en innovación digital?",
+    "respuesta": "Sí, te acompañamos en todo el proceso de ideación, diseño, implementación y escalamiento de tu solución innovadora."
+  },
+  {
+    "pregunta": "¿El área de innovación diseña paneles interactivos?",
+    "respuesta": "Sí, desarrollamos dashboards dinámicos con análisis visual e información en tiempo real para mejorar la toma de decisiones."
+  },
+  {
+    "pregunta": "¿Desarrollan sistemas con IA conversacional?",
+    "respuesta": "Sí, diseñamos chatbots avanzados con lenguaje natural que interactúan fluidamente con los usuarios."
+  },
+  {
+    "pregunta": "¿Puedo solicitar soluciones de innovación para pymes?",
+    "respuesta": "Sí, ofrecemos soluciones escalables y rentables que ayudan a pequeñas y medianas empresas a digitalizar sus operaciones."
+  },
+  {
+    "pregunta": "¿El área de innovación puede ayudarme a crear un producto digital?",
+    "respuesta": "Sí, te acompañamos desde la idea hasta el lanzamiento con desarrollo, diseño, pruebas y soporte técnico."
+  },
+  {
+    "pregunta": "¿Desarrollan proyectos con asistentes virtuales?",
+    "respuesta": "Sí, creamos asistentes inteligentes que gestionan tareas, agendan citas y brindan atención personalizada a tus clientes."
+  },
+  {
+    "pregunta": "¿Puedo solicitar innovación aplicada a recursos humanos?",
+    "respuesta": "Sí, desarrollamos herramientas con IA para selección de personal, análisis de desempeño y automatización de procesos internos."
+  },
+  {
+    "pregunta": "¿El área de innovación trabaja con automatización robótica?",
+    "respuesta": "Sí, implementamos RPA (automatización robótica de procesos) para reducir tareas repetitivas y optimizar el tiempo del personal."
+  },
+  {
+    "pregunta": "¿Desarrollan soluciones de innovación para logística?",
+    "respuesta": "Sí, creamos sistemas que optimizan rutas, controlan inventarios y mejoran la trazabilidad mediante análisis inteligente de datos."
+  },
+  {
+    "pregunta": "¿Puedo solicitar apoyo para digitalizar mi empresa?",
+    "respuesta": "Sí, realizamos diagnósticos y diseñamos un plan digital a tu medida para que adoptes tecnología paso a paso."
+  },
+  {
+    "pregunta": "¿El área de innovación ofrece mentorías para emprendedores?",
+    "respuesta": "Sí, guiamos a emprendedores en el desarrollo de ideas tecnológicas, planificación y validación de sus proyectos digitales."
+  },
+  {
+    "pregunta": "¿Desarrollan plataformas de análisis empresarial?",
+    "respuesta": "Sí, creamos plataformas BI que analizan datos y generan reportes interactivos para apoyar decisiones estratégicas."
+  },
+  {
+    "pregunta": "¿Puedo solicitar innovación con blockchain?",
+    "respuesta": "Sí, exploramos el uso de blockchain en trazabilidad, contratos inteligentes y seguridad digital."
+  },
+  {
+    "pregunta": "¿El área de innovación diseña experiencias inmersivas?",
+    "respuesta": "Sí, creamos experiencias 3D, entornos VR y contenidos digitales para presentaciones o entrenamientos empresariales."
+  },
+  {
+    "pregunta": "¿Desarrollan sistemas con inteligencia artificial predictiva?",
+    "respuesta": "Sí, implementamos IA que predice comportamientos, fallos o tendencias para ayudarte a tomar decisiones anticipadas."
+  },
+  {
+    "pregunta": "¿Puedo combinar innovación y soporte técnico?",
+    "respuesta": "Sí, ofrecemos soluciones que incluyen desarrollo innovador y soporte técnico continuo para mantener tu sistema actualizado."
+  },
+  {
+    "pregunta": "¿El área de innovación apoya procesos de investigación tecnológica?",
+    "respuesta": "Sí, colaboramos con universidades y centros de investigación para desarrollar proyectos científicos y tecnológicos aplicados."
+  },
+  {
+    "pregunta": "¿Desarrollan sistemas de gestión automatizados?",
+    "respuesta": "Sí, creamos plataformas que administran tareas, recursos y datos automáticamente, reduciendo errores humanos."
+  },
+  {
+    "pregunta": "¿Puedo solicitar innovación para atención médica?",
+    "respuesta": "Sí, desarrollamos soluciones digitales para clínicas y hospitales que optimizan procesos y mejoran la atención al paciente."
+  },
+  {
+    "pregunta": "¿El área de innovación ofrece consultoría en tecnologías emergentes?",
+    "respuesta": "Sí, te asesoramos sobre las tecnologías más recientes y cómo aplicarlas estratégicamente en tu organización."
+  },
+  {
+    "pregunta": "¿Desarrollan sistemas de control inteligente?",
+    "respuesta": "Sí, integramos IA, sensores y automatización para crear sistemas que se ajustan automáticamente a tu entorno o necesidades."
+  },
+  {
+    "pregunta": "¿Puedo innovar en mis servicios actuales?",
+    "respuesta": "Sí, analizamos tu modelo de negocio y aplicamos mejoras digitales para hacerlo más eficiente, competitivo y moderno."
+  },
+
+  {
+    "pregunta": "¿Desarrollan soluciones de automatización empresarial?",
+    "respuesta": "Sí, creamos sistemas automatizados que optimizan tareas diarias, reducen errores y mejoran la productividad general de tu empresa."
+  },
+  {
+    "pregunta": "¿Puedo solicitar una propuesta de innovación tecnológica?",
+    "respuesta": "Sí, elaboramos propuestas personalizadas con análisis técnico, costos estimados y beneficios esperados para tu organización."
+  },
+  {
+    "pregunta": "¿El área de innovación diseña chatbots para empresas?",
+    "respuesta": "Sí, desarrollamos chatbots personalizados que aprenden del comportamiento de tus clientes y mejoran la atención digital."
+  },
+  {
+    "pregunta": "¿Desarrollan soluciones con inteligencia artificial aplicada?",
+    "respuesta": "Sí, aplicamos IA en áreas como análisis de datos, automatización, seguridad digital y atención al cliente."
+  },
+  {
+    "pregunta": "¿Puedo automatizar la gestión de mis clientes?",
+    "respuesta": "Sí, desarrollamos sistemas CRM inteligentes que organizan la información de tus clientes y optimizan la comunicación comercial."
+  },
+  {
+    "pregunta": "¿El área de innovación apoya proyectos de sostenibilidad tecnológica?",
+    "respuesta": "Sí, promovemos soluciones tecnológicas sostenibles, de bajo consumo energético y con materiales ecológicos."
+  },
+  {
+    "pregunta": "¿Desarrollan sistemas con aprendizaje automático?",
+    "respuesta": "Sí, aplicamos machine learning para crear sistemas que aprenden de la información y mejoran sus resultados con el tiempo."
+  },
+  {
+    "pregunta": "¿Puedo innovar en mis procesos administrativos?",
+    "respuesta": "Sí, automatizamos tareas como facturación, control de inventarios y gestión de documentos para hacer tu empresa más ágil."
+  },
+  {
+    "pregunta": "¿El área de innovación ofrece desarrollo web avanzado?",
+    "respuesta": "Sí, creamos sitios web dinámicos, con inteligencia artificial integrada y experiencias visuales interactivas."
+  },
+  {
+    "pregunta": "¿Desarrollan proyectos con análisis de comportamiento?",
+    "respuesta": "Sí, aplicamos análisis de comportamiento y datos para entender mejor a tus clientes y mejorar tus estrategias de negocio."
+  },
+  {
+    "pregunta": "¿Puedo digitalizar mis servicios tradicionales?",
+    "respuesta": "Sí, te ayudamos a migrar tus servicios físicos al entorno digital con plataformas modernas y seguras."
+  },
+  {
+    "pregunta": "¿El área de innovación trabaja con sensores inteligentes?",
+    "respuesta": "Sí, integramos sensores IoT para recopilar datos, monitorear procesos y generar alertas automáticas."
+  },
+  {
+    "pregunta": "¿Desarrollan soluciones para empresas del sector salud?",
+    "respuesta": "Sí, creamos plataformas de historia clínica, gestión de citas, monitoreo de pacientes y análisis de datos médicos."
+  },
+  {
+    "pregunta": "¿Puedo automatizar mis procesos de facturación?",
+    "respuesta": "Sí, implementamos sistemas automáticos de facturación electrónica que cumplen con la normativa y mejoran la eficiencia."
+  },
+  {
+    "pregunta": "¿El área de innovación ofrece inteligencia de negocios?",
+    "respuesta": "Sí, implementamos soluciones BI para analizar datos, medir indicadores y apoyar decisiones estratégicas."
+  },
+  {
+    "pregunta": "¿Desarrollan herramientas con IA generativa?",
+    "respuesta": "Sí, aplicamos IA generativa para crear contenido, imágenes, textos o respuestas automáticas en entornos empresariales."
+  },
+  {
+    "pregunta": "¿Puedo integrar innovación a mis estrategias de marketing?",
+    "respuesta": "Sí, aplicamos automatización, análisis de datos y herramientas digitales para potenciar tus campañas de marketing."
+  },
+  {
+    "pregunta": "¿El área de innovación apoya a instituciones educativas?",
+    "respuesta": "Sí, colaboramos con instituciones en la creación de entornos digitales, aulas virtuales y herramientas de aprendizaje interactivo."
+  },
+  {
+    "pregunta": "¿Desarrollan soluciones de innovación en ciberseguridad?",
+    "respuesta": "Sí, aplicamos inteligencia artificial y análisis predictivo para detectar y prevenir amenazas informáticas."
+  },
+  {
+    "pregunta": "¿Puedo solicitar una reunión con el equipo de innovación?",
+    "respuesta": "Sí, puedes agendar una reunión virtual o presencial para discutir tu idea y diseñar una solución adaptada a tus metas."
+  },
+  {
+    "pregunta": "¿El área de innovación realiza proyectos de automatización de datos?",
+    "respuesta": "Sí, desarrollamos herramientas que recopilan, procesan y visualizan datos automáticamente para facilitar la toma de decisiones."
+  },
+  {
+    "pregunta": "¿Desarrollan innovación para comercio electrónico?",
+    "respuesta": "Sí, creamos tiendas online inteligentes con recomendaciones automáticas, chatbots y análisis de comportamiento de clientes."
+  },
+  {
+    "pregunta": "¿Puedo solicitar un prototipo digital de mi idea?",
+    "respuesta": "Sí, desarrollamos prototipos interactivos para validar tu idea antes de invertir en su desarrollo completo."
+  },
+  {
+    "pregunta": "¿El área de innovación ofrece asesorías continuas?",
+    "respuesta": "Sí, puedes contratar acompañamiento mensual o trimestral para implementar y mantener tus estrategias innovadoras."
+  },
+  {
+    "pregunta": "¿Desarrollan herramientas de gestión inteligente?",
+    "respuesta": "Sí, creamos software de gestión automatizado que optimiza la administración de recursos, personal y proyectos."
+  },
+  {
+    "pregunta": "¿Puedo innovar en la atención al cliente de mi empresa?",
+    "respuesta": "Sí, aplicamos IA conversacional y automatización para ofrecer atención más rápida, personalizada y eficiente."
+  },
+  {
+    "pregunta": "¿El área de innovación apoya proyectos sociales?",
+    "respuesta": "Sí, participamos en proyectos tecnológicos con impacto social, educativo o ambiental que aporten al desarrollo sostenible."
+  },
+  {
+    "pregunta": "¿Desarrollan plataformas de monitoreo ambiental?",
+    "respuesta": "Sí, creamos sistemas IoT que registran temperatura, calidad del aire y variables ambientales en tiempo real."
+  },
+  {
+    "pregunta": "¿Puedo automatizar tareas repetitivas en mi negocio?",
+    "respuesta": "Sí, implementamos RPA para que las tareas rutinarias se ejecuten automáticamente, ahorrando tiempo y recursos."
+  },
+  {
+    "pregunta": "¿El área de innovación diseña soluciones escalables?",
+    "respuesta": "Sí, todas nuestras soluciones están pensadas para crecer contigo, adaptándose al ritmo y tamaño de tu empresa."
+  },
+  {
+    "pregunta": "¿Desarrollan plataformas de gestión energética?",
+    "respuesta": "Sí, diseñamos sistemas inteligentes que analizan consumo eléctrico y optimizan el uso de energía en instalaciones."
+  },
+  {
+    "pregunta": "¿Puedo digitalizar mi proceso de ventas?",
+    "respuesta": "Sí, creamos plataformas comerciales automatizadas con cotización, seguimiento y cierre de ventas online."
+  },
+  {
+    "pregunta": "¿El área de innovación trabaja con inteligencia visual?",
+    "respuesta": "Sí, aplicamos IA visual para reconocimiento facial, conteo de personas o detección de objetos en tiempo real."
+  },
+  {
+    "pregunta": "¿Desarrollan proyectos con inteligencia de voz?",
+    "respuesta": "Sí, integramos asistentes virtuales por voz para automatizar tareas, consultas y controles de dispositivos."
+  },
+  {
+    "pregunta": "¿Puedo integrar inteligencia artificial en mis productos actuales?",
+    "respuesta": "Sí, adaptamos la IA a tus productos o servicios actuales para hacerlos más inteligentes, eficientes y atractivos."
+  },
+  {
+    "pregunta": "¿El área de innovación ofrece soporte técnico postimplementación?",
+    "respuesta": "Sí, acompañamos cada proyecto después de su lanzamiento con mantenimiento y optimización continua."
+  },
+  {
+    "pregunta": "¿Desarrollan innovación aplicada al turismo?",
+    "respuesta": "Sí, creamos experiencias virtuales, recorridos 3D y herramientas interactivas para potenciar el turismo digital."
+  },
+  {
+    "pregunta": "¿Puedo usar IA para mejorar mi atención al cliente?",
+    "respuesta": "Sí, aplicamos modelos de IA conversacional que responden consultas, canalizan solicitudes y aprenden de cada interacción."
+  },
+  {
+    "pregunta": "¿El área de innovación crea experiencias 3D personalizadas?",
+    "respuesta": "Sí, diseñamos entornos tridimensionales para marcas, educación o industrias que buscan destacar con tecnología visual."
+  },
+  {
+    "pregunta": "¿Desarrollan herramientas de innovación para marketing digital?",
+    "respuesta": "Sí, integramos automatización, análisis de datos y creatividad digital para campañas más efectivas y medibles."
+  },
+  {
+    "pregunta": "¿Puedo solicitar consultoría en IA aplicada a mi negocio?",
+    "respuesta": "Sí, analizamos tus operaciones y te mostramos cómo la inteligencia artificial puede generar valor real en tu empresa."
+  },
+
+  {
+    "pregunta": "¿Desarrollan soluciones de innovación para pymes?",
+    "respuesta": "Sí, ofrecemos proyectos de innovación ajustados a las necesidades y presupuestos de pequeñas y medianas empresas."
+  },
+  {
+    "pregunta": "¿Puedo automatizar la gestión de mis proyectos?",
+    "respuesta": "Sí, desarrollamos software de gestión automatizado que organiza tareas, asigna recursos y genera reportes en tiempo real."
+  },
+  {
+    "pregunta": "¿El área de innovación puede mejorar procesos logísticos?",
+    "respuesta": "Sí, creamos soluciones que optimizan rutas, controlan inventarios y reducen tiempos operativos con tecnología inteligente."
+  },
+  {
+    "pregunta": "¿Desarrollan proyectos con inteligencia artificial visual?",
+    "respuesta": "Sí, aplicamos IA para reconocimiento de imágenes, detección de patrones y análisis de video en entornos empresariales."
+  },
+  {
+    "pregunta": "¿Puedo recibir asesoría para innovación empresarial?",
+    "respuesta": "Sí, te guiamos paso a paso para incorporar innovación tecnológica en tus procesos y productos."
+  },
+  {
+    "pregunta": "¿El área de innovación diseña experiencias de usuario?",
+    "respuesta": "Sí, diseñamos interfaces intuitivas y atractivas para que tus clientes disfruten una experiencia digital moderna y fluida."
+  },
+  {
+    "pregunta": "¿Desarrollan soluciones basadas en Big Data?",
+    "respuesta": "Sí, procesamos grandes volúmenes de datos para identificar tendencias, optimizar procesos y apoyar decisiones estratégicas."
+  },
+  {
+    "pregunta": "¿Puedo digitalizar mis operaciones internas?",
+    "respuesta": "Sí, transformamos tus procesos en sistemas digitales automatizados, accesibles y más eficientes."
+  },
+  {
+    "pregunta": "¿El área de innovación colabora con universidades?",
+    "respuesta": "Sí, trabajamos con instituciones académicas en investigación y desarrollo de proyectos tecnológicos conjuntos."
+  },
+  {
+    "pregunta": "¿Desarrollan soluciones con analítica avanzada?",
+    "respuesta": "Sí, aplicamos modelos predictivos y analítica de datos para anticipar resultados y mejorar estrategias empresariales."
+  },
+  {
+    "pregunta": "¿Puedo implementar IA en el control de calidad?",
+    "respuesta": "Sí, desarrollamos sistemas de visión artificial que detectan fallas o inconsistencias en productos y procesos."
+  },
+  {
+    "pregunta": "¿El área de innovación apoya proyectos con realidad aumentada?",
+    "respuesta": "Sí, diseñamos experiencias que mezclan el mundo real con elementos digitales para formación, ventas o entretenimiento."
+  },
+  {
+    "pregunta": "¿Desarrollan soluciones para control industrial?",
+    "respuesta": "Sí, integramos sensores y sistemas inteligentes para monitorear y controlar líneas de producción y equipos industriales."
+  },
+  {
+    "pregunta": "¿Puedo automatizar mis procesos de servicio al cliente?",
+    "respuesta": "Sí, implementamos chatbots y sistemas automáticos que mejoran la atención y reducen tiempos de respuesta."
+  },
+  {
+    "pregunta": "¿El área de innovación puede crear sistemas predictivos?",
+    "respuesta": "Sí, desarrollamos sistemas que anticipan comportamientos, necesidades o fallos a partir del análisis de datos históricos."
+  },
+  {
+    "pregunta": "¿Desarrollan innovación para el sector energético?",
+    "respuesta": "Sí, implementamos soluciones que monitorean consumo, controlan variables eléctricas y optimizan la eficiencia energética."
+  },
+  {
+    "pregunta": "¿Puedo recibir una propuesta tecnológica gratuita?",
+    "respuesta": "Sí, realizamos una evaluación inicial sin costo para recomendarte las mejores opciones tecnológicas para tu empresa."
+  },
+  {
+    "pregunta": "¿El área de innovación trabaja con inteligencia de procesos?",
+    "respuesta": "Sí, aplicamos inteligencia de procesos para mapear, medir y mejorar el rendimiento de tus operaciones empresariales."
+  },
+  {
+    "pregunta": "¿Desarrollan sistemas de automatización en la nube?",
+    "respuesta": "Sí, implementamos soluciones cloud que centralizan datos, procesos y usuarios desde cualquier ubicación."
+  },
+  {
+    "pregunta": "¿Puedo solicitar innovación para el sector público?",
+    "respuesta": "Sí, ofrecemos proyectos de digitalización y modernización tecnológica adaptados a entidades gubernamentales."
+  },
+  {
+    "pregunta": "¿El área de innovación puede crear paneles de control?",
+    "respuesta": "Sí, diseñamos paneles interactivos que muestran métricas, indicadores y alertas para tomar decisiones inteligentes."
+  },
+  {
+    "pregunta": "¿Desarrollan soluciones IA para reconocimiento facial?",
+    "respuesta": "Sí, aplicamos IA visual para reconocimiento facial, control de acceso y sistemas de seguridad automatizados."
+  },
+  {
+    "pregunta": "¿Puedo solicitar automatización de reportes?",
+    "respuesta": "Sí, desarrollamos herramientas que generan reportes automáticos con datos actualizados y análisis detallado."
+  },
+  {
+    "pregunta": "¿El área de innovación ofrece pruebas piloto?",
+    "respuesta": "Sí, realizamos pilotos tecnológicos para validar nuevas ideas antes de implementarlas en producción."
+  },
+  {
+    "pregunta": "¿Desarrollan proyectos de innovación industrial?",
+    "respuesta": "Sí, trabajamos con plantas y empresas industriales para integrar soluciones tecnológicas inteligentes."
+  },
+  {
+    "pregunta": "¿Puedo aplicar IA a mi proceso de ventas?",
+    "respuesta": "Sí, implementamos sistemas inteligentes que analizan clientes, predicen compras y automatizan el seguimiento comercial."
+  },
+  {
+    "pregunta": "¿El área de innovación ofrece desarrollo multiplataforma?",
+    "respuesta": "Sí, creamos aplicaciones compatibles con distintos dispositivos y sistemas operativos."
+  },
+  {
+    "pregunta": "¿Desarrollan herramientas de monitoreo remoto?",
+    "respuesta": "Sí, diseñamos soluciones que permiten observar, registrar y controlar variables en tiempo real desde cualquier lugar."
+  },
+  {
+    "pregunta": "¿Puedo usar inteligencia artificial para recursos humanos?",
+    "respuesta": "Sí, desarrollamos herramientas que ayudan a identificar talento, medir desempeño y automatizar procesos de selección."
+  },
+  {
+    "pregunta": "¿El área de innovación puede crear soluciones inteligentes personalizadas?",
+    "respuesta": "Sí, todas nuestras soluciones se adaptan a los objetivos, estructura y cultura de tu empresa."
+  },
+  {
+    "pregunta": "¿Desarrollan innovación para el sector financiero?",
+    "respuesta": "Sí, diseñamos sistemas seguros con IA para detección de fraudes, análisis de crédito y automatización de operaciones."
+  },
+  {
+    "pregunta": "¿Puedo combinar innovación con infraestructura tecnológica?",
+    "respuesta": "Sí, integramos hardware, software y automatización para lograr soluciones completas y eficientes."
+  },
+  {
+    "pregunta": "¿El área de innovación ofrece inteligencia operacional?",
+    "respuesta": "Sí, aplicamos análisis avanzado y monitoreo digital para mejorar la eficiencia operativa de tus procesos."
+  },
+  {
+    "pregunta": "¿Desarrollan proyectos de inteligencia artificial aplicada a la educación?",
+    "respuesta": "Sí, creamos sistemas educativos personalizados que adaptan el contenido al ritmo y perfil de cada estudiante."
+  },
+  {
+    "pregunta": "¿Puedo digitalizar mis auditorías empresariales?",
+    "respuesta": "Sí, automatizamos tus auditorías mediante formularios inteligentes, almacenamiento en la nube y reportes automáticos."
+  },
+  {
+    "pregunta": "¿El área de innovación crea soluciones interactivas para empresas?",
+    "respuesta": "Sí, diseñamos aplicaciones, simuladores y experiencias digitales que mejoran la interacción con clientes y empleados."
+  },
+  {
+    "pregunta": "¿Desarrollan plataformas inteligentes para monitoreo de producción?",
+    "respuesta": "Sí, creamos soluciones que controlan maquinaria, registran datos y detectan anomalías para mejorar el rendimiento."
+  },
+  {
+    "pregunta": "¿Puedo recibir asesoría sobre innovación digital?",
+    "respuesta": "Sí, nuestros expertos te orientan sobre tendencias tecnológicas y estrategias para digitalizar tu empresa de manera efectiva."
+  },
+  {
+    "pregunta": "¿El área de innovación apoya proyectos internacionales?",
+    "respuesta": "Sí, trabajamos con empresas fuera de Colombia mediante asesoría virtual y desarrollo remoto de soluciones."
+  },
+
+  {
+    "pregunta": "¿Desarrollan innovación aplicada a la industria 4.0?",
+    "respuesta": "Sí, implementamos tecnologías de la industria 4.0 como sensores IoT, IA y automatización para digitalizar procesos industriales."
+  },
+  {
+    "pregunta": "¿Puedo solicitar innovación en mantenimiento predictivo?",
+    "respuesta": "Sí, desarrollamos soluciones que anticipan fallas en equipos usando inteligencia artificial y análisis de datos."
+  },
+  {
+    "pregunta": "¿El área de innovación apoya proyectos con inteligencia ambiental?",
+    "respuesta": "Sí, creamos sistemas inteligentes que monitorean el entorno, temperatura, humedad y consumo energético para optimizar recursos."
+  },
+  {
+    "pregunta": "¿Desarrollan innovación para el sector agrícola?",
+    "respuesta": "Sí, ofrecemos soluciones tecnológicas para monitoreo de cultivos, riego inteligente y análisis climático con IoT."
+  },
+  {
+    "pregunta": "¿Puedo solicitar digitalización de mis documentos?",
+    "respuesta": "Sí, ofrecemos servicios de digitalización con respaldo en la nube, indexación automática y acceso seguro a la información."
+  },
+  {
+    "pregunta": "¿El área de innovación trabaja con inteligencia artificial visual?",
+    "respuesta": "Sí, aplicamos visión por computadora para inspección, control de calidad y monitoreo de espacios o productos."
+  },
+  {
+    "pregunta": "¿Desarrollan soluciones inteligentes para energía solar?",
+    "respuesta": "Sí, diseñamos sistemas que miden, controlan y optimizan el rendimiento de paneles solares en tiempo real."
+  },
+  {
+    "pregunta": "¿Puedo integrar IA en mis plataformas actuales?",
+    "respuesta": "Sí, adaptamos inteligencia artificial a tus sistemas existentes para potenciar sus funciones y análisis de datos."
+  },
+  {
+    "pregunta": "¿El área de innovación desarrolla entornos digitales interactivos?",
+    "respuesta": "Sí, creamos entornos web y simuladores digitales con experiencias dinámicas e inmersivas para tus clientes o empleados."
+  },
+  {
+    "pregunta": "¿Desarrollan soluciones para control de acceso inteligente?",
+    "respuesta": "Sí, integramos reconocimiento facial, huellas digitales o tarjetas RFID en sistemas de acceso automatizados."
+  },
+  {
+    "pregunta": "¿Puedo innovar mis procesos de producción?",
+    "respuesta": "Sí, analizamos tus operaciones y aplicamos tecnología para optimizar recursos, mejorar la trazabilidad y reducir desperdicios."
+  },
+  {
+    "pregunta": "¿El área de innovación apoya transformación digital en industrias?",
+    "respuesta": "Sí, ayudamos a las industrias a evolucionar hacia modelos digitales con IA, sensores y automatización."
+  },
+  {
+    "pregunta": "¿Desarrollan sistemas con inteligencia híbrida?",
+    "respuesta": "Sí, combinamos IA, análisis humano y algoritmos predictivos para lograr decisiones más precisas y confiables."
+  },
+  {
+    "pregunta": "¿Puedo recibir acompañamiento en innovación sostenible?",
+    "respuesta": "Sí, promovemos proyectos que integran tecnología con responsabilidad ambiental y eficiencia energética."
+  },
+  {
+    "pregunta": "¿El área de innovación ofrece alianzas tecnológicas?",
+    "respuesta": "Sí, colaboramos con otras empresas y startups para crear ecosistemas de innovación que generen valor conjunto."
+  },
+  {
+    "pregunta": "¿Desarrollan software para análisis de rendimiento?",
+    "respuesta": "Sí, creamos plataformas que miden productividad, eficiencia y resultados mediante métricas personalizadas."
+  },
+  {
+    "pregunta": "¿Puedo solicitar innovación para centros educativos?",
+    "respuesta": "Sí, diseñamos herramientas tecnológicas para aulas virtuales, laboratorios digitales y experiencias de aprendizaje interactivas."
+  },
+  {
+    "pregunta": "¿El área de innovación aplica metodologías ágiles?",
+    "respuesta": "Sí, trabajamos con metodologías ágiles para garantizar entregas rápidas, eficientes y con mejora continua."
+  },
+  {
+    "pregunta": "¿Desarrollan proyectos de investigación tecnológica?",
+    "respuesta": "Sí, participamos en proyectos de I+D orientados a nuevas tecnologías, automatización e inteligencia artificial."
+  },
+  {
+    "pregunta": "¿Puedo automatizar mi sistema de gestión documental?",
+    "respuesta": "Sí, creamos herramientas que clasifican, almacenan y gestionan documentos automáticamente con IA."
+  },
+  {
+    "pregunta": "¿El área de innovación ofrece soporte postimplementación?",
+    "respuesta": "Sí, acompañamos cada proyecto tras su entrega para garantizar estabilidad, mantenimiento y evolución tecnológica."
+  },
+  {
+    "pregunta": "¿Desarrollan sistemas inteligentes de inventario?",
+    "respuesta": "Sí, aplicamos sensores e IA para controlar el inventario, evitar pérdidas y optimizar los procesos de almacenamiento."
+  },
+  {
+    "pregunta": "¿Puedo usar IA para predecir la demanda de mis productos?",
+    "respuesta": "Sí, diseñamos modelos predictivos que analizan ventas pasadas y tendencias para estimar la demanda futura."
+  },
+  {
+    "pregunta": "¿El área de innovación crea entornos de simulación industrial?",
+    "respuesta": "Sí, desarrollamos simuladores que replican procesos industriales para entrenamiento o prueba de escenarios."
+  },
+  {
+    "pregunta": "¿Desarrollan sistemas de monitoreo con drones?",
+    "respuesta": "Sí, integramos drones equipados con cámaras y sensores para inspección aérea y monitoreo en tiempo real."
+  },
+  {
+    "pregunta": "¿Puedo recibir asesoría personalizada sobre innovación?",
+    "respuesta": "Sí, nuestros especialistas te orientan con estrategias tecnológicas adaptadas a tu sector y objetivos."
+  },
+  {
+    "pregunta": "¿El área de innovación desarrolla soluciones para smart cities?",
+    "respuesta": "Sí, trabajamos en proyectos urbanos inteligentes que integran sensores, IA y análisis de datos para mejorar servicios públicos."
+  },
+  {
+    "pregunta": "¿Desarrollan herramientas de mantenimiento digital?",
+    "respuesta": "Sí, creamos sistemas que registran y programan mantenimientos automáticos para equipos e infraestructura."
+  },
+  {
+    "pregunta": "¿Puedo combinar innovación y ciberseguridad?",
+    "respuesta": "Sí, cada proyecto innovador incluye medidas de seguridad digital para proteger datos y sistemas empresariales."
+  },
+  {
+    "pregunta": "¿El área de innovación colabora con organismos públicos?",
+    "respuesta": "Sí, participamos en proyectos de digitalización gubernamental e innovación para servicios ciudadanos."
+  },
+  {
+    "pregunta": "¿Desarrollan soluciones IA para análisis financiero?",
+    "respuesta": "Sí, creamos herramientas inteligentes que detectan riesgos, analizan inversiones y optimizan decisiones financieras."
+  },
+  {
+    "pregunta": "¿Puedo usar innovación para optimizar mis recursos humanos?",
+    "respuesta": "Sí, implementamos IA que evalúa desempeño, automatiza procesos y mejora la gestión del talento humano."
+  },
+  {
+    "pregunta": "¿El área de innovación diseña sistemas de seguimiento de proyectos?",
+    "respuesta": "Sí, creamos plataformas que controlan avances, plazos y resultados con reportes automáticos."
+  },
+  {
+    "pregunta": "¿Desarrollan soluciones inteligentes para transporte?",
+    "respuesta": "Sí, implementamos sistemas que optimizan rutas, controlan flotas y reducen costos logísticos mediante IA."
+  },
+  {
+    "pregunta": "¿Puedo recibir entrenamiento en innovación digital?",
+    "respuesta": "Sí, capacitamos a tu equipo en tendencias tecnológicas, herramientas digitales y metodologías de innovación."
+  },
+  {
+    "pregunta": "¿El área de innovación desarrolla soluciones con 5G?",
+    "respuesta": "Sí, trabajamos en proyectos que aprovechan la conectividad 5G para comunicación más rápida y eficiente entre dispositivos."
+  },
+  {
+    "pregunta": "¿Desarrollan plataformas con inteligencia emocional artificial?",
+    "respuesta": "Sí, exploramos IA capaz de reconocer emociones y mejorar la interacción entre usuarios y sistemas digitales."
+  },
+  {
+    "pregunta": "¿Puedo participar en un proyecto conjunto de innovación?",
+    "respuesta": "Sí, invitamos a empresas aliadas a co-crear proyectos innovadores con apoyo técnico y estratégico."
+  },
+  {
+    "pregunta": "¿El área de innovación ofrece soluciones a medida?",
+    "respuesta": "Sí, cada proyecto se diseña desde cero según las metas, estructura y presupuesto de tu empresa."
+  },
+  {
+    "pregunta": "¿Desarrollan IA para gestión del conocimiento?",
+    "respuesta": "Sí, creamos sistemas inteligentes que organizan, clasifican y recomiendan información dentro de las empresas."
+  },
+  {
+    "pregunta": "¿Puedo recibir acompañamiento continuo en innovación?",
+    "respuesta": "Sí, ofrecemos planes de seguimiento y actualización tecnológica para mantenerte a la vanguardia digital."
+  },
+  {
+    "pregunta": "¿El área de innovación ofrece informes de resultados?",
+    "respuesta": "Sí, entregamos reportes detallados sobre impacto, rendimiento y beneficios de cada proyecto implementado."
+  },
+  {
+    "pregunta": "¿Desarrollan innovación para integración de sistemas empresariales?",
+    "respuesta": "Sí, conectamos distintas plataformas y herramientas para crear ecosistemas tecnológicos más eficientes y automatizados."
+  },
+  {
+    "pregunta": "¿Puedo recibir orientación sobre tendencias de innovación?",
+    "respuesta": "Sí, te compartimos reportes y análisis sobre las principales tendencias tecnológicas aplicables a tu negocio."
+  },
+  {
+    "pregunta": "¿El área de innovación trabaja con desarrollo sostenible?",
+    "respuesta": "Sí, impulsamos proyectos que equilibran tecnología, sostenibilidad y responsabilidad ambiental."
+  },
+  {
+    "pregunta": "¿Desarrollan soluciones IA para predicción de fallos?",
+    "respuesta": "Sí, implementamos modelos predictivos que detectan anomalías antes de que afecten la operación."
+  },
+  {
+    "pregunta": "¿Puedo combinar varias áreas en un solo proyecto?",
+    "respuesta": "Sí, integramos innovación, infraestructura, soporte y consultoría para desarrollar soluciones completas."
+  },
+  {
+    "pregunta": "¿El área de innovación brinda asesoría internacional?",
+    "respuesta": "Sí, atendemos clientes fuera del país mediante asesorías virtuales y soporte remoto especializado."
+  },
+  {
+    "pregunta": "¿Desarrollan proyectos de innovación digital empresarial?",
+    "respuesta": "Sí, acompañamos a empresas en su transformación digital con estrategias de automatización, IA y análisis de datos."
+  },
+  {
+    "pregunta": "¿Qué beneficios obtengo al innovar con VicaTechnology?",
+    "respuesta": "Obtienes tecnología de vanguardia, asesoría cercana, soluciones a medida y un equipo que convierte tus ideas en resultados reales."
+  }
+
+]
+
+
+
+
+
+
+
+
+
+

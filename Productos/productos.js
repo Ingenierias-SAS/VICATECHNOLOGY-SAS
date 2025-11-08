@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (!menuToggle || !menuNav) return;
 
+  // Abrir / cerrar menú
   menuToggle.addEventListener('click', (e) => {
     e.stopPropagation();
     const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
@@ -12,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.body.classList.toggle('menu-open');
   });
 
-  // Cerrar al hacer clic fuera
+  // Cerrar clic fuera del menú
   document.addEventListener('click', (e) => {
     if (window.innerWidth <= 900 && menuNav.classList.contains('active')) {
       if (!menuNav.contains(e.target) && e.target !== menuToggle) {
@@ -23,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Cerrar al hacer clic en un enlace
+  // Cerrar menú al seleccionar una opción
   menuNav.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
       if (window.innerWidth <= 900) {
@@ -34,35 +35,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Header transparente -> negro al hacer scroll
+  // Header sólido al hacer scroll
   const header = document.querySelector('header');
   const onScroll = () => {
-    if (!header) return;
     const y = window.pageYOffset || document.documentElement.scrollTop || 0;
     const scrolled = y > 10;
     header.classList.toggle('header-solid', scrolled);
     document.body.classList.toggle('scrolled', scrolled);
   };
+
   onScroll();
   window.addEventListener('scroll', onScroll, { passive: true });
 });
 
-  // Swap de imagen del banner en móviles (Consultorías)
-  try {
-    const heroImg = document.querySelector('.bunker-servicios img.img-infra');
-    if (heroImg) {
-      const desktopSrc = heroImg.getAttribute('src') || '';
-      // Inserta '-movil' antes de la extensión del archivo actual
-      const mobileSrc = desktopSrc.replace(/(\.[a-z0-9]+)(\?.*)?$/i, '-movil$1');
-      const applySwap = () => {
-        if (window.innerWidth <= 768) {
-          heroImg.setAttribute('src', mobileSrc);
-        } else {
-          heroImg.setAttribute('src', desktopSrc);
-        }
-      };
-      applySwap();
-      window.addEventListener('resize', applySwap);
-    }
-  } catch (_) { /* silencioso */ }
-});

@@ -998,6 +998,12 @@ footer {
     padding: 30px 15px;      /* menos padding */
   }
 
+  .sobre-img {
+    position: static !important; /* deja la imagen quieta */
+    top: auto !important;
+    align-self: center; /* centra la imagen */
+  }
+
   .sobre-img img {
     max-width: 90%;   /* imagen más adaptable */
     height: auto;
@@ -1019,6 +1025,15 @@ footer {
   .cuadro h3 {
     font-size: 18px;
   }
+
+  /* Asegurar sticky de la imagen en móviles (Nosotros) */
+  .sobre-nosotros { align-items: flex-start; }
+  .sobre-img {
+    position: sticky;
+    top: var(--header-h, 70px);
+    align-self: flex-start;
+    z-index: 3;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1036,6 +1051,10 @@ footer {
 
   .cuadro h3 {
     font-size: 16px;
+  }
+
+    .sobre-img {
+    position: static !important;
   }
 
   /* Footer */

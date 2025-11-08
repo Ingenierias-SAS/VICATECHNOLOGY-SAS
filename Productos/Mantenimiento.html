@@ -34,11 +34,23 @@
   </nav>
 </header>
 
-  <section class="bunker-servicios">
-  <h2>SERVICIOS DE INFRAESTRUCTURA TECNOLÓGICA</h2>
-  <img src="../img/Consultorías.png" alt="Infraestructura Tecnológica" class="img-infra">
+<section class="bunker-servicios">
+  <h2>SERVICIOS DE MANTENIMIENTO TECNOLÓGICO</h2>
+
+  <!-- ✅ Usa <picture> con fuentes por media -->
+  <picture class="hero-illustration">
+    <!-- móvil -->
+    <source srcset="../img/Consultorías-movil.png" media="(max-width: 768px)">
+    <!-- escritorio -->
+    <source srcset="../img/Consultorías.png" media="(min-width: 769px)">
+    <!-- fallback (por si el navegador no soporta <picture>) -->
+    <img src="../img/Consultorías.png" alt="Infraestructura Tecnológica" loading="eager">
+  </picture>
+
   <a href="../Contacto/Contacto.html" class="btn-info">MÁS INFORMACIÓN...</a>
- </section>
+</section>
+
+
 
 <section class="servicios-infra">
   <h2>SERVICIOS DE MANTENIMIENTO</h2>
@@ -152,5 +164,6 @@
 
   <script src="../Productos/productos.js"></script>
   <script src="../common/header-scroll.js" defer></script>
+  <script src="../chatboot/embed.js" defer></script>
 </body>
 </html>

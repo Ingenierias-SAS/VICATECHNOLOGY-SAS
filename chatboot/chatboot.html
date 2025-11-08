@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChatBot Interactivo</title>
+  <link rel="stylesheet" href="chatboot.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="color-scheme" content="light" />
+  <meta name="theme-color" content="#4b7bec" />
+  <style>body{min-height:100vh;background:#f7f7f9;}</style>
+  
+  </head>
+<body>
+  <button class="chat-toggle" id="chatToggle" aria-label="Abrir chat">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 2H4a2 2 0 0 0-2 2v18l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2Z" fill="#fff"/><circle cx="8" cy="11" r="1.5" fill="#4b7bec"/><circle cx="12" cy="11" r="1.5" fill="#4b7bec"/><circle cx="16" cy="11" r="1.5" fill="#4b7bec"/></svg>
+  </button>
+
+  <div class="chat-container" id="chatContainer">
+    <div class="chat-header">
+      <div class="chat-title">Safyra</div>
+      <div class="chat-subtitle">asistente virtual</div>
+      <span class="chat-close" id="chatClose">&times;</span>
+    </div>
+
+    <div class="chat-messages" id="chatMessages"></div>
+
+    <div class="chat-input">
+      <input type="text" id="userInput" placeholder="Escribe tu mensaje..." aria-label="Mensaje" />
+      <button type="button">Enviar</button>
+    </div>
+  </div>
+
+  <script src="chatboot.js"></script>
+  <script>
+    // Inicializa el chat localmente en esta página
+    function boot() {
+      try { window.Chatboot && window.Chatboot.init({ baseUrl: window.location.href }); } catch(e){}
+    }
+    if (window.Chatboot && typeof window.Chatboot.init === 'function') {
+      boot();
+    } else {
+      document.addEventListener('DOMContentLoaded', boot);
+    }
+  </script>
+</body>
+</html>

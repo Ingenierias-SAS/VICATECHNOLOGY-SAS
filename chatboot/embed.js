@@ -37,9 +37,9 @@
     container.id = 'chatContainer';
     container.innerHTML = `
       <div class="chat-header">
-        <img class="chat-avatar" src="img/logonuevo2.png" alt="Xyber" />
+        <img class="chat-avatar" src="img/logonuevo2.png" alt="axia" />
         <div class="chat-meta">
-          <div class="chat-title">Xyber</div>
+          <div class="chat-title">axia</div>
           <div class="chat-subtitle">en línea</div>
         </div>
         <span class="chat-close" id="chatClose" aria-label="Cerrar chat" role="button" tabindex="0">&times;</span>

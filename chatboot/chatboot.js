@@ -126,10 +126,10 @@
     if (!messages) return;
     const div = document.createElement('div');
     div.className = `message ${sender}`;
-    // Ensure displayed assistant name is Xyber
+    // Ensure displayed assistant name is axia
     try {
       if (typeof text === 'string') {
-        text = text.replace(/Safyra/g, 'Xyber');
+        text = text.replace(/Safyra/gi, 'axia').replace(/Xyber/gi, 'axia');
       }
     } catch (_) {}
     if (html) { div.innerHTML = text; } else { div.textContent = text; }
@@ -298,7 +298,7 @@
       }
     }
     if (q.includes('hola') || q.includes('buenas') || q.includes('buenos dias') || q.includes('buenas tardes')) {
-      return '¡Hola! Soy Safyra. ¿En qué puedo ayudarte?';
+      return '¡Hola! Soy axia. ¿En qué puedo ayudarte?';
     }
     if (q.includes('contacto') || q.includes('whatsapp') || q.includes('hablar') || q.includes('asesor')) {
       return 'Puedes escribirnos a WhatsApp: +57 313 234 4719 o al correo comunicaciones@vica-technology.com';
@@ -328,7 +328,7 @@
 
   function handleFirstOpen() {
     if (state.hasGreeted || state.history.length) return;
-    addMessage('¡Hola! Soy Safyra, tu asistente virtual. ¿En qué puedo ayudarte hoy?', 'bot');
+    addMessage('¡Hola! Soy axia, tu asistente virtual. ¿En qué puedo ayudarte hoy?', 'bot');
     addQuickReplies([
       'Quiero cotizar',
       'Servicios de ciberseguridad',
@@ -564,8 +564,8 @@
       const q = normalize(userText || '');
       if (/gracias/.test(q)) return '¡Con gusto! ¿Te apoyo con algo más?';
       if (/(adios|bye|chao|hasta luego)/.test(q)) return '¡Hasta luego! Si necesitas algo, estoy aquí.';
-      if (/(quien eres|quien sos|como te llamas|tu nombre)/.test(q)) return 'Soy Safyra, asistente virtual de VicaTechnology. ¿En qué te ayudo?';
-      if (q.includes('hola') || q.includes('buenas') || q.includes('buenos dias') || q.includes('buenas tardes') || q.includes('buenas noches') || q.includes('hey')) return '¡Hola! Soy Safyra. ¿En qué puedo ayudarte?';
+      if (/(quien eres|quien sos|como te llamas|tu nombre)/.test(q)) return 'Soy axia, asistente virtual de VicaTechnology. ¿En qué te ayudo?';
+      if (q.includes('hola') || q.includes('buenas') || q.includes('buenos dias') || q.includes('buenas tardes') || q.includes('buenas noches') || q.includes('hey')) return '¡Hola! Soy axia. ¿En qué puedo ayudarte?';
       if (/(mas|m[aá]s) info|detalles|cuentame|cuéntame|amplia|ampliar|explica|profundiza/.test(q) && state.lastKBIndex >= 0) return 'Claro. ¿Qué aspecto te interesa: alcance, tiempos o costos?';
       return '';
     }

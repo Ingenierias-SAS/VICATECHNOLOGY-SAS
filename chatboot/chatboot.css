@@ -3,22 +3,54 @@
 /* Nota: Se removieron estilos globales al body para no afectar
    el resto del sitio cuando se usa como widget embebido. */
 
+:root {
+  --chat-bg: radial-gradient(circle at top, #141b3a 0%, #050911 70%);
+  --chat-panel: rgba(8, 14, 27, 0.92);
+  --chat-border: rgba(94, 234, 212, 0.35);
+  --chat-glow: 0 20px 45px rgba(16, 185, 129, 0.2);
+  --user-gradient: linear-gradient(135deg, #4ade80, #22d3ee);
+  --accent: #68f7ff;
+  --accent-strong: #7c3aed;
+  --brand-orange: #F23805;
+  --text-primary: #f8fafc;
+  --text-muted: rgba(248, 250, 252, 0.7);
+}
+
 .chat-toggle {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #25D366; /* WhatsApp green */
+  background: linear-gradient(140deg, #2563eb, #7c3aed 65%, #22d3ee);
   border: none;
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 12px 25px rgba(32, 78, 213, 0.4),
+              inset 0 0 20px rgba(255, 255, 255, 0.15);
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0;
   z-index: 3000;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.chat-toggle::after {
+  content: "";
+  position: absolute;
+  inset: 5px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 18px rgba(104, 247, 255, 0.4);
+  opacity: 0.65;
+}
+
+
+.chat-toggle:hover {
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 18px 35px rgba(1, 3, 38, 0.55);
 }
 
 .chat-toggle img {
@@ -32,75 +64,90 @@
   right: 20px;
   width: 350px;
   height: 500px;
-  background: #fff;
+  background: var(--chat-panel);
+  backdrop-filter: blur(18px) saturate(130%);
   border-radius: 20px;
-  box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+  border: 1px solid var(--chat-border);
+  box-shadow: var(--chat-glow);
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  display: none; 
+  display: none;
   z-index: 2999;
   font-family: 'Montserrat', Arial, sans-serif;
-  color: #1f2937; /* Asegura texto oscuro en todo el widget */
+  color: var(--text-primary);
 }
 
 .chat-header {
-  background: #075E54; /* WhatsApp header */
-  color: white;
-  padding: 12px 48px 12px 12px;
+  background: linear-gradient(110deg, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.95) 55%, rgba(242, 56, 5, 0.9) 100%);
+  color: var(--text-primary);
+  padding: 14px 48px 14px 16px;
   font-size: 18px;
   font-weight: bold;
   position: relative;
   display: flex;
   align-items: center;
   gap: 10px;
+  box-shadow: inset 0 -1px 0 rgba(255,255,255,0.12),
+              0 12px 28px rgba(242, 56, 5, 0.35);
 }
 
 .chat-avatar {
   width: 36px;
   height: 36px;
-  border-radius: 50%;
+  border-radius: 10px;
   object-fit: cover;
-  background: #fff;
+  background: transparent;
+  border: none;
 }
 
-.chat-meta { display: flex; flex-direction: column; }
+.chat-meta { display: flex; flex-direction: column; gap: 2px; }
 
 .chat-close {
   position: absolute;
-  top: 10px;
-  right: 15px;
+  top: 12px;
+  right: 16px;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 22px;
+  color: var(--text-muted);
+  transition: color 0.2s ease;
 }
 
-/* Se removieron pestañas: chat-tabs y chat-tab */
+.chat-close:hover { color: var(--accent); }
+
+/* Se removieron pesta�as: chat-tabs y chat-tab */
 
 .chat-messages {
   flex: 1;
-  padding: 15px;
+  padding: 18px;
   overflow-y: auto;
-  background: #ECE5DD; /* WhatsApp chat bg */
+  background: #ffffff;
   display: flex;
   flex-direction: column;
-  color: #1f2937; /* Evita heredar color blanco del body */
+  gap: 6px;
 }
 
 .message {
-  margin: 10px 0;
-  padding: 10px;
-  border-radius: 10px;
+  margin: 8px 0;
+  padding: 12px 14px;
+  border-radius: 14px;
   max-width: 75%;
   line-height: 1.4;
-  color: #1f2937;
+  color: var(--text-primary);
+  position: relative;
+  border: 1px solid rgba(255,255,255,0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.message:hover {
+  box-shadow: 0 8px 25px rgba(1, 3, 38, 0.55);
 }
 
 .bot {
-  background: #ffffff; /* bot bubble */
-  border: 1px solid #e0e0e0;
+  background: #010326;
   align-self: flex-start;
-  color: #111;
   border-top-left-radius: 0;
+  box-shadow: inset 0 0 30px rgba(99, 102, 241, 0.12);
 }
 
 /* List styling inside bot messages */
@@ -111,10 +158,11 @@
 .message.bot li { margin: 4px 0; }
 
 .user {
-  background: #DCF8C6; /* WhatsApp user bubble */
-  color: #111;
+  background: var(--user-gradient);
+  color: #04101e;
   align-self: flex-end;
   border-top-right-radius: 0;
+  box-shadow: 0 12px 20px rgba(34, 211, 238, 0.25);
 }
 
 /* Typing indicator */
@@ -126,7 +174,7 @@
 .typing .dot {
   width: 6px;
   height: 6px;
-  background: #6b7bd6;
+  background: var(--accent);
   border-radius: 50%;
   display: inline-block;
   animation: typingBlink 1.2s infinite ease-in-out;
@@ -146,59 +194,68 @@
   flex-wrap: wrap;
   gap: 8px;
   margin: 6px 0 8px;
-  align-self: flex-start; /* lado del bot */
+  align-self: flex-start;
 }
 
 .quick-replies .chip {
-  background: #fff;
-  color: #4b7bec;
-  border: 1px solid #4b7bec;
-  border-radius: 16px;
-  padding: 6px 10px;
-  font-size: 12px;
+  background: rgba(15, 23, 42, 0.65);
+  color: var(--text-primary);
+  border: 1px solid rgba(104, 247, 255, 0.35);
+  border-radius: 18px;
+  padding: 7px 12px;
+  font-size: 11px;
   cursor: pointer;
   transition: all 0.2s ease;
   user-select: none;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  box-shadow: 0 5px 15px rgba(15, 118, 227, 0.15);
 }
 
 .quick-replies .chip:hover {
-  background: #4b7bec;
-  color: #fff;
+  background: #010326;
+  color: var(--text-primary);
+  border-color: rgba(1, 3, 38, 0.65);
+  box-shadow: 0 0 22px rgba(1, 3, 38, 0.7);
 }
 
 .chat-input {
   display: flex;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  background: rgba(0,0,0,0.5);
 }
 
 .chat-input input {
   flex: 1;
   border: none;
-  padding: 15px;
+  padding: 16px;
   outline: none;
   font-size: 14px;
   font-family: 'Montserrat', Arial, sans-serif;
-  color: #1f2937;
+  color: var(--text-primary);
+  background: transparent;
 }
 
 .chat-input input::placeholder {
-  color: #9aa0a6;
+  color: var(--text-muted);
 }
 
 .chat-input button {
-  background: #25D366;
-  color: white;
+  background: linear-gradient(135deg, #F23805, #ff7a00);
+  color: #fff;
   border: none;
-  padding: 15px 20px;
+  padding: 15px 22px;
   cursor: pointer;
   font-size: 14px;
   line-height: 1;
   border-radius: 0;
   font-family: 'Montserrat', Arial, sans-serif;
+  box-shadow: 0 8px 20px rgba(242, 56, 5, 0.35);
 }
 
 .chat-input button:hover {
-  background: #1ebe57;
+  filter: brightness(1.05);
+  box-shadow: 0 10px 25px rgba(1, 3, 38, 0.55);
 }
 
 /* RESPONSIVE */
@@ -206,8 +263,8 @@
 /* Tablets y pantallas medianas */
 @media (max-width: 768px) {
   .chat-container {
-    width: 80%;   
-    height: 70%;  
+    width: 80%;
+    height: 70%;
     right: 10px;
     bottom: 80px;
   }
@@ -216,8 +273,8 @@
 /* Celulares */
 @media (max-width: 480px) {
   .chat-container {
-    width: 95%;   
-    height: 85%;  
+    width: 95%;
+    height: 85%;
     bottom: 75px;
     right: 2.5%;
     border-radius: 12px;
@@ -242,8 +299,45 @@
 /* Header title/subtitle */
 .chat-header { position: relative; }
 .chat-title { font-size: 18px; font-weight: 700; line-height: 1; }
-.chat-subtitle { font-size: 12px; font-weight: 500; opacity: 0.9; margin-top: 2px; }
+.chat-subtitle {
+  font-size: 12px;
+  font-weight: 500;
+  opacity: 0.75;
+  margin-top: 2px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
 @media (max-width: 480px) {
   .chat-title { font-size: 16px; }
   .chat-subtitle { font-size: 11px; }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

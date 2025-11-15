@@ -23,7 +23,7 @@
     }
   }
 
-  function ensureMarkup() {
+  function ensureMarkup(base) {
     if (document.getElementById('chatToggle') || document.getElementById('chatContainer')) return;
     const btn = document.createElement('button');
     btn.className = 'chat-toggle';
@@ -35,9 +35,10 @@
     const container = document.createElement('div');
     container.className = 'chat-container';
     container.id = 'chatContainer';
+    const avatarSrc = base ? new URL('../img/logonuevo2.png', base).href : 'img/logonuevo2.png';
     container.innerHTML = `
       <div class="chat-header">
-        <img class="chat-avatar" src="img/logonuevo2.png" alt="axia" />
+        <img class="chat-avatar" src="${avatarSrc}" alt="axia" />
         <div class="chat-meta">
           <div class="chat-title">axia</div>
           <div class="chat-subtitle">en línea</div>
@@ -69,7 +70,7 @@
   function initAfterDOM() {
     const base = getBasePath();
     ensureCSS(base);
-    ensureMarkup();
+    ensureMarkup(base);
     loadCore(base).then(() => {
       try { window.Chatboot && window.Chatboot.init({ baseUrl: base }); } catch (_) { /* noop */ }
     });
@@ -81,3 +82,7 @@
     initAfterDOM();
   }
 })();
+
+
+
+

@@ -140,27 +140,6 @@
     return div;
   }
 
-  function addQuickReplies(phrases) {
-    if (!phrases || !phrases.length) return;
-    const messages = el('chatMessages');
-    const wrap = document.createElement('div');
-    wrap.className = 'quick-replies';
-    phrases.forEach((p) => {
-      const chip = document.createElement('div');
-      chip.className = 'chip';
-      chip.textContent = p;
-      chip.addEventListener('click', () => {
-        const input = el('userInput');
-        if (!input) return;
-        input.value = p;
-        sendMessage();
-      });
-      wrap.appendChild(chip);
-    });
-    messages.appendChild(wrap);
-    scrollToBottom(messages);
-  }
-
   function setTyping(show) {
     const messages = el('chatMessages');
     if (!messages) return;
@@ -270,15 +249,7 @@
     if (!reply) return null;
     // If under accept threshold, do not answer directly; suggest clarifications
     if (best.score < state.cfg.acceptThreshold) {
-      const suggestions = top3
-        .map(x => state.kb[x.idx]?.pregunta)
-        .filter(Boolean)
-        .slice(0, 3);
-      if (suggestions.length) {
-        addMessage('¿Te refieres a alguno de estos temas?', 'bot');
-        addQuickReplies(suggestions);
-        return null; // no respuesta directa para evitar generalidades
-      }
+      return 'Necesito un poco más de contexto para darte una respuesta precisa. ¿Puedes contarme más sobre lo que necesitas?';
     }
     // Update conversation state
     state.lastIntent = state.kb[best.idx]?.pregunta || '';
@@ -320,7 +291,7 @@
     if (kb) return kb;
     // If KB loaded but no confident match, avoid genérica; pide aclaración
     if (state.kbLoaded) {
-      return 'Para ayudarte mejor, ¿puedes aclarar el tema o elegir una opción sugerida?';
+      return 'Para ayudarte mejor, ¿puedes aclarar el tema con más detalles?';
     }
     // Si no hay KB, usa reglas básicas
     return basicReply(userText);
@@ -329,12 +300,6 @@
   function handleFirstOpen() {
     if (state.hasGreeted || state.history.length) return;
     addMessage('¡Hola! Soy axia, tu asistente virtual. ¿En qué puedo ayudarte hoy?', 'bot');
-    addQuickReplies([
-      'Quiero cotizar',
-      'Servicios de ciberseguridad',
-      'Soporte y mantenimiento',
-      'Contacto con un asesor'
-    ]);
     state.hasGreeted = true;
   }
 
@@ -362,12 +327,9 @@
     setTimeout(() => {
       setTyping(false);
       const r = respond(text);
-      const msg = addMessage(r, 'bot');
-      // Offer context-based quick replies for continuity
+      addMessage(r, 'bot');
       const topic = extractTopic(text) || state.currentTopic;
       if (topic) state.currentTopic = topic;
-      const followups = ['Más info','Precios','Hablar con asesor'];
-      addQuickReplies(followups);
     }, 500);
   }
 
@@ -570,24 +532,6 @@
       return '';
     }
 
-    function topicFollowups(topic) {
-      const t = (topic || '').toLowerCase();
-      if (!t) return ['Más info','Precios','Hablar con asesor'];
-      if (t.includes('seguridad') || t.includes('ciberseguridad') || t.includes('siem') || t.includes('edr') || t.includes('soc')) {
-        return ['Auditoría de seguridad','Planes SOC','Precios','Hablar con asesor'];
-      }
-      if (t.includes('infraestructura') || t.includes('red') || t.includes('servidor') || t.includes('nube') || t.includes('backup')) {
-        return ['Revisión de infraestructura','Backups/Nube','Precios','Hablar con asesor'];
-      }
-      if (t.includes('soporte') || t.includes('mantenimiento')) {
-        return ['Reportar incidencia','Planes de mantenimiento','Precios','Hablar con asesor'];
-      }
-      if (t.includes('consultoria') || t.includes('auditoria')) {
-        return ['Diagnóstico inicial','Tiempo y alcance','Precios','Hablar con asesor'];
-      }
-      return ['Más info','Precios','Hablar con asesor'];
-    }
-
     // Mejora de extractTopic para más señales
     try {
       const __oldExtract = extractTopic;
@@ -645,7 +589,6 @@
           const question = nextQuestion(topic);
           const final = r ? (r.trim().replace(/[\s]+$/,'') + ' ' + question) : question;
           addMessage(final, 'bot');
-          addQuickReplies(topicFollowups(topic));
         }, 500);
       };
     } catch(_){}
@@ -659,7 +602,6 @@
         const mentionsService = has('servicio') || has('servicios');
         const mentionsOffer = has('ofrecen') || has('manejan') || has('tienen') || has('oferta');
         if (!(mentionsService && (looksLikeAsk || mentionsOffer))) return null;
-        const chips = ['Ciberseguridad','Infraestructura','Nube y backup','Soporte','Consultoria','Hablar con asesor'];
         const replyHtml = [
           '<div class="svc">',
           '  <div><strong>Servicios principales</strong></div>',
@@ -673,7 +615,7 @@
           '  <div style="margin-top:6px;">Sobre cual te gustaria saber mas?</div>',
           '</div>'
         ].join('');
-        return { replyHtml, chips };
+        return { replyHtml };
       } catch(_) { return null; }
     }
 
@@ -697,7 +639,6 @@
             } else if (svc.reply) {
               addMessage(svc.reply, 'bot');
             }
-            addQuickReplies(svc.chips);
             return;
           }
           const r = st || respond(text);
@@ -706,7 +647,6 @@
           const question = nextQuestion(topic);
           const final = r ? (String(r).trim().replace(/[\s]+$/,'') + ' ' + question) : question;
           addMessage(final, 'bot');
-          addQuickReplies(topicFollowups(topic));
         }, 500);
       };
     } catch(_){}
@@ -728,7 +668,6 @@
           const mentionsService = has('servicio') || has('servicios');
           const mentionsOffer = has('ofrecen') || has('manejan') || has('tienen') || has('oferta');
           if (mentionsService && (looksLikeAsk || mentionsOffer)) {
-            const chips = ['Ciberseguridad','Infraestructura','Nube y backup','Soporte','Consultoria','Hablar con asesor'];
             const replyHtml = [
               '<div class="svc">',
               '  <div><strong>Servicios principales</strong></div>',
@@ -743,7 +682,6 @@
               '</div>'
             ].join('');
             addMessage(replyHtml, 'bot', { html: true });
-            addQuickReplies(chips);
             return;
           }
         } catch(_) {}
@@ -754,7 +692,6 @@
         const question = nextQuestion(topic);
         const final = r ? (String(r).trim().replace(/[\s]+$/,'') + ' ' + question) : question;
         addMessage(final, 'bot');
-        addQuickReplies(topicFollowups(topic));
       }, 500);
     }
 
